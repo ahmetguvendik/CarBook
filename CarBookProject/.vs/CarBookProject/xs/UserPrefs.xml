@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{F9D832BC-F07A-45E8-A35C-439D5DA14295}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Infrastructure/CarBook.Persistance/Class1.cs">
+    <Files>
+      <File FileName="Infrastructure/CarBook.Persistance/Class1.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CarBookProject" expanded="True">
+            <Node name="Core" expanded="True" />
+            <Node name="Infrastructure" expanded="True">
+              <Node name="CarBook.Persistance" expanded="True" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Core.CarBook.Application FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Presentation.CarBook.Presentation FirstBuild="True" PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.ItemProperties.Infrastructure.CarBook.Persistance FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Infrastructure.CarBook.Infrastructure FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.Core.CarBook.Domain FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+</Properties>

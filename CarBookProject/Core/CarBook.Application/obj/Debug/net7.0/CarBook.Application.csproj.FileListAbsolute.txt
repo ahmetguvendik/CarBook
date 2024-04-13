@@ -1,0 +1,12 @@
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Core/CarBook.Application/bin/Debug/net7.0/CarBook.Application.deps.json
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Core/CarBook.Application/bin/Debug/net7.0/CarBook.Application.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Core/CarBook.Application/bin/Debug/net7.0/CarBook.Application.pdb
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Core/CarBook.Application/obj/Debug/net7.0/CarBook.Application.csproj.AssemblyReference.cache
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Core/CarBook.Application/obj/Debug/net7.0/CarBook.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Core/CarBook.Application/obj/Debug/net7.0/CarBook.Application.AssemblyInfoInputs.cache
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Core/CarBook.Application/obj/Debug/net7.0/CarBook.Application.AssemblyInfo.cs
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Core/CarBook.Application/obj/Debug/net7.0/CarBook.Application.csproj.CoreCompileInputs.cache
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Core/CarBook.Application/obj/Debug/net7.0/CarBook.Application.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Core/CarBook.Application/obj/Debug/net7.0/refint/CarBook.Application.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Core/CarBook.Application/obj/Debug/net7.0/CarBook.Application.pdb
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Core/CarBook.Application/obj/Debug/net7.0/ref/CarBook.Application.dll
