@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{9431771B-D2FC-43AC-B9C1-08E67EA33165}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{531A1601-8FB6-49C9-A179-9986998D5833}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{606FDA6C-FBAE-4500-AC12-BC416460B7A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarBook.Domain", "Core\CarBook.Domain\CarBook.Domain.csproj", "{5852DCAE-FCBD-4BCA-ADD5-63E1777A2748}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarBook.Application", "Core\CarBook.Application\CarBook.Application.csproj", "{140E218B-461D-434B-9EEE-5B8F45AEC1E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarBook.Presentation", "Presentation\CarBook.Presentation\CarBook.Presentation.csproj", "{F9D832BC-F07A-45E8-A35C-439D5DA14295}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarBook.Infrastructure", "Infrastructure\CarBook.Infrastructure\CarBook.Infrastructure.csproj", "{19A7F975-A683-4016-B88E-B89BF2CC50DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarBook.Persistance", "Infrastructure\CarBook.Persistance\CarBook.Persistance.csproj", "{933D314E-C288-4603-AAB1-6D9E1D55729B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5852DCAE-FCBD-4BCA-ADD5-63E1777A2748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5852DCAE-FCBD-4BCA-ADD5-63E1777A2748}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5852DCAE-FCBD-4BCA-ADD5-63E1777A2748}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5852DCAE-FCBD-4BCA-ADD5-63E1777A2748}.Release|Any CPU.Build.0 = Release|Any CPU
+		{140E218B-461D-434B-9EEE-5B8F45AEC1E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{140E218B-461D-434B-9EEE-5B8F45AEC1E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{140E218B-461D-434B-9EEE-5B8F45AEC1E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{140E218B-461D-434B-9EEE-5B8F45AEC1E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9D832BC-F07A-45E8-A35C-439D5DA14295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9D832BC-F07A-45E8-A35C-439D5DA14295}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9D832BC-F07A-45E8-A35C-439D5DA14295}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9D832BC-F07A-45E8-A35C-439D5DA14295}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19A7F975-A683-4016-B88E-B89BF2CC50DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A7F975-A683-4016-B88E-B89BF2CC50DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19A7F975-A683-4016-B88E-B89BF2CC50DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19A7F975-A683-4016-B88E-B89BF2CC50DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{933D314E-C288-4603-AAB1-6D9E1D55729B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{933D314E-C288-4603-AAB1-6D9E1D55729B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{933D314E-C288-4603-AAB1-6D9E1D55729B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{933D314E-C288-4603-AAB1-6D9E1D55729B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AAE0F0C1-8DF9-4767-AD25-BB7721279149}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5852DCAE-FCBD-4BCA-ADD5-63E1777A2748} = {9431771B-D2FC-43AC-B9C1-08E67EA33165}
+		{140E218B-461D-434B-9EEE-5B8F45AEC1E1} = {9431771B-D2FC-43AC-B9C1-08E67EA33165}
+		{F9D832BC-F07A-45E8-A35C-439D5DA14295} = {531A1601-8FB6-49C9-A179-9986998D5833}
+		{19A7F975-A683-4016-B88E-B89BF2CC50DE} = {606FDA6C-FBAE-4500-AC12-BC416460B7A7}
+		{933D314E-C288-4603-AAB1-6D9E1D55729B} = {606FDA6C-FBAE-4500-AC12-BC416460B7A7}
+	EndGlobalSection
+EndGlobal
