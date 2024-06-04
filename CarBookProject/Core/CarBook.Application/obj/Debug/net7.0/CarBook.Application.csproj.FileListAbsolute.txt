@@ -10,3 +10,6 @@
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Core/CarBook.Application/obj/Debug/net7.0/refint/CarBook.Application.dll
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Core/CarBook.Application/obj/Debug/net7.0/CarBook.Application.pdb
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Core/CarBook.Application/obj/Debug/net7.0/ref/CarBook.Application.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Core/CarBook.Application/bin/Debug/net7.0/CarBook.Domain.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Core/CarBook.Application/bin/Debug/net7.0/CarBook.Domain.pdb
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Core/CarBook.Application/obj/Debug/net7.0/CarBook.Application.csproj.CopyComplete

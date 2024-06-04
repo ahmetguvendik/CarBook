@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Px9Il2Vd/M6OIIrtBG/MVCWac6Indc1AQKfn9CuOJoebAsbjQZDB69RFuUfTY56AmPf36fKKOgvsNBOY6iizlg==",
+  "dgSpecHash": "Zl6Y6vgcaueVZl6TS+NPVRP3Iro3s7C77YpsT5WNwvNgkZGOC7W3HP6DENWqTc9hL5aez2mGMMuiFAkxkzCoXg==",
   "success": true,
   "projectFilePath": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Infrastructure/CarBook.Persistance/CarBook.Persistance.csproj",
   "expectedPackageFiles": [
     "/Users/ahmetguvendik/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
-    "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore/7.0.18/microsoft.entityframeworkcore.7.0.18.nupkg.sha512",
-    "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.18/microsoft.entityframeworkcore.abstractions.7.0.18.nupkg.sha512",
-    "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.18/microsoft.entityframeworkcore.analyzers.7.0.18.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore/7.0.20/microsoft.entityframeworkcore.7.0.20.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.20/microsoft.entityframeworkcore.abstractions.7.0.20.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.20/microsoft.entityframeworkcore.analyzers.7.0.20.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.design/7.0.18/microsoft.entityframeworkcore.design.7.0.18.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.18/microsoft.entityframeworkcore.relational.7.0.18.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.tools/7.0.18/microsoft.entityframeworkcore.tools.7.0.18.nupkg.sha512",

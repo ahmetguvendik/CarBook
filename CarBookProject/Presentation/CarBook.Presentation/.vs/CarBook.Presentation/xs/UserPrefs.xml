@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{4363982B-DC0B-4CF2-9F52-2A304E1DBFD6}|https">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CarBook.Presentation" expanded="True" selected="True">
+            <Node name="CarBook.Presentation" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CarBook.Presentation PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

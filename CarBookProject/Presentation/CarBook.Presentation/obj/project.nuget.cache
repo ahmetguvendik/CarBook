@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "pxhGUU/6E/UMsmpCD8jPyxYGCn/z67y8jQqOuc+c8ceQjAXbALS5HEyYf+c7gIosY5ce6Q59pDXAfKiih9Rc5w==",
+  "dgSpecHash": "VqxS5q1l8daM4u2kW1Fg3fQuNdmk6+XK5U06qt6XasEwnJWtNOOWN6niFF+zh+xs+uXLeMjQL18fJatVJofEgA==",
   "success": true,
   "projectFilePath": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Presentation/CarBook.Presentation/CarBook.Presentation.csproj",
   "expectedPackageFiles": [
     "/Users/ahmetguvendik/.nuget/packages/microsoft.aspnetcore.openapi/7.0.18/microsoft.aspnetcore.openapi.7.0.18.nupkg.sha512",
-    "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore/7.0.11/microsoft.entityframeworkcore.7.0.11.nupkg.sha512",
-    "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.11/microsoft.entityframeworkcore.abstractions.7.0.11.nupkg.sha512",
-    "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.11/microsoft.entityframeworkcore.analyzers.7.0.11.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore/7.0.20/microsoft.entityframeworkcore.7.0.20.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.20/microsoft.entityframeworkcore.abstractions.7.0.20.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.20/microsoft.entityframeworkcore.analyzers.7.0.20.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.11/microsoft.entityframeworkcore.relational.7.0.11.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",

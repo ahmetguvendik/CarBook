@@ -40,3 +40,5 @@
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Presentation/CarBook.Presentation/bin/Debug/net7.0/CarBook.Persistance.dll
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Presentation/CarBook.Presentation/bin/Debug/net7.0/CarBook.Persistance.pdb
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Presentation/CarBook.Presentation/bin/Debug/net7.0/CarBook.Domain.pdb
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Presentation/CarBook.Presentation/bin/Debug/net7.0/CarBook.Application.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Presentation/CarBook.Presentation/bin/Debug/net7.0/CarBook.Application.pdb

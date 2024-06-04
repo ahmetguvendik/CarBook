@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "CarBook.Persistance/1.0.0": {
         "dependencies": {
+          "CarBook.Application": "1.0.0",
           "CarBook.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "7.0.18",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.18",
@@ -25,30 +26,30 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore/7.0.18": {
+      "Microsoft.EntityFrameworkCore/7.0.20": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.18",
-          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.18",
+          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.20",
+          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.20",
           "Microsoft.Extensions.Caching.Memory": "7.0.0",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "Microsoft.Extensions.Logging": "7.0.0"
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.dll": {
-            "assemblyVersion": "7.0.18.0",
-            "fileVersion": "7.0.1824.16810"
+            "assemblyVersion": "7.0.20.0",
+            "fileVersion": "7.0.2024.26903"
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/7.0.18": {
+      "Microsoft.EntityFrameworkCore.Abstractions/7.0.20": {
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
-            "assemblyVersion": "7.0.18.0",
-            "fileVersion": "7.0.1824.16810"
+            "assemblyVersion": "7.0.20.0",
+            "fileVersion": "7.0.2024.26903"
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/7.0.18": {},
+      "Microsoft.EntityFrameworkCore.Analyzers/7.0.20": {},
       "Microsoft.EntityFrameworkCore.Design/7.0.18": {
         "dependencies": {
           "Humanizer.Core": "2.14.1",
@@ -65,7 +66,7 @@
       },
       "Microsoft.EntityFrameworkCore.Relational/7.0.18": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.18",
+          "Microsoft.EntityFrameworkCore": "7.0.20",
           "Microsoft.Extensions.Configuration.Abstractions": "7.0.0"
         },
         "runtime": {
@@ -214,8 +215,8 @@
       },
       "Npgsql.EntityFrameworkCore.PostgreSQL/7.0.11": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.18",
-          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.18",
+          "Microsoft.EntityFrameworkCore": "7.0.20",
+          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.20",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.18",
           "Npgsql": "7.0.6"
         },
@@ -240,6 +241,15 @@
           "System.Text.Encodings.Web": "7.0.0"
         }
       },
+      "CarBook.Application/1.0.0": {
+        "dependencies": {
+          "CarBook.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.20"
+        },
+        "runtime": {
+          "CarBook.Application.dll": {}
+        }
+      },
       "CarBook.Domain/1.0.0": {
         "runtime": {
           "CarBook.Domain.dll": {}
@@ -260,26 +270,26 @@
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore/7.0.18": {
+    "Microsoft.EntityFrameworkCore/7.0.20": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zk4JC8m9T55dwtqBnnXar1jtI7q4bZuSo3PI8/Iq7QbVk0D2Yrvx0mZJb/5tj8O+ghwT56XzDuN3641iumXqmg==",
-      "path": "microsoft.entityframeworkcore/7.0.18",
-      "hashPath": "microsoft.entityframeworkcore.7.0.18.nupkg.sha512"
+      "sha512": "sha512-Wvmktob+dBPvMZdTj2yRrfDi3ERL/RRcE8EWjr3DuIjWn+6giqD81+oNM/09IthwZ3IsSMHgpiVVmTwAW92gEQ==",
+      "path": "microsoft.entityframeworkcore/7.0.20",
+      "hashPath": "microsoft.entityframeworkcore.7.0.20.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/7.0.18": {
+    "Microsoft.EntityFrameworkCore.Abstractions/7.0.20": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-KCEaYiYM6bVGKo/dLRDkXn1zZ1Vn6f4uG0nb2iis/jCju16hUOX/GAOLx1FhD2cIQcHRvtmYFZnm5/anHFdhtg==",
-      "path": "microsoft.entityframeworkcore.abstractions/7.0.18",
-      "hashPath": "microsoft.entityframeworkcore.abstractions.7.0.18.nupkg.sha512"
+      "sha512": "sha512-ds6XFVrh34AWYAedlMo8tVkmxsxyXnwP0N6FTjlq4p1oR6TQktIabUDkSMKgStVYt4c4b4Rus3H/Oad9I4uSlQ==",
+      "path": "microsoft.entityframeworkcore.abstractions/7.0.20",
+      "hashPath": "microsoft.entityframeworkcore.abstractions.7.0.20.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/7.0.18": {
+    "Microsoft.EntityFrameworkCore.Analyzers/7.0.20": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qD7GuyGVQvndDJdYbv5UTuxJeeH/cVS1VBz3ZY72yCYKnSEx9hpiokCji1bgy9cHA1rPNjI7OA7ZrDOeojMtOA==",
-      "path": "microsoft.entityframeworkcore.analyzers/7.0.18",
-      "hashPath": "microsoft.entityframeworkcore.analyzers.7.0.18.nupkg.sha512"
+      "sha512": "sha512-doouHLWFcYcd08QUh9+4aZu3sk4WySp/aSOHeIzNhMJ58ESQXUAGDvB1sjJ4HmE0tmCea51NGzgtHE5IBmFLGg==",
+      "path": "microsoft.entityframeworkcore.analyzers/7.0.20",
+      "hashPath": "microsoft.entityframeworkcore.analyzers.7.0.20.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Design/7.0.18": {
       "type": "package",
@@ -413,6 +423,11 @@
       "sha512": "sha512-DaGSsVqKsn/ia6RG8frjwmJonfos0srquhw09TlT8KRw5I43E+4gs+/bZj4K0vShJ5H9imCuXupb4RmS+dBy3w==",
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
+    },
+    "CarBook.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "CarBook.Domain/1.0.0": {
       "type": "project",
