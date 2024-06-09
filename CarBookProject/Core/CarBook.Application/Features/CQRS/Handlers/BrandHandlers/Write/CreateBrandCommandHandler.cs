@@ -16,6 +16,7 @@ namespace CarBook.Application.Features.CQRS.Handlers.BrandHandlers.Write
 		public async Task Handle(CreateBrandCommand command)
 		{
 			var brand = new Brand();
+			brand.Id = Guid.NewGuid().ToString();
 			brand.Name = command.Name;
 			await _repository.CreateAsync(brand);
 		}

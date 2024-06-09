@@ -5,6 +5,11 @@ namespace CarBook.Application.Features.CQRS.Queries.ContactQueries
 	{
         public string Id { get; set; }
 
+        public GetContactByIdQuery(string id)
+        {
+            Id = id;
+        }
+
     }
 }
 
