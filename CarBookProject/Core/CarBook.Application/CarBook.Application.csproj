@@ -20,6 +20,12 @@
     <None Remove="Features\CQRS\Commands\AboutCommands\" />
     <None Remove="Features\CQRS\Handlers\AboutHandlers\Read\" />
     <None Remove="Features\CQRS\Handlers\AboutHandlers\Write\" />
+    <None Remove="Features\CQRS\Commands\BannerCommands\" />
+    <None Remove="Features\CQRS\Handlers\BannerHandlers\" />
+    <None Remove="Features\CQRS\Queries\BannerQueries\" />
+    <None Remove="Features\CQRS\Results\BannerResults\" />
+    <None Remove="Features\CQRS\Handlers\BannerHandlers\Write\" />
+    <None Remove="Features\CQRS\Handlers\BannerHandlers\Read\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
@@ -35,6 +41,12 @@
     <Folder Include="Features\CQRS\Commands\AboutCommands\" />
     <Folder Include="Features\CQRS\Handlers\AboutHandlers\Read\" />
     <Folder Include="Features\CQRS\Handlers\AboutHandlers\Write\" />
+    <Folder Include="Features\CQRS\Commands\BannerCommands\" />
+    <Folder Include="Features\CQRS\Handlers\BannerHandlers\" />
+    <Folder Include="Features\CQRS\Queries\BannerQueries\" />
+    <Folder Include="Features\CQRS\Results\BannerResults\" />
+    <Folder Include="Features\CQRS\Handlers\BannerHandlers\Write\" />
+    <Folder Include="Features\CQRS\Handlers\BannerHandlers\Read\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CarBook.Domain\CarBook.Domain.csproj" />

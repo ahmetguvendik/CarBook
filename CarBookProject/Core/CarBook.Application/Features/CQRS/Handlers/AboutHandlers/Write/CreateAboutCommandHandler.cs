@@ -15,13 +15,12 @@ namespace CarBook.Application.Features.CQRS.Handlers.AboutHandlers.Write
 
 		public async Task Handle(CreateAboutCommand createAboutCommand)
 		{
-			await _repository.CreateAsync(new About
-			{
-				Id = Guid.NewGuid().ToString(),
-				Description = createAboutCommand.Description,
-				ImageURL = createAboutCommand.ImageURL,
-				Title = createAboutCommand.Title
-			});
+			var about = new About();
+			about.Id = Guid.NewGuid().ToString();
+			about.Description = createAboutCommand.Description;
+			about.ImageURL = createAboutCommand.ImageURL;
+			about.Title = createAboutCommand.Title;
+            await _repository.CreateAsync(about);
 		}
 	}
 }
