@@ -26,6 +26,12 @@
     <None Remove="Features\CQRS\Results\BannerResults\" />
     <None Remove="Features\CQRS\Handlers\BannerHandlers\Write\" />
     <None Remove="Features\CQRS\Handlers\BannerHandlers\Read\" />
+    <None Remove="Features\CQRS\Commands\BrandCommands\" />
+    <None Remove="Features\CQRS\Handlers\BrandHandlers\" />
+    <None Remove="Features\CQRS\Queries\BrandQueries\" />
+    <None Remove="Features\CQRS\Results\BrandResults\" />
+    <None Remove="Features\CQRS\Handlers\BrandHandlers\Read\" />
+    <None Remove="Features\CQRS\Handlers\BrandHandlers\Write\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
@@ -47,6 +53,12 @@
     <Folder Include="Features\CQRS\Results\BannerResults\" />
     <Folder Include="Features\CQRS\Handlers\BannerHandlers\Write\" />
     <Folder Include="Features\CQRS\Handlers\BannerHandlers\Read\" />
+    <Folder Include="Features\CQRS\Commands\BrandCommands\" />
+    <Folder Include="Features\CQRS\Handlers\BrandHandlers\" />
+    <Folder Include="Features\CQRS\Queries\BrandQueries\" />
+    <Folder Include="Features\CQRS\Results\BrandResults\" />
+    <Folder Include="Features\CQRS\Handlers\BrandHandlers\Read\" />
+    <Folder Include="Features\CQRS\Handlers\BrandHandlers\Write\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CarBook.Domain\CarBook.Domain.csproj" />
