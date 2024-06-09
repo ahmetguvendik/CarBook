@@ -32,6 +32,19 @@
     <None Remove="Features\CQRS\Results\BrandResults\" />
     <None Remove="Features\CQRS\Handlers\BrandHandlers\Read\" />
     <None Remove="Features\CQRS\Handlers\BrandHandlers\Write\" />
+    <None Remove="Features\CQRS\Commands\CategoryCommands\" />
+    <None Remove="Features\CQRS\Handlers\CategoryHandlers\" />
+    <None Remove="Features\CQRS\Queries\CategoryQueries\" />
+    <None Remove="Features\CQRS\Results\CategoryResults\" />
+    <None Remove="Features\CQRS\Handlers\CategoryHandlers\Read\" />
+    <None Remove="Features\CQRS\Handlers\CategoryHandlers\Write\" />
+    <None Remove="Features\CQRS\Commands\ContactCommands\" />
+    <None Remove="Features\CQRS\Handlers\ContactHandlers\" />
+    <None Remove="Features\CQRS\Queries\ContactQueries\" />
+    <None Remove="Features\CQRS\Results\ContactResults\" />
+    <None Remove="Features\CQRS\Handlers\ContactHandlers\Write\" />
+    <None Remove="Features\CQRS\Handlers\ContactHandlers\Read\" />
+    <None Remove="Features\Mediator\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
@@ -59,11 +72,26 @@
     <Folder Include="Features\CQRS\Results\BrandResults\" />
     <Folder Include="Features\CQRS\Handlers\BrandHandlers\Read\" />
     <Folder Include="Features\CQRS\Handlers\BrandHandlers\Write\" />
+    <Folder Include="Features\CQRS\Commands\CategoryCommands\" />
+    <Folder Include="Features\CQRS\Handlers\CategoryHandlers\" />
+    <Folder Include="Features\CQRS\Queries\CategoryQueries\" />
+    <Folder Include="Features\CQRS\Results\CategoryResults\" />
+    <Folder Include="Features\CQRS\Handlers\CategoryHandlers\Read\" />
+    <Folder Include="Features\CQRS\Handlers\CategoryHandlers\Write\" />
+    <Folder Include="Features\CQRS\Commands\ContactCommands\" />
+    <Folder Include="Features\CQRS\Handlers\ContactHandlers\" />
+    <Folder Include="Features\CQRS\Queries\ContactQueries\" />
+    <Folder Include="Features\CQRS\Results\ContactResults\" />
+    <Folder Include="Features\CQRS\Handlers\ContactHandlers\Write\" />
+    <Folder Include="Features\CQRS\Handlers\ContactHandlers\Read\" />
+    <Folder Include="Features\Mediator\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CarBook.Domain\CarBook.Domain.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.20" />
+    <PackageReference Include="MediatR" Version="12.3.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
   </ItemGroup>
 </Project>

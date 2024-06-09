@@ -5,6 +5,11 @@ namespace CarBook.Application.Features.CQRS.Commands.BannerCommands
 	{
         public string id { get; set; }
 
+        public RemoveBannerCommand(string _id)
+        {
+            id = _id;
+        }
+
     }
 }
 

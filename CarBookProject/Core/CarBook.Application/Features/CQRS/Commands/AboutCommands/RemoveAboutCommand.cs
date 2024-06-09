@@ -5,6 +5,10 @@ namespace CarBook.Application.Features.CQRS.Commands.AboutCommands
 	{
         public string id { get; set; }
 
+        public RemoveAboutCommand(string Id)
+        {
+            id = Id;
+        }
     }
 }
 
