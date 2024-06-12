@@ -45,6 +45,15 @@
     <None Remove="Features\CQRS\Handlers\ContactHandlers\Write\" />
     <None Remove="Features\CQRS\Handlers\ContactHandlers\Read\" />
     <None Remove="Features\Mediator\" />
+    <None Remove="Features\Mediator\Commands\" />
+    <None Remove="Features\Mediator\Handlers\" />
+    <None Remove="Features\Mediator\Queries\" />
+    <None Remove="Features\Mediator\Results\" />
+    <None Remove="Features\Mediator\Results\FeatureResults\" />
+    <None Remove="Features\Mediator\Queries\FeatureQueries\" />
+    <None Remove="Features\Mediator\Handlers\FeatureHandlers\" />
+    <None Remove="Features\Mediator\Commands\FeatureCommands\" />
+    <None Remove="Features\Mediator\Handlers\FeatureHandlers\Write\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
@@ -85,6 +94,15 @@
     <Folder Include="Features\CQRS\Handlers\ContactHandlers\Write\" />
     <Folder Include="Features\CQRS\Handlers\ContactHandlers\Read\" />
     <Folder Include="Features\Mediator\" />
+    <Folder Include="Features\Mediator\Commands\" />
+    <Folder Include="Features\Mediator\Handlers\" />
+    <Folder Include="Features\Mediator\Queries\" />
+    <Folder Include="Features\Mediator\Results\" />
+    <Folder Include="Features\Mediator\Results\FeatureResults\" />
+    <Folder Include="Features\Mediator\Queries\FeatureQueries\" />
+    <Folder Include="Features\Mediator\Handlers\FeatureHandlers\" />
+    <Folder Include="Features\Mediator\Commands\FeatureCommands\" />
+    <Folder Include="Features\Mediator\Handlers\FeatureHandlers\Write\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CarBook.Domain\CarBook.Domain.csproj" />
@@ -93,5 +111,6 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.20" />
     <PackageReference Include="MediatR" Version="12.3.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
   </ItemGroup>
 </Project>

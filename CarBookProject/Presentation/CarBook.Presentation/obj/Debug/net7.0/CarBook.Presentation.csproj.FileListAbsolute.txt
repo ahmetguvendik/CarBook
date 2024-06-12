@@ -46,3 +46,6 @@
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Presentation/CarBook.Presentation/bin/Debug/net7.0/MediatR.Contracts.dll
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Presentation/CarBook.Presentation/bin/Debug/net7.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Presentation/CarBook.Presentation/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Presentation/CarBook.Presentation/bin/Debug/net7.0/Microsoft.Extensions.Configuration.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Presentation/CarBook.Presentation/bin/Debug/net7.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Presentation/CarBook.Presentation/bin/Debug/net7.0/Microsoft.Extensions.Primitives.dll
