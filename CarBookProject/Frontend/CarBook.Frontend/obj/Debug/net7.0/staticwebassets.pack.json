@@ -5,10 +5,6 @@
       "PackagePath": "staticwebassets/CarBook.Frontend.bundle.scp.css"
     },
     {
-      "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/.DS_Store",
-      "PackagePath": "staticwebassets/.DS_Store"
-    },
-    {
       "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/Admin/horizontal/assets/css/bootstrap.css",
       "PackagePath": "staticwebassets/Admin/horizontal/assets/css/bootstrap.css"
     },
@@ -2477,10 +2473,6 @@
       "PackagePath": "staticwebassets/Admin/vertical/ui-typography.html"
     },
     {
-      "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/.DS_Store",
-      "PackagePath": "staticwebassets/carbook-master/.DS_Store"
-    },
-    {
       "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/about.html",
       "PackagePath": "staticwebassets/carbook-master/about.html"
     },
@@ -2505,10 +2497,6 @@
       "PackagePath": "staticwebassets/carbook-master/contact.html"
     },
     {
-      "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/css/.DS_Store",
-      "PackagePath": "staticwebassets/carbook-master/css/.DS_Store"
-    },
-    {
       "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/css/ajax-loader.gif",
       "PackagePath": "staticwebassets/carbook-master/css/ajax-loader.gif"
     },
@@ -2529,20 +2517,12 @@
       "PackagePath": "staticwebassets/carbook-master/css/bootstrap.min.css"
     },
     {
-      "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/css/bootstrap/.DS_Store",
-      "PackagePath": "staticwebassets/carbook-master/css/bootstrap/.DS_Store"
-    },
-    {
       "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/css/bootstrap/bootstrap-grid.css",
       "PackagePath": "staticwebassets/carbook-master/css/bootstrap/bootstrap-grid.css"
     },
     {
       "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/css/bootstrap/bootstrap-reboot.css",
       "PackagePath": "staticwebassets/carbook-master/css/bootstrap/bootstrap-reboot.css"
-    },
-    {
-      "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/css/css/.DS_Store",
-      "PackagePath": "staticwebassets/carbook-master/css/css/.DS_Store"
     },
     {
       "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/css/css/bootstrap-reboot.css",
@@ -2589,20 +2569,8 @@
       "PackagePath": "staticwebassets/carbook-master/css/style.css"
     },
     {
-      "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/fonts/.DS_Store",
-      "PackagePath": "staticwebassets/carbook-master/fonts/.DS_Store"
-    },
-    {
-      "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/fonts/flaticon/.DS_Store",
-      "PackagePath": "staticwebassets/carbook-master/fonts/flaticon/.DS_Store"
-    },
-    {
       "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/fonts/flaticon/backup.txt",
       "PackagePath": "staticwebassets/carbook-master/fonts/flaticon/backup.txt"
-    },
-    {
-      "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/fonts/flaticon/font/.DS_Store",
-      "PackagePath": "staticwebassets/carbook-master/fonts/flaticon/font/.DS_Store"
     },
     {
       "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/fonts/flaticon/font/Flaticon.eot",
@@ -2665,10 +2633,6 @@
       "PackagePath": "staticwebassets/carbook-master/fonts/ionicons/css/ionicons.min.css"
     },
     {
-      "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/fonts/ionicons/fonts/.DS_Store",
-      "PackagePath": "staticwebassets/carbook-master/fonts/ionicons/fonts/.DS_Store"
-    },
-    {
       "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/fonts/ionicons/fonts/ionicons.eot",
       "PackagePath": "staticwebassets/carbook-master/fonts/ionicons/fonts/ionicons.eot"
     },
@@ -2707,10 +2671,6 @@
     {
       "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/fonts/open-iconic/open-iconic.woff",
       "PackagePath": "staticwebassets/carbook-master/fonts/open-iconic/open-iconic.woff"
-    },
-    {
-      "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/images/.DS_Store",
-      "PackagePath": "staticwebassets/carbook-master/images/.DS_Store"
     },
     {
       "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/images/about.jpg",
@@ -2825,10 +2785,6 @@
       "PackagePath": "staticwebassets/carbook-master/index.html"
     },
     {
-      "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/js/.DS_Store",
-      "PackagePath": "staticwebassets/carbook-master/js/.DS_Store"
-    },
-    {
       "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/js/aos.js",
       "PackagePath": "staticwebassets/carbook-master/js/aos.js"
     },
@@ -2915,14 +2871,6 @@
     {
       "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/readme.txt",
       "PackagePath": "staticwebassets/carbook-master/readme.txt"
-    },
-    {
-      "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/scss/.DS_Store",
-      "PackagePath": "staticwebassets/carbook-master/scss/.DS_Store"
-    },
-    {
-      "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/scss/bootstrap/.DS_Store",
-      "PackagePath": "staticwebassets/carbook-master/scss/bootstrap/.DS_Store"
     },
     {
       "Id": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/scss/bootstrap/_alert.scss",

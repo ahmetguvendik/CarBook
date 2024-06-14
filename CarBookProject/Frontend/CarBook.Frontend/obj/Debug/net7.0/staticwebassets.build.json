@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hx54/WVSDVuPztATtxodRzJwKn+ogZAeyH1WZGmMT3s=",
+  "Hash": "HtK8Yy7bFbEx/NJyGemUsTPscLv88woAtb00uxQMHFE=",
   "Source": "CarBook.Frontend",
   "BasePath": "_content/CarBook.Frontend",
   "Mode": "Default",
@@ -49,23 +49,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/obj/Debug/net7.0/scopedcss/projectbundle/CarBook.Frontend.bundle.scp.css"
-    },
-    {
-      "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/.DS_Store",
-      "SourceId": "CarBook.Frontend",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/",
-      "BasePath": "_content/CarBook.Frontend",
-      "RelativePath": ".DS_Store",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/.DS_Store"
     },
     {
       "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/Admin/horizontal/assets/css/bootstrap.css",
@@ -10557,23 +10540,6 @@
       "OriginalItemSpec": "wwwroot/Admin/vertical/ui-typography.html"
     },
     {
-      "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/.DS_Store",
-      "SourceId": "CarBook.Frontend",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/",
-      "BasePath": "_content/CarBook.Frontend",
-      "RelativePath": "carbook-master/.DS_Store",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/carbook-master/.DS_Store"
-    },
-    {
       "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/about.html",
       "SourceId": "CarBook.Frontend",
       "SourceType": "Discovered",
@@ -10676,23 +10642,6 @@
       "OriginalItemSpec": "wwwroot/carbook-master/contact.html"
     },
     {
-      "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/css/.DS_Store",
-      "SourceId": "CarBook.Frontend",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/",
-      "BasePath": "_content/CarBook.Frontend",
-      "RelativePath": "carbook-master/css/.DS_Store",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/carbook-master/css/.DS_Store"
-    },
-    {
       "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/css/ajax-loader.gif",
       "SourceId": "CarBook.Frontend",
       "SourceType": "Discovered",
@@ -10778,23 +10727,6 @@
       "OriginalItemSpec": "wwwroot/carbook-master/css/bootstrap.min.css"
     },
     {
-      "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/css/bootstrap/.DS_Store",
-      "SourceId": "CarBook.Frontend",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/",
-      "BasePath": "_content/CarBook.Frontend",
-      "RelativePath": "carbook-master/css/bootstrap/.DS_Store",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/carbook-master/css/bootstrap/.DS_Store"
-    },
-    {
       "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/css/bootstrap/bootstrap-grid.css",
       "SourceId": "CarBook.Frontend",
       "SourceType": "Discovered",
@@ -10827,23 +10759,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/carbook-master/css/bootstrap/bootstrap-reboot.css"
-    },
-    {
-      "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/css/css/.DS_Store",
-      "SourceId": "CarBook.Frontend",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/",
-      "BasePath": "_content/CarBook.Frontend",
-      "RelativePath": "carbook-master/css/css/.DS_Store",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/carbook-master/css/css/.DS_Store"
     },
     {
       "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/css/css/bootstrap-reboot.css",
@@ -11033,40 +10948,6 @@
       "OriginalItemSpec": "wwwroot/carbook-master/css/style.css"
     },
     {
-      "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/fonts/.DS_Store",
-      "SourceId": "CarBook.Frontend",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/",
-      "BasePath": "_content/CarBook.Frontend",
-      "RelativePath": "carbook-master/fonts/.DS_Store",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/carbook-master/fonts/.DS_Store"
-    },
-    {
-      "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/fonts/flaticon/.DS_Store",
-      "SourceId": "CarBook.Frontend",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/",
-      "BasePath": "_content/CarBook.Frontend",
-      "RelativePath": "carbook-master/fonts/flaticon/.DS_Store",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/carbook-master/fonts/flaticon/.DS_Store"
-    },
-    {
       "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/fonts/flaticon/backup.txt",
       "SourceId": "CarBook.Frontend",
       "SourceType": "Discovered",
@@ -11099,23 +10980,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/carbook-master/fonts/flaticon/font/_flaticon.scss"
-    },
-    {
-      "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/fonts/flaticon/font/.DS_Store",
-      "SourceId": "CarBook.Frontend",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/",
-      "BasePath": "_content/CarBook.Frontend",
-      "RelativePath": "carbook-master/fonts/flaticon/font/.DS_Store",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/carbook-master/fonts/flaticon/font/.DS_Store"
     },
     {
       "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/fonts/flaticon/font/flaticon.css",
@@ -11356,23 +11220,6 @@
       "OriginalItemSpec": "wwwroot/carbook-master/fonts/ionicons/css/ionicons.min.css"
     },
     {
-      "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/fonts/ionicons/fonts/.DS_Store",
-      "SourceId": "CarBook.Frontend",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/",
-      "BasePath": "_content/CarBook.Frontend",
-      "RelativePath": "carbook-master/fonts/ionicons/fonts/.DS_Store",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/carbook-master/fonts/ionicons/fonts/.DS_Store"
-    },
-    {
       "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/fonts/ionicons/fonts/ionicons.eot",
       "SourceId": "CarBook.Frontend",
       "SourceType": "Discovered",
@@ -11541,23 +11388,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/carbook-master/fonts/open-iconic/open-iconic.woff"
-    },
-    {
-      "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/images/.DS_Store",
-      "SourceId": "CarBook.Frontend",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/",
-      "BasePath": "_content/CarBook.Frontend",
-      "RelativePath": "carbook-master/images/.DS_Store",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/carbook-master/images/.DS_Store"
     },
     {
       "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/images/about.jpg",
@@ -12036,23 +11866,6 @@
       "OriginalItemSpec": "wwwroot/carbook-master/index.html"
     },
     {
-      "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/js/.DS_Store",
-      "SourceId": "CarBook.Frontend",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/",
-      "BasePath": "_content/CarBook.Frontend",
-      "RelativePath": "carbook-master/js/.DS_Store",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/carbook-master/js/.DS_Store"
-    },
-    {
       "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/js/aos.js",
       "SourceId": "CarBook.Frontend",
       "SourceType": "Discovered",
@@ -12425,23 +12238,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/carbook-master/readme.txt"
-    },
-    {
-      "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/scss/.DS_Store",
-      "SourceId": "CarBook.Frontend",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/",
-      "BasePath": "_content/CarBook.Frontend",
-      "RelativePath": "carbook-master/scss/.DS_Store",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/carbook-master/scss/.DS_Store"
     },
     {
       "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/scss/bootstrap/_alert.scss",
@@ -13071,23 +12867,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/carbook-master/scss/bootstrap/_variables.scss"
-    },
-    {
-      "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/scss/bootstrap/.DS_Store",
-      "SourceId": "CarBook.Frontend",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/",
-      "BasePath": "_content/CarBook.Frontend",
-      "RelativePath": "carbook-master/scss/bootstrap/.DS_Store",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/carbook-master/scss/bootstrap/.DS_Store"
     },
     {
       "Identity": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/wwwroot/carbook-master/scss/bootstrap/bootstrap-grid.scss",

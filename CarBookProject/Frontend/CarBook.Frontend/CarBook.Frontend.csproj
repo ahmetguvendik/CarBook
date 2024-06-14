@@ -11,9 +11,38 @@
   <ItemGroup>
     <None Remove="Views\UILayout\" />
     <None Remove="Views\About\" />
+    <None Remove="ViewComponents\" />
+    <None Remove="Views\Shared\Components\" />
+    <None Remove="Views\Shared\Components\_HeadUILayoutComponentPartial\" />
+    <None Remove="Views\Shared\Components\_ScriptUILayoutComponentPartial\" />
+    <None Remove="Views\Shared\Components\_NavbarUILayoutComponentPartial\" />
+    <None Remove="Views\Shared\Components\_MainCoverUILayoutComponentPartial\" />
+    <None Remove="Views\Shared\Components\_FooterUILayoutComponentPartial\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\UILayout\" />
     <Folder Include="Views\About\" />
+    <Folder Include="ViewComponents\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\Components\_HeadUILayoutComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_ScriptUILayoutComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_NavbarUILayoutComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_MainCoverUILayoutComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_FooterUILayoutComponentPartial\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\css\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\css\bootstrap\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\css\css\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\images\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\js\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\scss\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\scss\bootstrap\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\fonts\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\fonts\ionicons\fonts\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\fonts\flaticon\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\fonts\flaticon\font\.DS_Store" />
   </ItemGroup>
 </Project>
