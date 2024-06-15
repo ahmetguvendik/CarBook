@@ -13,14 +13,14 @@ namespace CarBook.Frontend.ViewComponents.AboutViewComponents
         {
             _httpClientFactory = httpClientFactory;
         }
-        public async Task<IViewComponentResult> Invoke()
+        public async Task<IViewComponentResult> InvokeAsync()
         {
             var client = _httpClientFactory.CreateClient();
             var response = await client.GetAsync("https://localhost:7070/api/About");
             if (response.IsSuccessStatusCode)
             {
                 var jsonData = await response.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<ResultAboutDto>(jsonData);
+                var values = JsonConvert.DeserializeObject<List<ResultAboutDto>>(jsonData);
                 return View(values);
             }
             return View();
