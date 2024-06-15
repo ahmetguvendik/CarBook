@@ -18,6 +18,9 @@
     <None Remove="Views\Shared\Components\_NavbarUILayoutComponentPartial\" />
     <None Remove="Views\Shared\Components\_MainCoverUILayoutComponentPartial\" />
     <None Remove="Views\Shared\Components\_FooterUILayoutComponentPartial\" />
+    <None Remove="ViewComponents\UILayoutViewComponent\" />
+    <None Remove="ViewComponents\AboutViewComponents\" />
+    <None Remove="Views\Shared\Components\_AboutUsComponentPartial\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\UILayout\" />
@@ -29,6 +32,9 @@
     <Folder Include="Views\Shared\Components\_NavbarUILayoutComponentPartial\" />
     <Folder Include="Views\Shared\Components\_MainCoverUILayoutComponentPartial\" />
     <Folder Include="Views\Shared\Components\_FooterUILayoutComponentPartial\" />
+    <Folder Include="ViewComponents\UILayoutViewComponent\" />
+    <Folder Include="ViewComponents\AboutViewComponents\" />
+    <Folder Include="Views\Shared\Components\_AboutUsComponentPartial\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\.DS_Store" />
@@ -44,5 +50,13 @@
     <Content Remove="wwwroot\carbook-master\fonts\ionicons\fonts\.DS_Store" />
     <Content Remove="wwwroot\carbook-master\fonts\flaticon\.DS_Store" />
     <Content Remove="wwwroot\carbook-master\fonts\flaticon\font\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CarBook.Dto\CarBook.Dto.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>

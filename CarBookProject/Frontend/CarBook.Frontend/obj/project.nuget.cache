@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+76axB6YngTuAOixgh9goCMBpc3LPRmF/xiBW3u8dl4qxz51xmYF9trSQ0MzhGrkroa4ADCu7Peqi3Pz8Q62EQ==",
+  "dgSpecHash": "RKy5A2lQb9nsvK0C/QNlaV7niZ+WDylonU/eCIhK+YRinDDtbzNsXjsp1RlAcqDDPNrGYcIdeg3PxMinA6h7uQ==",
   "success": true,
   "projectFilePath": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/CarBook.Frontend.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/ahmetguvendik/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
