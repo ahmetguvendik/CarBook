@@ -24,6 +24,9 @@
     <None Remove="Views\Shared\Components\_BecomeADriverComponentPartial\" />
     <None Remove="ViewComponents\TestimonialViewComponents\" />
     <None Remove="Views\Shared\Components\_TestimonialComponentPartial\" />
+    <None Remove="Views\Service\" />
+    <None Remove="ViewComponents\ServiceViewComponents\" />
+    <None Remove="Views\Shared\Components\_ServiceComponentPartial\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\UILayout\" />
@@ -41,6 +44,9 @@
     <Folder Include="Views\Shared\Components\_BecomeADriverComponentPartial\" />
     <Folder Include="ViewComponents\TestimonialViewComponents\" />
     <Folder Include="Views\Shared\Components\_TestimonialComponentPartial\" />
+    <Folder Include="Views\Service\" />
+    <Folder Include="ViewComponents\ServiceViewComponents\" />
+    <Folder Include="Views\Shared\Components\_ServiceComponentPartial\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\.DS_Store" />
