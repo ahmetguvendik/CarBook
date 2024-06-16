@@ -27,6 +27,9 @@
     <None Remove="Views\Service\" />
     <None Remove="ViewComponents\ServiceViewComponents\" />
     <None Remove="Views\Shared\Components\_ServiceComponentPartial\" />
+    <None Remove="Views\Contact\" />
+    <None Remove="ViewComponents\ContactViewComponents\" />
+    <None Remove="Views\Shared\Components\_ContactComponentPartial\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\UILayout\" />
@@ -47,6 +50,9 @@
     <Folder Include="Views\Service\" />
     <Folder Include="ViewComponents\ServiceViewComponents\" />
     <Folder Include="Views\Shared\Components\_ServiceComponentPartial\" />
+    <Folder Include="Views\Contact\" />
+    <Folder Include="ViewComponents\ContactViewComponents\" />
+    <Folder Include="Views\Shared\Components\_ContactComponentPartial\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\.DS_Store" />
