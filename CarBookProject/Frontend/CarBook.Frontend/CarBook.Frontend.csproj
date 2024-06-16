@@ -21,6 +21,9 @@
     <None Remove="ViewComponents\UILayoutViewComponent\" />
     <None Remove="ViewComponents\AboutViewComponents\" />
     <None Remove="Views\Shared\Components\_AboutUsComponentPartial\" />
+    <None Remove="Views\Shared\Components\_BecomeADriverComponentPartial\" />
+    <None Remove="ViewComponents\TestimonialViewComponents\" />
+    <None Remove="Views\Shared\Components\_TestimonialComponentPartial\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\UILayout\" />
@@ -35,6 +38,9 @@
     <Folder Include="ViewComponents\UILayoutViewComponent\" />
     <Folder Include="ViewComponents\AboutViewComponents\" />
     <Folder Include="Views\Shared\Components\_AboutUsComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_BecomeADriverComponentPartial\" />
+    <Folder Include="ViewComponents\TestimonialViewComponents\" />
+    <Folder Include="Views\Shared\Components\_TestimonialComponentPartial\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\.DS_Store" />

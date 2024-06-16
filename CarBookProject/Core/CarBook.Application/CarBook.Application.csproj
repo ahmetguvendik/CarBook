@@ -54,6 +54,12 @@
     <None Remove="Features\Mediator\Handlers\FeatureHandlers\" />
     <None Remove="Features\Mediator\Commands\FeatureCommands\" />
     <None Remove="Features\Mediator\Handlers\FeatureHandlers\Write\" />
+    <None Remove="Features\Mediator\Results\TestimonialResults\" />
+    <None Remove="Features\Mediator\Queries\TestimonialQueries\" />
+    <None Remove="Features\Mediator\Handlers\TestimonialHandlers\" />
+    <None Remove="Features\Mediator\Commands\TestimonialCommands\" />
+    <None Remove="Features\Mediator\Handlers\TestimonialHandlers\Write\" />
+    <None Remove="Features\Mediator\Handlers\TestimonialHandlers\Read\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
@@ -103,6 +109,12 @@
     <Folder Include="Features\Mediator\Handlers\FeatureHandlers\" />
     <Folder Include="Features\Mediator\Commands\FeatureCommands\" />
     <Folder Include="Features\Mediator\Handlers\FeatureHandlers\Write\" />
+    <Folder Include="Features\Mediator\Results\TestimonialResults\" />
+    <Folder Include="Features\Mediator\Queries\TestimonialQueries\" />
+    <Folder Include="Features\Mediator\Handlers\TestimonialHandlers\" />
+    <Folder Include="Features\Mediator\Commands\TestimonialCommands\" />
+    <Folder Include="Features\Mediator\Handlers\TestimonialHandlers\Write\" />
+    <Folder Include="Features\Mediator\Handlers\TestimonialHandlers\Read\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CarBook.Domain\CarBook.Domain.csproj" />
