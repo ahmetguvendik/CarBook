@@ -8,6 +8,7 @@ namespace CarBook.Persistance.Context
     {
         public CarBookDbContext(DbContextOptions options) : base(options) { }
 
+        
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<About> Abouts { get; set; }
         public DbSet<Banner> Banners { get; set; }
@@ -23,6 +24,7 @@ namespace CarBook.Persistance.Context
         public DbSet<Pricing> Pricings { get; set; }
         public DbSet<Service> Services { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
+
     }
 }
 

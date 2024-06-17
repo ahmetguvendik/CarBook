@@ -23,6 +23,9 @@ namespace CarBook.Application.Features.CQRS.Handlers.ContactHandlers.Write
 			contact.Description = command.Description;
 			contact.DateTime = DateTime.UtcNow;
 			await _repository.CreateAsync(contact);
+			await _repository.SaveChangesAsync();
+
+			
 		}
 	}
 }

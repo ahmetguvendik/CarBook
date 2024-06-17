@@ -22,6 +22,7 @@ namespace CarBook.Persistance
         public static void AddPersistanceService(this IServiceCollection collection)
         {
             collection.AddDbContext<CarBookDbContext>(opt => opt.UseNpgsql("User ID=postgres;Password=123456;Host=localhost;Port=5432;Database=CarBookDb;"));
+            AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
             collection.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
             collection.AddScoped<GetAboutQueryHandler>();

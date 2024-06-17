@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using CarBook.Application.Features.CQRS.Commands.CategoryCommands;
-using CarBook.Application.Features.CQRS.Commands.ContactCommands;
-using CarBook.Application.Features.CQRS.Handlers.CategoryHandlers.Read;
-using CarBook.Application.Features.CQRS.Handlers.CategoryHandlers.Write;
+﻿using CarBook.Application.Features.CQRS.Commands.ContactCommands;
 using CarBook.Application.Features.CQRS.Handlers.ContactHandlers.Read;
 using CarBook.Application.Features.CQRS.Handlers.ContactHandlers.Write;
-using CarBook.Application.Features.CQRS.Queries.CategoryQueries;
 using CarBook.Application.Features.CQRS.Queries.ContactQueries;
 using Microsoft.AspNetCore.Mvc;
 

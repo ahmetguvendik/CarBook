@@ -35,6 +35,11 @@ namespace CarBook.Persistance.Repositories
             await _carBookDbContext.SaveChangesAsync();
         }
 
+        public async Task SaveChangesAsync()
+        {
+            await _carBookDbContext.SaveChangesAsync();
+        }
+
         public async Task UpdateAsync(T entity)
         {
             _carBookDbContext.Set<T>().Update(entity);
