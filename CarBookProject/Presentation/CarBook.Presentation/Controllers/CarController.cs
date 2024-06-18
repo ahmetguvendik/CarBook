@@ -33,6 +33,13 @@ namespace CarBook.Presentation.Controllers
             return Ok(value);
         }
 
+        [HttpGet("[action]")]
+        public async Task<IActionResult> Get5CarWithBrands()
+        {
+            var value = await _mediator.Send(new Get5CarWithBrandsQuery());
+            return Ok(value);
+        }
+
         // GET api/values/5
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(string id)

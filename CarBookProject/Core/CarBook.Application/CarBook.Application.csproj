@@ -79,6 +79,16 @@
     <None Remove="Features\Mediator\Commands\CarCommands\" />
     <None Remove="Features\Mediator\Handlers\CarHandlers\Write\" />
     <None Remove="Features\Mediator\Handlers\CarHandlers\Read\" />
+    <None Remove="Features\Mediator\Results\BlogResults\" />
+    <None Remove="Features\Mediator\Queries\BlogQueries\" />
+    <None Remove="Features\Mediator\Handlers\BlogHandlers\" />
+    <None Remove="Features\Mediator\Commands\BlogCommands\" />
+    <None Remove="Features\Mediator\Commands\AuthorCommands\" />
+    <None Remove="Features\Mediator\Handlers\AuthorHandlers\" />
+    <None Remove="Features\Mediator\Queries\AuthorQueries\" />
+    <None Remove="Features\Mediator\Results\AuthorResults\" />
+    <None Remove="Features\Mediator\Handlers\AuthorHandlers\Write\" />
+    <None Remove="Features\Mediator\Handlers\AuthorHandlers\Read\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
@@ -153,6 +163,16 @@
     <Folder Include="Features\Mediator\Commands\CarCommands\" />
     <Folder Include="Features\Mediator\Handlers\CarHandlers\Write\" />
     <Folder Include="Features\Mediator\Handlers\CarHandlers\Read\" />
+    <Folder Include="Features\Mediator\Results\BlogResults\" />
+    <Folder Include="Features\Mediator\Queries\BlogQueries\" />
+    <Folder Include="Features\Mediator\Handlers\BlogHandlers\" />
+    <Folder Include="Features\Mediator\Commands\BlogCommands\" />
+    <Folder Include="Features\Mediator\Commands\AuthorCommands\" />
+    <Folder Include="Features\Mediator\Handlers\AuthorHandlers\" />
+    <Folder Include="Features\Mediator\Queries\AuthorQueries\" />
+    <Folder Include="Features\Mediator\Results\AuthorResults\" />
+    <Folder Include="Features\Mediator\Handlers\AuthorHandlers\Write\" />
+    <Folder Include="Features\Mediator\Handlers\AuthorHandlers\Read\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CarBook.Domain\CarBook.Domain.csproj" />
