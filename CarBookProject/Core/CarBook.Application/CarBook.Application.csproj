@@ -66,16 +66,19 @@
     <None Remove="Features\Mediator\Results\ServiceResults\" />
     <None Remove="Features\Mediator\Handlers\ServiceHandlers\Write\" />
     <None Remove="Features\Mediator\Handlers\ServiceHandlers\Read\" />
-    <None Remove="Features\Mediator\Commands\ContactCommands\" />
-    <None Remove="Features\Mediator\Handlers\ContactHandlers\" />
-    <None Remove="Features\Mediator\Queries\ContactQueries\" />
-    <None Remove="Features\Mediator\Results\ContactResults\" />
     <None Remove="Features\Mediator\Commands\FooterAdressCommands\" />
     <None Remove="Features\Mediator\Handlers\FooterAdressHandlers\" />
     <None Remove="Features\Mediator\Queries\FooterAdressQueries\" />
     <None Remove="Features\Mediator\Results\FooterAdressResults\" />
     <None Remove="Features\Mediator\Handlers\FooterAdressHandlers\Write\" />
     <None Remove="Features\Mediator\Handlers\FooterAdressHandlers\Read\" />
+    <None Remove="Repositories\CarRepositories\" />
+    <None Remove="Features\Mediator\Results\CarResults\" />
+    <None Remove="Features\Mediator\Queries\CarQueries\" />
+    <None Remove="Features\Mediator\Handlers\CarHandlers\" />
+    <None Remove="Features\Mediator\Commands\CarCommands\" />
+    <None Remove="Features\Mediator\Handlers\CarHandlers\Write\" />
+    <None Remove="Features\Mediator\Handlers\CarHandlers\Read\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
@@ -137,16 +140,19 @@
     <Folder Include="Features\Mediator\Results\ServiceResults\" />
     <Folder Include="Features\Mediator\Handlers\ServiceHandlers\Write\" />
     <Folder Include="Features\Mediator\Handlers\ServiceHandlers\Read\" />
-    <Folder Include="Features\Mediator\Commands\ContactCommands\" />
-    <Folder Include="Features\Mediator\Handlers\ContactHandlers\" />
-    <Folder Include="Features\Mediator\Queries\ContactQueries\" />
-    <Folder Include="Features\Mediator\Results\ContactResults\" />
     <Folder Include="Features\Mediator\Commands\FooterAdressCommands\" />
     <Folder Include="Features\Mediator\Handlers\FooterAdressHandlers\" />
     <Folder Include="Features\Mediator\Queries\FooterAdressQueries\" />
     <Folder Include="Features\Mediator\Results\FooterAdressResults\" />
     <Folder Include="Features\Mediator\Handlers\FooterAdressHandlers\Write\" />
     <Folder Include="Features\Mediator\Handlers\FooterAdressHandlers\Read\" />
+    <Folder Include="Repositories\CarRepositories\" />
+    <Folder Include="Features\Mediator\Results\CarResults\" />
+    <Folder Include="Features\Mediator\Queries\CarQueries\" />
+    <Folder Include="Features\Mediator\Handlers\CarHandlers\" />
+    <Folder Include="Features\Mediator\Commands\CarCommands\" />
+    <Folder Include="Features\Mediator\Handlers\CarHandlers\Write\" />
+    <Folder Include="Features\Mediator\Handlers\CarHandlers\Read\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CarBook.Domain\CarBook.Domain.csproj" />

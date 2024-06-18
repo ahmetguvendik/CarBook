@@ -33,6 +33,7 @@
     <None Remove="Views\Default\" />
     <None Remove="ViewComponents\DefaultViewComponents\" />
     <None Remove="Views\Shared\Components\_DefaultHeadUILayoutComponentPartial\" />
+    <None Remove="Views\Car\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\UILayout\" />
@@ -59,6 +60,7 @@
     <Folder Include="Views\Default\" />
     <Folder Include="ViewComponents\DefaultViewComponents\" />
     <Folder Include="Views\Shared\Components\_DefaultHeadUILayoutComponentPartial\" />
+    <Folder Include="Views\Car\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\.DS_Store" />

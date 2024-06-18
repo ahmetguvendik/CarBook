@@ -10,8 +10,10 @@ using CarBook.Application.Features.CQRS.Handlers.CategoryHandlers.Write;
 using CarBook.Application.Features.CQRS.Handlers.ContactHandlers.Read;
 using CarBook.Application.Features.CQRS.Handlers.ContactHandlers.Write;
 using CarBook.Application.Repositories;
+using CarBook.Application.Repositories.CarRepositories;
 using CarBook.Persistance.Context;
 using CarBook.Persistance.Repositories;
+using CarBook.Persistance.Repositories.CarRepositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -24,6 +26,7 @@ namespace CarBook.Persistance
             collection.AddDbContext<CarBookDbContext>(opt => opt.UseNpgsql("User ID=postgres;Password=123456;Host=localhost;Port=5432;Database=CarBookDb;"));
             AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
             collection.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            collection.AddScoped(typeof(ICarRepository), typeof(CarRepositories));
 
             collection.AddScoped<GetAboutQueryHandler>();
             collection.AddScoped<GetAboutByIdQueryHandler>();
