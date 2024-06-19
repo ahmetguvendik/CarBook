@@ -7,6 +7,7 @@ namespace CarBook.Application.Repositories.BlogRepository
 	public interface IBlogRepository
 	{
         Task<List<Blog>> Get3BlogWithAuthor();
+        Task<List<Blog>> GetAllBlogWithAuthor();
     }
 }
 

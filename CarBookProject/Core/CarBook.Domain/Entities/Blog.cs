@@ -10,6 +10,7 @@ namespace CarBook.Domain.Entities
 		public string AuthorId { get; set; }
 		public Category Category { get; set; }
 		public string CategoryId { get; set; }
+		public string Description { get; set; }
 	}
 }
 
