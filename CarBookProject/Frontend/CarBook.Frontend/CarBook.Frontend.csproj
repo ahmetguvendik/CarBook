@@ -35,6 +35,8 @@
     <None Remove="Views\Shared\Components\_DefaultHeadUILayoutComponentPartial\" />
     <None Remove="Views\Car\" />
     <None Remove="Views\Shared\Components\_Get5CarsWithBrandsComponentPartial\" />
+    <None Remove="ViewComponents\BlogViewComponents\" />
+    <None Remove="Views\Shared\Components\_Get3BlogWithAuthorComponentPartial\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\UILayout\" />
@@ -63,6 +65,8 @@
     <Folder Include="Views\Shared\Components\_DefaultHeadUILayoutComponentPartial\" />
     <Folder Include="Views\Car\" />
     <Folder Include="Views\Shared\Components\_Get5CarsWithBrandsComponentPartial\" />
+    <Folder Include="ViewComponents\BlogViewComponents\" />
+    <Folder Include="Views\Shared\Components\_Get3BlogWithAuthorComponentPartial\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\.DS_Store" />

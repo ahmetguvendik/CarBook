@@ -63,7 +63,7 @@ namespace CarBook.Persistance.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Author");
+                    b.ToTable("Authors");
                 });
 
             modelBuilder.Entity("CarBook.Domain.Entities.Banner", b =>
@@ -122,7 +122,7 @@ namespace CarBook.Persistance.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Blog");
+                    b.ToTable("Blogs");
                 });
 
             modelBuilder.Entity("CarBook.Domain.Entities.Brand", b =>

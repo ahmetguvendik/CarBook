@@ -13,6 +13,7 @@
     <None Remove="ContactDTOs\" />
     <None Remove="DefaultDTOs\" />
     <None Remove="CarDTOs\" />
+    <None Remove="BlogDTOs\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AboutDTOs\" />
@@ -21,5 +22,6 @@
     <Folder Include="ContactDTOs\" />
     <Folder Include="DefaultDTOs\" />
     <Folder Include="CarDTOs\" />
+    <Folder Include="BlogDTOs\" />
   </ItemGroup>
 </Project>

@@ -10,11 +10,13 @@
     <None Remove="Context\" />
     <None Remove="Repositories\" />
     <None Remove="Repositories\CarRepositories\" />
+    <None Remove="Repositories\BlogRepository\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Context\" />
     <Folder Include="Repositories\" />
     <Folder Include="Repositories\CarRepositories\" />
+    <Folder Include="Repositories\BlogRepository\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.11" />

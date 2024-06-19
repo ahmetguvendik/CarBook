@@ -89,6 +89,9 @@
     <None Remove="Features\Mediator\Results\AuthorResults\" />
     <None Remove="Features\Mediator\Handlers\AuthorHandlers\Write\" />
     <None Remove="Features\Mediator\Handlers\AuthorHandlers\Read\" />
+    <None Remove="Features\Mediator\Handlers\BlogHandlers\Write\" />
+    <None Remove="Features\Mediator\Handlers\BlogHandlers\Read\" />
+    <None Remove="Repositories\BlogRepository\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
@@ -173,6 +176,9 @@
     <Folder Include="Features\Mediator\Results\AuthorResults\" />
     <Folder Include="Features\Mediator\Handlers\AuthorHandlers\Write\" />
     <Folder Include="Features\Mediator\Handlers\AuthorHandlers\Read\" />
+    <Folder Include="Features\Mediator\Handlers\BlogHandlers\Write\" />
+    <Folder Include="Features\Mediator\Handlers\BlogHandlers\Read\" />
+    <Folder Include="Repositories\BlogRepository\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CarBook.Domain\CarBook.Domain.csproj" />

@@ -10,9 +10,11 @@ using CarBook.Application.Features.CQRS.Handlers.CategoryHandlers.Write;
 using CarBook.Application.Features.CQRS.Handlers.ContactHandlers.Read;
 using CarBook.Application.Features.CQRS.Handlers.ContactHandlers.Write;
 using CarBook.Application.Repositories;
+using CarBook.Application.Repositories.BlogRepository;
 using CarBook.Application.Repositories.CarRepositories;
 using CarBook.Persistance.Context;
 using CarBook.Persistance.Repositories;
+using CarBook.Persistance.Repositories.BlogRepository;
 using CarBook.Persistance.Repositories.CarRepositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -27,6 +29,7 @@ namespace CarBook.Persistance
             AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
             collection.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             collection.AddScoped(typeof(ICarRepository), typeof(CarRepositories));
+            collection.AddScoped(typeof(IBlogRepository), typeof(BlogRepository));
 
             collection.AddScoped<GetAboutQueryHandler>();
             collection.AddScoped<GetAboutByIdQueryHandler>();
