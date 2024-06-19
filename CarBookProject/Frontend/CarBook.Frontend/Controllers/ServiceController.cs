@@ -13,6 +13,8 @@ namespace CarBook.Frontend.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
+            ViewBag.v1 = "Hizmetler";
+            ViewBag.v2 = "Sizler İçin Sunduklarımız";
             return View();
         }
     }

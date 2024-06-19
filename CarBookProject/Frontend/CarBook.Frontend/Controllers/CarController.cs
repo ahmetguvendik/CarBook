@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using CarBook.Dto.AboutDTOs;
 using CarBook.Dto.CarDTOs;
+using CarBook.Dto.CarPricingDTOs;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -21,12 +22,14 @@ namespace CarBook.Frontend.Controllers
         }
         public async Task<IActionResult> Index()
         {
+            ViewBag.v1 = "Arabalar";
+            ViewBag.v2 = "Kendinize Göre Araba Bulun";
             var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync("https://localhost:7070/api/Car/GetCarWithBrands");
+            var response = await client.GetAsync("https://localhost:7070/api/CarPricing");
             if (response.IsSuccessStatusCode)
             {
                 var jsonData = await response.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<List<ResultCarWithBrandsDto>>(jsonData);
+                var values = JsonConvert.DeserializeObject<List<GetCarPricingWithCarDto>>(jsonData);
                 return View(values);
             }
             return View();

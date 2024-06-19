@@ -92,6 +92,12 @@
     <None Remove="Features\Mediator\Handlers\BlogHandlers\Write\" />
     <None Remove="Features\Mediator\Handlers\BlogHandlers\Read\" />
     <None Remove="Repositories\BlogRepository\" />
+    <None Remove="Repositories\CarPricingReposiyories\" />
+    <None Remove="Features\Mediator\Results\CarPricingResults\" />
+    <None Remove="Features\Mediator\Queries\CarPricingQueries\" />
+    <None Remove="Features\Mediator\Handlers\CarPricingHandlers\" />
+    <None Remove="Features\Mediator\Commands\CarPricingCommands\" />
+    <None Remove="Features\Mediator\Handlers\CarPricingHandlers\Read\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
@@ -179,6 +185,12 @@
     <Folder Include="Features\Mediator\Handlers\BlogHandlers\Write\" />
     <Folder Include="Features\Mediator\Handlers\BlogHandlers\Read\" />
     <Folder Include="Repositories\BlogRepository\" />
+    <Folder Include="Repositories\CarPricingReposiyories\" />
+    <Folder Include="Features\Mediator\Results\CarPricingResults\" />
+    <Folder Include="Features\Mediator\Queries\CarPricingQueries\" />
+    <Folder Include="Features\Mediator\Handlers\CarPricingHandlers\" />
+    <Folder Include="Features\Mediator\Commands\CarPricingCommands\" />
+    <Folder Include="Features\Mediator\Handlers\CarPricingHandlers\Read\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CarBook.Domain\CarBook.Domain.csproj" />
