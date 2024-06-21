@@ -38,6 +38,14 @@
     <None Remove="ViewComponents\BlogViewComponents\" />
     <None Remove="Views\Shared\Components\_Get3BlogWithAuthorComponentPartial\" />
     <None Remove="Views\Blog\" />
+    <None Remove="ViewComponents\BlogDetailViewComponents\" />
+    <None Remove="Views\Shared\Components\_BlogDetailSideBarSearchComponentPartial\" />
+    <None Remove="Views\Shared\Components\_BlogDetailCategoryComponentPartial\" />
+    <None Remove="Views\Shared\Components\_BlogDetailRecentBlogComponentPartial\" />
+    <None Remove="Views\Shared\Components\_BlogDetailCreateCommentComponentPartial\" />
+    <None Remove="Views\Shared\Components\_BlogDetailGetCommentComponentPartial\" />
+    <None Remove="Views\Shared\Components\_BlogDetailAuthorDetailComponentPartial\" />
+    <None Remove="Views\Shared\Components\_BlogDetailGetBlogComponentPartial\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\UILayout\" />
@@ -69,6 +77,14 @@
     <Folder Include="ViewComponents\BlogViewComponents\" />
     <Folder Include="Views\Shared\Components\_Get3BlogWithAuthorComponentPartial\" />
     <Folder Include="Views\Blog\" />
+    <Folder Include="ViewComponents\BlogDetailViewComponents\" />
+    <Folder Include="Views\Shared\Components\_BlogDetailSideBarSearchComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_BlogDetailCategoryComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_BlogDetailRecentBlogComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_BlogDetailCreateCommentComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_BlogDetailGetCommentComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_BlogDetailAuthorDetailComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_BlogDetailGetBlogComponentPartial\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\.DS_Store" />

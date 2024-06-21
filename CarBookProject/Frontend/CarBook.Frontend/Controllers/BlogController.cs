@@ -31,5 +31,14 @@ namespace CarBook.Frontend.Controllers
             return View();
 
         }
+
+        public async Task<IActionResult> BlogDetail(string id)
+        {
+            ViewBag.v1 = "Blog";
+            ViewBag.v2 = "Kullanici Yorumlarimiz ve Bloglar";
+            return View();
+        }
+
+
     }
 }
