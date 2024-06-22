@@ -19,7 +19,9 @@ namespace CarBook.Application.Features.Mediator.Handlers.BlogHandlers.Read
             var blogwithAuthor = await _blogRepository.Get3BlogWithAuthor();
             return blogwithAuthor.Select(x => new Get3BlogWithAuthorQueryResult
             {
+                Id = x.Id,
                 AuthorName = x.Author.Name,
+                Description = x.Description,
                 CategoryId = x.CategoryId,
                 CoverImageUrl = x.CoverImageUrl,
                 CreatedTime = x.CreatedTime,

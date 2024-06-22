@@ -36,6 +36,7 @@ namespace CarBook.Frontend.Controllers
         {
             ViewBag.v1 = "Blog";
             ViewBag.v2 = "Kullanici Yorumlarimiz ve Bloglar";
+            ViewBag.blogId = id;
             return View();
         }
 

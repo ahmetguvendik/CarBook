@@ -3,6 +3,7 @@ namespace CarBook.Dto.BlogDTOs
 {
 	public class ResultGetAllBlogWithAuthorDto
 	{
+        public string Id { get; set; }
         public string Title { get; set; }
         public string CoverImageUrl { get; set; }
         public DateTime CreatedTime { get; set; }

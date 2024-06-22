@@ -38,6 +38,13 @@ namespace CarBook.Presentation.Controllers
             return Ok(value);
         }
 
+        [HttpGet("{action}")]
+        public async Task<IActionResult> GetAuthorByBlogId(string id)
+        {
+            var value = await _mediator.Send(new GetAuthorByIdQuery(id));
+            return Ok(value);
+        }
+
         // POST api/values
         [HttpPost]
         public async Task<IActionResult> Post(CreateAuthorCommand command)

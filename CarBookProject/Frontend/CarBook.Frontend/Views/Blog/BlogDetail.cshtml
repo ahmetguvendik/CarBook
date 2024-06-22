@@ -9,9 +9,9 @@
             <div class="col-md-8 ftco-animate">
                 
 
-                @await Component.InvokeAsync("_BlogDetailGetBlogComponentPartial")
+                @await Component.InvokeAsync("_BlogDetailGetBlogComponentPartial", new { id = ViewBag.blogId })
                
-                @await Component.InvokeAsync("_BlogDetailAuthorDetailComponentPartial")
+                @await Component.InvokeAsync("_BlogDetailAuthorDetailComponentPartial" , new { id = ViewBag.blogId })
 
                 @await Component.InvokeAsync("_BlogDetailGetCommentComponentPartial")
 

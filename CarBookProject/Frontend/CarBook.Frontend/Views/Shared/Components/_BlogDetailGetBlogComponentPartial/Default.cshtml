@@ -1,11 +1,9 @@
-﻿@model List<CarBook.Dto.BlogDTOs.ResultGetAllBlogWithAuthorDto>
+﻿@model CarBook.Dto.BlogDTOs.ResultGetAllBlogWithAuthorDto
 
-@foreach (var item in Model)
-{
-    <h2 class="mb-3">@item.Title</h2>
-    <p>@item.Description</p>
+
+    <h2 class="mb-3">@Model.Title</h2>
+    <p>@Model.Description</p>
     <p>
-        <img src="images/image_7.jpg" alt="" class="img-fluid">
+        <img src="@Model.CoverImageUrl" alt="" class="img-fluid">
     </p>
     
-}

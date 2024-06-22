@@ -20,11 +20,13 @@ namespace CarBook.Application.Features.Mediator.Handlers.BlogHandlers.Read
             var value = await _repository.GetByIdAsync(request.Id);
             return new GetBlogByIdQueryResult()
             {
+                Id = value.Id,
                 AuthorId = value.AuthorId,
                 CategoryId = value.CategoryId,
                 CoverImageUrl = value.CoverImageUrl,
                 CreatedTime = value.CreatedTime,
-                Title = value.Title
+                Title = value.Title,
+                Description = value.Description,
             };
         }
     }

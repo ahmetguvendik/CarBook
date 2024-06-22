@@ -14,14 +14,14 @@ namespace CarBook.Frontend.ViewComponents.BlogDetailViewComponents
             _httpClientFactory = httpClientFactory;
         }
 
-		public async Task<IViewComponentResult> InvokeAsync()
+		public async Task<IViewComponentResult> InvokeAsync(string id)
 		{
             var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync("https://localhost:7070/api/Blog/GetAllBlogWithAuthor");
+            var response = await client.GetAsync($"https://localhost:7070/api/Blog/"+id);
             if (response.IsSuccessStatusCode)
             {
                 var jsonData = await response.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<List<ResultGetAllBlogWithAuthorDto>>(jsonData);
+                var values = JsonConvert.DeserializeObject<ResultGetAllBlogWithAuthorDto>(jsonData);
                 return View(values);
             }
             return View();

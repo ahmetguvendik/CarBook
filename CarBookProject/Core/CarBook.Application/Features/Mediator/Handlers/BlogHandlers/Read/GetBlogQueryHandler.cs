@@ -20,11 +20,13 @@ namespace CarBook.Application.Features.Mediator.Handlers.BlogHandlers.Read
             var blog = await _repository.GetAllAsync();
             return blog.Select(x => new GetBlogQueryResult
             {
+                Id = x.Id,
                 AuthorId = x.AuthorId,
                 CategoryId = x.CategoryId,
                 CoverImageUrl = x.CoverImageUrl,
                 CreatedTime = x.CreatedTime,
-                Title = x.Title
+                Title = x.Title,
+                Description = x.Description
             }).ToList();
         }
     }
