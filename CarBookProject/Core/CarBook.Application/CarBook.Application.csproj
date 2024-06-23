@@ -98,6 +98,13 @@
     <None Remove="Features\Mediator\Handlers\CarPricingHandlers\" />
     <None Remove="Features\Mediator\Commands\CarPricingCommands\" />
     <None Remove="Features\Mediator\Handlers\CarPricingHandlers\Read\" />
+    <None Remove="Repositories\CommentRepository\" />
+    <None Remove="Features\Mediator\Results\CommentResults\" />
+    <None Remove="Features\Mediator\Queries\CommentQueries\" />
+    <None Remove="Features\Mediator\Handlers\CommentHandlers\" />
+    <None Remove="Features\Mediator\Commands\CommetCommands\" />
+    <None Remove="Features\Mediator\Handlers\CommentHandlers\Read\" />
+    <None Remove="Features\Mediator\Handlers\CommentHandlers\Write\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
@@ -191,6 +198,13 @@
     <Folder Include="Features\Mediator\Handlers\CarPricingHandlers\" />
     <Folder Include="Features\Mediator\Commands\CarPricingCommands\" />
     <Folder Include="Features\Mediator\Handlers\CarPricingHandlers\Read\" />
+    <Folder Include="Repositories\CommentRepository\" />
+    <Folder Include="Features\Mediator\Results\CommentResults\" />
+    <Folder Include="Features\Mediator\Queries\CommentQueries\" />
+    <Folder Include="Features\Mediator\Handlers\CommentHandlers\" />
+    <Folder Include="Features\Mediator\Commands\CommetCommands\" />
+    <Folder Include="Features\Mediator\Handlers\CommentHandlers\Read\" />
+    <Folder Include="Features\Mediator\Handlers\CommentHandlers\Write\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CarBook.Domain\CarBook.Domain.csproj" />

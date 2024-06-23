@@ -12,6 +12,7 @@
     <None Remove="Repositories\CarRepositories\" />
     <None Remove="Repositories\BlogRepository\" />
     <None Remove="Repositories\CarPricingRepositories\" />
+    <None Remove="Repositories\CommentRepository\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Context\" />
@@ -19,6 +20,7 @@
     <Folder Include="Repositories\CarRepositories\" />
     <Folder Include="Repositories\BlogRepository\" />
     <Folder Include="Repositories\CarPricingRepositories\" />
+    <Folder Include="Repositories\CommentRepository\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.11" />

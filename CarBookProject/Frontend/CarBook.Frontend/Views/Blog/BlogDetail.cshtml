@@ -13,7 +13,7 @@
                
                 @await Component.InvokeAsync("_BlogDetailAuthorDetailComponentPartial" , new { id = ViewBag.blogId })
 
-                @await Component.InvokeAsync("_BlogDetailGetCommentComponentPartial")
+                @await Component.InvokeAsync("_BlogDetailGetCommentComponentPartial", new { id = ViewBag.blogId })
 
 
             </div> <!-- .col-md-8 -->

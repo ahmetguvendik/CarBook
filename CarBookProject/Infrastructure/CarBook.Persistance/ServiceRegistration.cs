@@ -13,11 +13,13 @@ using CarBook.Application.Repositories;
 using CarBook.Application.Repositories.BlogRepository;
 using CarBook.Application.Repositories.CarPricingReposiyories;
 using CarBook.Application.Repositories.CarRepositories;
+using CarBook.Application.Repositories.GenericRepository;
 using CarBook.Persistance.Context;
 using CarBook.Persistance.Repositories;
 using CarBook.Persistance.Repositories.BlogRepository;
 using CarBook.Persistance.Repositories.CarPricingRepositories;
 using CarBook.Persistance.Repositories.CarRepositories;
+using CarBook.Persistance.Repositories.CommentRepository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -33,6 +35,7 @@ namespace CarBook.Persistance
             collection.AddScoped(typeof(ICarRepository), typeof(CarRepositories));
             collection.AddScoped(typeof(IBlogRepository), typeof(BlogRepository));
             collection.AddScoped(typeof(ICarPricingRepository), typeof(CarPricingRepository));
+            collection.AddScoped(typeof(ICommentRepository), typeof(CommentRepository));
 
             collection.AddScoped<GetAboutQueryHandler>();
             collection.AddScoped<GetAboutByIdQueryHandler>();
