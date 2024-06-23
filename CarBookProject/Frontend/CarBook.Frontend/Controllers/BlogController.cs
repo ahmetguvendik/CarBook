@@ -1,4 +1,6 @@
-﻿using CarBook.Dto.BlogDTOs;
+﻿using System.Text;
+using CarBook.Dto.BlogDTOs;
+using CarBook.Dto.CommentDTOs;
 using CarBook.Dto.ContactDTOs;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -40,6 +42,30 @@ namespace CarBook.Frontend.Controllers
             return View();
         }
 
+        [HttpGet]
+        public PartialViewResult CreateComment()
+        {
+            return PartialView();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateComment(CreateCommentDto createCommentDto)
+        {
+            createCommentDto.CreatedTime = DateTime.UtcNow;
+            createCommentDto.BlogId = ViewBag.blogId;
+            var client = _httpClientFactory.CreateClient();
+            var jsonData = JsonConvert.SerializeObject(createCommentDto);
+            StringContent stringContent = new StringContent(jsonData, encoding: Encoding.UTF8, "application/json");
+            var response = await client.PostAsync("https://localhost:7070/api/Comment", stringContent);
+            if (response.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Index", "Default");
+            }
+
+            return View();
+
+        }
+    }
 
     }
-}
+

@@ -46,6 +46,8 @@
     <None Remove="Views\Shared\Components\_BlogDetailGetCommentComponentPartial\" />
     <None Remove="Views\Shared\Components\_BlogDetailAuthorDetailComponentPartial\" />
     <None Remove="Views\Shared\Components\_BlogDetailGetBlogComponentPartial\" />
+    <None Remove="Views\AdminLayout\" />
+    <None Remove="Views\Admin\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\UILayout\" />
@@ -85,6 +87,8 @@
     <Folder Include="Views\Shared\Components\_BlogDetailGetCommentComponentPartial\" />
     <Folder Include="Views\Shared\Components\_BlogDetailAuthorDetailComponentPartial\" />
     <Folder Include="Views\Shared\Components\_BlogDetailGetBlogComponentPartial\" />
+    <Folder Include="Views\AdminLayout\" />
+    <Folder Include="Views\Admin\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\.DS_Store" />
