@@ -19,6 +19,7 @@ namespace CarBook.Application.Features.CQRS.Handlers.BrandHandlers.Read
 			var brand = await _repository.GetByIdAsync(query.id);
 			return new GetBrandByIdQueryResult()
 			{
+				
 				Name = brand.Name
 			};
 		}

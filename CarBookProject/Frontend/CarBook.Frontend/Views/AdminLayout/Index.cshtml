@@ -6,17 +6,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-@await Html.PartialAsync("/Views/AdminLayout/AdminLayoutHead.cshtml")
+@await Html.PartialAsync("~/Views/AdminLayout/AdminLayoutHead.cshtml")
 
 <body>
 
     <!-- Begin page -->
     <div id="layout-wrapper">
 
-        @await Html.PartialAsync("/Views/AdminLayout/AdminLayoutNavBar.cshtml")
+        @await Html.PartialAsync("~/Views/AdminLayout/AdminLayoutNavBar.cshtml")
 
         <!-- ========== Left Sidebar Start ========== -->
-        @await Html.PartialAsync("/Views/AdminLayout/AdminLayoutSideBar.cshtml")
+        @await Html.PartialAsync("~/Views/AdminLayout/AdminLayoutSideBar.cshtml")
         <!-- Left Sidebar End -->
         <!-- ============================================================== -->
         <!-- Start right Content here -->
@@ -29,14 +29,14 @@
             <!-- End Page-content -->
 
 
-            @await Html.PartialAsync("/Views/AdminLayout/AdminLayoutFooter.cshtml")
+            @await Html.PartialAsync("~/Views/AdminLayout/AdminLayoutFooter.cshtml")
         </div>
         <!-- end main content-->
 
     </div>
     <!-- END layout-wrapper -->
     <!-- Overlay-->
-    @await Html.PartialAsync("/Views/AdminLayout/AdminLayoutScript.cshtml")
+    @await Html.PartialAsync("~/Views/AdminLayout/AdminLayoutScript.cshtml")
 
 </body>
 
