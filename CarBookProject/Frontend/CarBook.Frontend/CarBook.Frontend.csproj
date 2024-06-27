@@ -1,0 +1,116 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <None Remove="Views\UILayout\" />
+    <None Remove="Views\About\" />
+    <None Remove="ViewComponents\" />
+    <None Remove="Views\Shared\Components\" />
+    <None Remove="Views\Shared\Components\_HeadUILayoutComponentPartial\" />
+    <None Remove="Views\Shared\Components\_ScriptUILayoutComponentPartial\" />
+    <None Remove="Views\Shared\Components\_NavbarUILayoutComponentPartial\" />
+    <None Remove="Views\Shared\Components\_MainCoverUILayoutComponentPartial\" />
+    <None Remove="Views\Shared\Components\_FooterUILayoutComponentPartial\" />
+    <None Remove="ViewComponents\UILayoutViewComponent\" />
+    <None Remove="ViewComponents\AboutViewComponents\" />
+    <None Remove="Views\Shared\Components\_AboutUsComponentPartial\" />
+    <None Remove="Views\Shared\Components\_BecomeADriverComponentPartial\" />
+    <None Remove="ViewComponents\TestimonialViewComponents\" />
+    <None Remove="Views\Shared\Components\_TestimonialComponentPartial\" />
+    <None Remove="Views\Service\" />
+    <None Remove="ViewComponents\ServiceViewComponents\" />
+    <None Remove="Views\Shared\Components\_ServiceComponentPartial\" />
+    <None Remove="Views\Contact\" />
+    <None Remove="ViewComponents\ContactViewComponents\" />
+    <None Remove="Views\Shared\Components\_ContactComponentPartial\" />
+    <None Remove="Views\Default\" />
+    <None Remove="ViewComponents\DefaultViewComponents\" />
+    <None Remove="Views\Shared\Components\_DefaultHeadUILayoutComponentPartial\" />
+    <None Remove="Views\Car\" />
+    <None Remove="Views\Shared\Components\_Get5CarsWithBrandsComponentPartial\" />
+    <None Remove="ViewComponents\BlogViewComponents\" />
+    <None Remove="Views\Shared\Components\_Get3BlogWithAuthorComponentPartial\" />
+    <None Remove="Views\Blog\" />
+    <None Remove="ViewComponents\BlogDetailViewComponents\" />
+    <None Remove="Views\Shared\Components\_BlogDetailSideBarSearchComponentPartial\" />
+    <None Remove="Views\Shared\Components\_BlogDetailCategoryComponentPartial\" />
+    <None Remove="Views\Shared\Components\_BlogDetailRecentBlogComponentPartial\" />
+    <None Remove="Views\Shared\Components\_BlogDetailCreateCommentComponentPartial\" />
+    <None Remove="Views\Shared\Components\_BlogDetailGetCommentComponentPartial\" />
+    <None Remove="Views\Shared\Components\_BlogDetailAuthorDetailComponentPartial\" />
+    <None Remove="Views\Shared\Components\_BlogDetailGetBlogComponentPartial\" />
+    <None Remove="Views\AdminLayout\" />
+    <None Remove="Views\Admin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\UILayout\" />
+    <Folder Include="Views\About\" />
+    <Folder Include="ViewComponents\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\Components\_HeadUILayoutComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_ScriptUILayoutComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_NavbarUILayoutComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_MainCoverUILayoutComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_FooterUILayoutComponentPartial\" />
+    <Folder Include="ViewComponents\UILayoutViewComponent\" />
+    <Folder Include="ViewComponents\AboutViewComponents\" />
+    <Folder Include="Views\Shared\Components\_AboutUsComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_BecomeADriverComponentPartial\" />
+    <Folder Include="ViewComponents\TestimonialViewComponents\" />
+    <Folder Include="Views\Shared\Components\_TestimonialComponentPartial\" />
+    <Folder Include="Views\Service\" />
+    <Folder Include="ViewComponents\ServiceViewComponents\" />
+    <Folder Include="Views\Shared\Components\_ServiceComponentPartial\" />
+    <Folder Include="Views\Contact\" />
+    <Folder Include="ViewComponents\ContactViewComponents\" />
+    <Folder Include="Views\Shared\Components\_ContactComponentPartial\" />
+    <Folder Include="Views\Default\" />
+    <Folder Include="ViewComponents\DefaultViewComponents\" />
+    <Folder Include="Views\Shared\Components\_DefaultHeadUILayoutComponentPartial\" />
+    <Folder Include="Views\Car\" />
+    <Folder Include="Views\Shared\Components\_Get5CarsWithBrandsComponentPartial\" />
+    <Folder Include="ViewComponents\BlogViewComponents\" />
+    <Folder Include="Views\Shared\Components\_Get3BlogWithAuthorComponentPartial\" />
+    <Folder Include="Views\Blog\" />
+    <Folder Include="ViewComponents\BlogDetailViewComponents\" />
+    <Folder Include="Views\Shared\Components\_BlogDetailSideBarSearchComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_BlogDetailCategoryComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_BlogDetailRecentBlogComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_BlogDetailCreateCommentComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_BlogDetailGetCommentComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_BlogDetailAuthorDetailComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_BlogDetailGetBlogComponentPartial\" />
+    <Folder Include="Views\AdminLayout\" />
+    <Folder Include="Views\Admin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\css\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\css\bootstrap\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\css\css\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\images\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\js\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\scss\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\scss\bootstrap\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\fonts\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\fonts\ionicons\fonts\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\fonts\flaticon\.DS_Store" />
+    <Content Remove="wwwroot\carbook-master\fonts\flaticon\font\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CarBook.Dto\CarBook.Dto.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

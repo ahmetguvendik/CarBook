@@ -17,6 +17,7 @@
     <None Remove="CarPricingDTOs\" />
     <None Remove="CategoryDTOs\" />
     <None Remove="CommentDTOs\" />
+    <None Remove="AdminDTOs\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AboutDTOs\" />
@@ -29,5 +30,6 @@
     <Folder Include="CarPricingDTOs\" />
     <Folder Include="CategoryDTOs\" />
     <Folder Include="CommentDTOs\" />
+    <Folder Include="AdminDTOs\" />
   </ItemGroup>
 </Project>
