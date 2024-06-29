@@ -3,6 +3,7 @@ namespace CarBook.Application.Features.Mediator.Results.CarResults
 {
 	public class GetCarQueryResult
 	{
+        public string Id { get; set; }
         public string Model { get; set; }
         public string CoverImageUrl { get; set; }
         public int Km { get; set; }

@@ -31,7 +31,6 @@
                             {
 
                                 <tr>
-
                                     <th scope="row">@Model.Count</th>
                                     <td>@item.Model</td>
                                     <td>@item.BrandName</td>
@@ -39,7 +38,8 @@
                                     <td>@item.Fuel</td>
                                     <td><a href="/Admin/RemoveCar/@item.Id" class="btn btn-outline-danger">Sil</a></td>
                                     <td><a href="/Admin/UpdateCar/@item.Id" class="btn btn-outline-success">Guncelle</a></td>
-
+                                    <td><a href="/Admin/DetailCar/@item.Id" class="btn btn-outline-success">Detaylar</a></td>
+                                    <td><a href="/Admin/UpdateCar/@item.Id" class="btn btn-outline-success">Sayfada Gor</a></td>
                                 </tr>
                             }
                         </tbody>

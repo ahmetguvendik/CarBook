@@ -19,6 +19,7 @@ namespace CarBook.Application.Features.Mediator.Handlers.CarHandlers.Read
             var value = await _repository.GetByIdAsync(request.Id);
             return new GetCarByIdQueryResult()
             {
+                Id = value.Id,
                 Bagaj = value.Bagaj,
                 Vites = value.Vites,
                 CoverImageUrl = value.CoverImageUrl,

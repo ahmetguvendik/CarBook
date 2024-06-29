@@ -60,11 +60,68 @@ namespace CarBook.Frontend.Controllers
             if (response.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index", "Default");
+            } 
+
+            return View();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> UpdateCar(string id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var response = await client.GetAsync("https://localhost:7070/api/Brand");
+            var jsonData = await response.Content.ReadAsStringAsync();
+            var values = JsonConvert.DeserializeObject<List<ResultBrandDto>>(jsonData);
+            List<SelectListItem> items = (from x in values
+                                          select new SelectListItem
+                                          {
+                                              Text = x.Name,
+                                              Value = x.Id.ToString()
+                                          }).ToList();
+            ViewBag.items = items;
+
+            var responseMeesage = await client.GetAsync($"https://localhost:7070/api/Car/{id}");
+            if(responseMeesage.IsSuccessStatusCode)
+            {
+                var jsonData1 = await responseMeesage.Content.ReadAsStringAsync();
+                var values1 = JsonConvert.DeserializeObject<UpdateCarDto>(jsonData1);
+                return View(values1);
             }
 
             return View();
         }
-      
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateCar(UpdateCarDto updateCarDto,string id)
+        {
+            updateCarDto.Id = id;
+            var client = _httpClientFactory.CreateClient();
+            var jsonData = JsonConvert.SerializeObject(updateCarDto);
+            StringContent stringContent = new StringContent(jsonData, encoding: Encoding.UTF8, "application/json");
+            var response = await client.PutAsync("https://localhost:7070/api/Car", stringContent);
+            if (response.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Index", "Default");
+            }
+
+            return View();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> RemoveCar(string id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var response = await client.DeleteAsync($"https://localhost:7070/api/Car?id={id}");
+            if (response.IsSuccessStatusCode)
+            {
+
+                return RedirectToAction("Index", "Admin");
+            }
+            return View();
+        
+
+       
+        }
     }
 }
 

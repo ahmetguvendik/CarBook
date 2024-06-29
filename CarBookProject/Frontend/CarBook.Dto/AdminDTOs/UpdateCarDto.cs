@@ -1,11 +1,8 @@
 ﻿using System;
-using CarBook.Domain.Entities;
-
-namespace CarBook.Application.Features.Mediator.Results.CarResults
+namespace CarBook.Dto.AdminDTOs
 {
-	public class GetCarByIdQueryResult
+	public class UpdateCarDto
 	{
-        public string Id { get; set; }  
         public string Model { get; set; }
         public string CoverImageUrl { get; set; }
         public int Km { get; set; }
@@ -15,6 +12,7 @@ namespace CarBook.Application.Features.Mediator.Results.CarResults
         public string Fuel { get; set; }
         public string DetailImageUrl { get; set; }
         public string BrandId { get; set; }
+        public string Id { get; set; }   
     }
 }
 
