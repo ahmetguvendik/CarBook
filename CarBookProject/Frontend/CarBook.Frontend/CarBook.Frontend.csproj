@@ -48,6 +48,15 @@
     <None Remove="Views\Shared\Components\_BlogDetailGetBlogComponentPartial\" />
     <None Remove="Views\AdminLayout\" />
     <None Remove="Views\Admin\" />
+    <None Remove="Areas\Admin\Controllers\" />
+    <None Remove="Areas\Admin\Data\" />
+    <None Remove="Areas\Admin\Models\" />
+    <None Remove="Areas\Admin\Views\" />
+    <None Remove="Areas\Admin\Views\AdminBrand\" />
+    <None Remove="Views\AdminBrand\" />
+    <None Remove="Views\AdminBanner\" />
+    <None Remove="Views\AdminService\" />
+    <None Remove="Views\AdminContact\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\UILayout\" />
@@ -89,6 +98,10 @@
     <Folder Include="Views\Shared\Components\_BlogDetailGetBlogComponentPartial\" />
     <Folder Include="Views\AdminLayout\" />
     <Folder Include="Views\Admin\" />
+    <Folder Include="Views\AdminBrand\" />
+    <Folder Include="Views\AdminBanner\" />
+    <Folder Include="Views\AdminService\" />
+    <Folder Include="Views\AdminContact\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\.DS_Store" />

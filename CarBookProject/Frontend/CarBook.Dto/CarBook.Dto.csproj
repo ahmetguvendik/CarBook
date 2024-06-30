@@ -18,6 +18,8 @@
     <None Remove="CategoryDTOs\" />
     <None Remove="CommentDTOs\" />
     <None Remove="AdminDTOs\" />
+    <None Remove="BrandDTOs\" />
+    <None Remove="BannerDTOs\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AboutDTOs\" />
@@ -31,5 +33,7 @@
     <Folder Include="CategoryDTOs\" />
     <Folder Include="CommentDTOs\" />
     <Folder Include="AdminDTOs\" />
+    <Folder Include="BrandDTOs\" />
+    <Folder Include="BannerDTOs\" />
   </ItemGroup>
 </Project>

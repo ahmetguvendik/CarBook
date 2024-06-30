@@ -1,0 +1,42 @@
+﻿@{
+
+    Layout = null;
+}
+@model CarBook.Dto.ServiceDTOs.CreateServiceDto
+
+<div class="row">
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Hizmet Ekleme</h4>
+                <p class="card-subtitle mb-4">Eklemek Istediginiz Hizmeti Yaziniz</p>
+
+                <form asp-controller="AdminService" asp-action="CreateService" method="post">
+
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Baslik</label>
+                        <input type="text" class="form-control" placeholder="Baslik Giriniz" asp-for="@Model.Title">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Aciklama</label>
+                        <input type="text" class="form-control" placeholder="Aciklama Giriniz" asp-for="@Model.Description">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Icon URL</label>
+                        <input type="text" class="form-control" placeholder="Icon URL Giriniz" asp-for="@Model.IconURL">
+                    </div>
+
+                    <button>
+                        Kaydet
+                    </button>
+
+                </form>
+            </div>
+            <!-- end card-body-->
+        </div>
+        <!-- end card -->
+
+    </div> <!-- end col -->
+
+
+</div>

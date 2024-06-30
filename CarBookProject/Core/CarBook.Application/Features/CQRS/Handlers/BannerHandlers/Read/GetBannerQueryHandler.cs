@@ -19,6 +19,7 @@ namespace CarBook.Application.Features.CQRS.Handlers.BannerHandlers.Read
 			var banners = await _repository.GetAllAsync();
 			return banners.Select(x => new GetBannerQueryResult
             {
+				Id = x.Id,
 				VideoDescription = x.VideoDescription,
 				VideoURL = x.VideoURL,
                 Description = x.Description,

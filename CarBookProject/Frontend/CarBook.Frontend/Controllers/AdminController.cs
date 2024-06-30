@@ -119,8 +119,6 @@ namespace CarBook.Frontend.Controllers
             }
             return View();
         
-
-       
         }
     }
 }

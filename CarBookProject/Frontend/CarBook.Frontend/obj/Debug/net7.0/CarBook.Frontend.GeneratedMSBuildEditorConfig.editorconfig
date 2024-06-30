@@ -32,6 +32,34 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vVXBkYXRlQ2FyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/Views/AdminBanner/CreateBanner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5CYW5uZXIvQ3JlYXRlQmFubmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/Views/AdminBanner/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5CYW5uZXIvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/Views/AdminBanner/UpdateBanner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5CYW5uZXIvVXBkYXRlQmFubmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/Views/AdminBrand/CreateBrand.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5CcmFuZC9DcmVhdGVCcmFuZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/Views/AdminBrand/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5CcmFuZC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/Views/AdminBrand/UpdateBrand.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5CcmFuZC9VcGRhdGVCcmFuZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/Views/AdminContact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5Db250YWN0L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/Views/AdminLayout/AdminLayoutFooter.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5MYXlvdXQvQWRtaW5MYXlvdXRGb290ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -54,6 +82,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/Views/AdminLayout/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5MYXlvdXQvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/Views/AdminService/CreateService.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5TZXJ2aWNlL0NyZWF0ZVNlcnZpY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/Views/AdminService/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5TZXJ2aWNlL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/Views/Blog/BlogDetail.cshtml]
