@@ -1,0 +1,43 @@
+﻿@{
+
+    Layout = null;
+}
+@model CarBook.Dto.AboutDTOs.UpdateAboutDto
+
+<div class="row">
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Banner Guncelleme</h4>
+                <p class="card-subtitle mb-4">Guncellemek Istediginiz Banner Yaziniz</p>
+
+                <form asp-controller="AdminAbout" asp-action="UpdateAbout" method="post">
+
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Baslik</label>
+                        <input type="text" class="form-control" placeholder="Baslik" asp-for="@Model.title">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Aciklama</label>
+                        <input type="text" class="form-control" placeholder="Aciklama" asp-for="@Model.description">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Resim Linki</label>
+                        <input type="text" class="form-control" placeholder="Video Linki" asp-for="@Model.imageURL">
+                    </div>
+
+                    <button>
+                        Guncelle
+                    </button>
+
+                </form>
+            </div>
+            <!-- end card-body-->
+        </div>
+        <!-- end card -->
+
+    </div> <!-- end col -->
+
+
+</div>

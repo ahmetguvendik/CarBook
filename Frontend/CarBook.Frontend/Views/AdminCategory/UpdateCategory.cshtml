@@ -1,0 +1,33 @@
+﻿@{
+
+    Layout = null;
+}
+@model CarBook.Dto.CategoryDTOs.UpdateCategoryDto
+
+<div class="row">
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Blog Kategori Guncelleme</h4>
+                <p class="card-subtitle mb-4">Guncellemek Istediginiz Blog Kategoriyi Yaziniz</p>
+
+                <form asp-controller="AdminCategory" asp-action="UpdateCategory" method="post">
+
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Model</label>
+                        <input type="text" class="form-control" placeholder="Marka Giriniz" asp-for="@Model.Name">
+                    </div>
+                    <button>
+                        Guncelle
+                    </button>
+
+                </form>
+            </div>
+            <!-- end card-body-->
+        </div>
+        <!-- end card -->
+
+    </div> <!-- end col -->
+
+
+</div>

@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+    int count = 0;
+}
+
+@model List<CarBook.Dto.AboutDTOs.ResultAboutDto>
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Banner</h4>
+                <p class="card-subtitle mb-4">
+                    Uygulama Butunlugu Geregi Sadece Bir Tane Veri Olmasi Gerekmektedir!!!
+                </p>
+                <div class="table-responsive">
+                    <table class="table table-bordered mb-0">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Baslik</th>
+                                <th>Aciklama</th>
+                                <th>Resim Linki</th>
+                                <th>Sil</th>
+                                <th>Guncelle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                                {
+                                    count++;
+                                <tr>
+                                    <th scope="row">@count</th>
+                                    <td>@item.title</td>
+                                    <td>@item.description</td>
+                                    <td>@item.imageURL</td>
+                                    <td><a href="/AdminAbout/RemoveAbout/@item" class="btn btn-outline-danger">Sil</a></td>
+                                    <td><a href="/AdminAbout/UpdateAbout/@item.Id" class="btn btn-outline-success">Guncelle</a></td> 
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+                    @if (Model.Count < 1)
+                    {
+                        <a href="/AdminAbout/CreateAbout/" class="btn btn-outline-primary">Yeni Banner Girisi</a>
+                    }
+
+
+                </div>
+
+            </div>
+            <!-- end card-body-->
+        </div>
+        <!-- end card -->
+    </div>
+    <!-- end col -->
+    <!-- end col -->
+</div>
