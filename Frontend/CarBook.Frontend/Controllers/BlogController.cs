@@ -23,7 +23,7 @@ namespace CarBook.Frontend.Controllers
             ViewBag.v1 = "Blog";
             ViewBag.v2 = "Kullanici Yorumlarimiz";
             var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync("https://localhost:7070/api/Blog/GetAllBlogWithAuthor");
+            var response = await client.GetAsync("http://localhost:7070/api/Blog/GetAllBlogWithAuthor");
             if (response.IsSuccessStatusCode)
             {
                 var jsonData = await response.Content.ReadAsStringAsync();
@@ -56,7 +56,7 @@ namespace CarBook.Frontend.Controllers
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(createCommentDto);
             StringContent stringContent = new StringContent(jsonData, encoding: Encoding.UTF8, "application/json");
-            var response = await client.PostAsync("https://localhost:7070/api/Comment", stringContent);
+            var response = await client.PostAsync("http://localhost:7070/api/Comment", stringContent);
             if (response.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index", "Default");

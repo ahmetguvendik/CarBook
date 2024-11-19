@@ -24,7 +24,7 @@ namespace CarBook.Frontend.Controllers
             public async Task<IActionResult> Index()
             {
                 var client = _httpClientFactory.CreateClient();
-                var response = await client.GetAsync("https://localhost:7070/api/Category");
+                var response = await client.GetAsync("http://localhost:7070/api/Category");
                 if (response.IsSuccessStatusCode)
                 {
                     var jsonData = await response.Content.ReadAsStringAsync();
@@ -45,7 +45,7 @@ namespace CarBook.Frontend.Controllers
                 var client = _httpClientFactory.CreateClient();
                 var jsonData = JsonConvert.SerializeObject(createBrandDto);
                 StringContent stringContent = new StringContent(jsonData, encoding: Encoding.UTF8, "application/json");
-                var response = await client.PostAsync("https://localhost:7070/api/Category", stringContent);
+                var response = await client.PostAsync("http://localhost:7070/api/Category", stringContent);
                 if (response.IsSuccessStatusCode)
                 {
                     return RedirectToAction("Index", "AdminCategory");
@@ -57,7 +57,7 @@ namespace CarBook.Frontend.Controllers
             public async Task<IActionResult> UpdateCategory(string id)
             {
                 var client = _httpClientFactory.CreateClient();
-                var responseMeesage = await client.GetAsync($"https://localhost:7070/api/Category/{id}");
+                var responseMeesage = await client.GetAsync($"http://localhost:7070/api/Category/{id}");
                 if (responseMeesage.IsSuccessStatusCode)
                 {
                     var jsonData1 = await responseMeesage.Content.ReadAsStringAsync();
@@ -75,7 +75,7 @@ namespace CarBook.Frontend.Controllers
                 var client = _httpClientFactory.CreateClient();
                 var jsonData = JsonConvert.SerializeObject(updateBrandDto);
                 StringContent stringContent = new StringContent(jsonData, encoding: Encoding.UTF8, "application/json");
-                var response = await client.PutAsync("https://localhost:7070/api/Category", stringContent);
+                var response = await client.PutAsync("http://localhost:7070/api/Category", stringContent);
                 if (response.IsSuccessStatusCode)
                 {
                     return RedirectToAction("Index", "AdminCategory");
@@ -88,7 +88,7 @@ namespace CarBook.Frontend.Controllers
             public async Task<IActionResult> RemoveCategory(string id)
             {
                 var client = _httpClientFactory.CreateClient();
-                var response = await client.DeleteAsync($"https://localhost:7070/api/Category?id={id}");
+                var response = await client.DeleteAsync($"http://localhost:7070/api/Category?id={id}");
                 if (response.IsSuccessStatusCode)
                 {
 

@@ -6,6 +6,9 @@
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/bin/Debug/net7.0/CarBook.Frontend.runtimeconfig.json
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/bin/Debug/net7.0/CarBook.Frontend.dll
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/bin/Debug/net7.0/CarBook.Frontend.pdb
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/bin/Debug/net7.0/CarBook.Dto.dll
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/bin/Debug/net7.0/CarBook.Dto.pdb
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/obj/Debug/net7.0/CarBook.Frontend.csproj.AssemblyReference.cache
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/obj/Debug/net7.0/CarBook.Frontend.GeneratedMSBuildEditorConfig.editorconfig
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/obj/Debug/net7.0/CarBook.Frontend.AssemblyInfoInputs.cache
@@ -24,12 +27,9 @@
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/obj/Debug/net7.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/obj/Debug/net7.0/scopedcss/bundle/CarBook.Frontend.styles.css
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/obj/Debug/net7.0/scopedcss/projectbundle/CarBook.Frontend.bundle.scp.css
+/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/obj/Debug/net7.0/CarBook.Frontend.csproj.CopyComplete
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/obj/Debug/net7.0/CarBook.Frontend.dll
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/obj/Debug/net7.0/refint/CarBook.Frontend.dll
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/obj/Debug/net7.0/CarBook.Frontend.pdb
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/obj/Debug/net7.0/CarBook.Frontend.genruntimeconfig.cache
 /Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/obj/Debug/net7.0/ref/CarBook.Frontend.dll
-/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/bin/Debug/net7.0/Newtonsoft.Json.dll
-/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/bin/Debug/net7.0/CarBook.Dto.dll
-/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/bin/Debug/net7.0/CarBook.Dto.pdb
-/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Frontend/obj/Debug/net7.0/CarBook.Frontend.csproj.CopyComplete

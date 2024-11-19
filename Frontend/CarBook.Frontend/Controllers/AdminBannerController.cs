@@ -23,7 +23,7 @@ namespace CarBook.Frontend.Controllers
         public async Task<IActionResult> Index()
         {
             var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync("https://localhost:7070/api/Banner");
+            var response = await client.GetAsync("http://localhost:7070/api/Banner");
             if (response.IsSuccessStatusCode)
             {
                 var jsonData = await response.Content.ReadAsStringAsync();
@@ -44,7 +44,7 @@ namespace CarBook.Frontend.Controllers
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(createBannerDto);
             StringContent stringContent = new StringContent(jsonData, encoding: Encoding.UTF8, "application/json");
-            var response = await client.PostAsync("https://localhost:7070/api/Banner", stringContent);
+            var response = await client.PostAsync("http://localhost:7070/api/Banner", stringContent);
             if (response.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index", "AdminBanner");
@@ -56,7 +56,7 @@ namespace CarBook.Frontend.Controllers
         public async Task<IActionResult> UpdateBanner(string id)
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMeesage = await client.GetAsync($"https://localhost:7070/api/Banner/{id}");
+            var responseMeesage = await client.GetAsync($"http://localhost:7070/api/Banner/{id}");
             if (responseMeesage.IsSuccessStatusCode)
             {
                 var jsonData1 = await responseMeesage.Content.ReadAsStringAsync();
@@ -74,7 +74,7 @@ namespace CarBook.Frontend.Controllers
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(updateBannerDto);
             StringContent stringContent = new StringContent(jsonData, encoding: Encoding.UTF8, "application/json");
-            var response = await client.PutAsync("https://localhost:7070/api/Banner", stringContent);
+            var response = await client.PutAsync("http://localhost:7070/api/Banner", stringContent);
             if (response.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index", "AdminBrand");
@@ -87,7 +87,7 @@ namespace CarBook.Frontend.Controllers
         public async Task<IActionResult> RemoveBanner(string id)    
         {
             var client = _httpClientFactory.CreateClient();
-            var response = await client.DeleteAsync($"https://localhost:7070/api/Banner?id={id}");
+            var response = await client.DeleteAsync($"http://localhost:7070/api/Banner?id={id}");
             if (response.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index", "AdminBanner");

@@ -4,6 +4,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>d1d006fd-6efd-4415-a338-487dc4f4e151</UserSecretsId>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
@@ -59,6 +60,7 @@
     <None Remove="Views\AdminContact\" />
     <None Remove="Views\AdminAbout\" />
     <None Remove="Views\AdminCategory\" />
+    <None Remove="Views\AdminPricing\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\UILayout\" />
@@ -106,6 +108,7 @@
     <Folder Include="Views\AdminContact\" />
     <Folder Include="Views\AdminAbout\" />
     <Folder Include="Views\AdminCategory\" />
+    <Folder Include="Views\AdminPricing\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\.DS_Store" />

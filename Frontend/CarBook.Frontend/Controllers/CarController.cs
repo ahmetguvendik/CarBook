@@ -25,7 +25,7 @@ namespace CarBook.Frontend.Controllers
             ViewBag.v1 = "Arabalar";
             ViewBag.v2 = "Kendinize Göre Araba Bulun";
             var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync("https://localhost:7070/api/CarPricing");
+            var response = await client.GetAsync("http://localhost:7070/api/CarPricing");
             if (response.IsSuccessStatusCode)
             {
                 var jsonData = await response.Content.ReadAsStringAsync();

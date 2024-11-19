@@ -21,6 +21,7 @@
     <None Remove="BrandDTOs\" />
     <None Remove="BannerDTOs\" />
     <None Remove="FooterAdressDTOs\" />
+    <None Remove="PricingDTOs\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AboutDTOs\" />
@@ -37,5 +38,6 @@
     <Folder Include="BrandDTOs\" />
     <Folder Include="BannerDTOs\" />
     <Folder Include="FooterAdressDTOs\" />
+    <Folder Include="PricingDTOs\" />
   </ItemGroup>
 </Project>

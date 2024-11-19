@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+@model List<CarBook.Dto.PricingDTOs.ResultPricingDto>
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Odeme Turleri</h4>
+                <p class="card-subtitle mb-4">
+                    Sisteme Kayitli Odeme Turlerini Buradan Gorebilirsiniz
+                </p>
+                <div class="table-responsive">
+                    <table class="table table-bordered mb-0">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Tur</th>
+                                <th>Sil</th>
+                                <th>Guncelle</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+
+                                <tr>
+                                    <th scope="row">@Model.Count</th>
+                                    <td>@item.Name</td>
+                                    <td><a href="/AdminPricing/RemovePricing/@item.Id" class="btn btn-outline-danger">Sil</a></td>
+                                    <td><a href="/AdminPricing/UpdatePricing/@item.Id" class="btn btn-outline-success">Guncelle</a></td>
+
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+                    <a href="/AdminPricing/CreatePricing/" class="btn btn-outline-primary">Yeni Hizmet Girisi</a>
+                </div>
+
+            </div>
+            <!-- end card-body-->
+        </div>
+        <!-- end card -->
+    </div>
+    <!-- end col -->
+    <!-- end col -->
+</div>
