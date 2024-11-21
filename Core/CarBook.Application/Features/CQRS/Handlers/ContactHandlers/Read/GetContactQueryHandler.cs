@@ -18,6 +18,7 @@ namespace CarBook.Application.Features.CQRS.Handlers.ContactHandlers.Read
 			var contact = await _repository.GetAllAsync();
 			return contact.Select(x => new GetContactQueryResult
 			{
+				
 				Email = x.Email,
 				DateTime = x.DateTime,
 				Description = x.Description,

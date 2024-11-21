@@ -1,0 +1,58 @@
+﻿@{
+
+    Layout = null;
+}
+@model CarBook.Dto.FooterAdressDTOs.UpdateFooterAdressDto
+
+<div class="row">
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Hizmet Guncelleme</h4>
+                <p class="card-subtitle mb-4">Guncellemek Istediginiz Hizmeti Yaziniz</p>
+
+                <form asp-controller="AdminFooter" asp-action="UpdateFooter" method="post">
+
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Adres Giriniz</label>
+                        <input type="text" class="form-control" placeholder="Adres Giriniz" asp-for="@Model.Adress">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Aciklama Giriniz</label>
+                        <input type="text" class="form-control" placeholder="Aciklama Giriniz" asp-for="@Model.Description">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Email Giriniz</label>
+                        <input type="text" class="form-control" placeholder="Email Giriniz" asp-for="@Model.Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Telefon Numarasi Giriniz</label>
+                        <input type="text" class="form-control" placeholder="Adres Giriniz" asp-for="@Model.PhoneNumber">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Instagram Linki Giriniz</label>
+                        <input type="text" class="form-control" placeholder="Instagram Linki Giriniz" asp-for="@Model.InstagramLink">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Twitter Linki Giriniz</label>
+                        <input type="text" class="form-control" placeholder="Twitter Linki Giriniz" asp-for="@Model.TwitterLink">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Facebook Linki  Giriniz</label>
+                        <input type="text" class="form-control" placeholder="Facebook Linki Giriniz" asp-for="@Model.FacebookLink">
+                    </div>
+
+                    <button>
+                        Guncelle
+                    </button>
+
+                </form>
+            </div>
+            <!-- end card-body-->
+        </div>
+        <!-- end card -->
+
+    </div> <!-- end col -->
+
+
+</div>

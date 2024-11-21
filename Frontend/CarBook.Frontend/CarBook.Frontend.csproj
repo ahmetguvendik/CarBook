@@ -61,6 +61,7 @@
     <None Remove="Views\AdminAbout\" />
     <None Remove="Views\AdminCategory\" />
     <None Remove="Views\AdminPricing\" />
+    <None Remove="Views\AdminFooter\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\UILayout\" />
@@ -109,6 +110,7 @@
     <Folder Include="Views\AdminAbout\" />
     <Folder Include="Views\AdminCategory\" />
     <Folder Include="Views\AdminPricing\" />
+    <Folder Include="Views\AdminFooter\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\.DS_Store" />
