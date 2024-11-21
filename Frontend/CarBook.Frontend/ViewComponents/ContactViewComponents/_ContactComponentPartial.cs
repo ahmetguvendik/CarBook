@@ -1,6 +1,7 @@
 ﻿using System;
 using CarBook.Dto.AboutDTOs;
 using CarBook.Dto.ContactDTOs;
+using CarBook.Dto.FooterAdressDTOs;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -17,7 +18,7 @@ namespace CarBook.Frontend.ViewComponents.ContactViewComponents
         public async Task<IViewComponentResult> InvokeAsync()
         {
             var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync("https://localhost:7070/api/FooterAdress");
+            var response = await client.GetAsync("http://localhost:7070/api/FooterAdress");
             if (response.IsSuccessStatusCode)
             {
                 var jsonData = await response.Content.ReadAsStringAsync();
