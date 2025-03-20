@@ -1,0 +1,36 @@
+@model CarBook.Dto.ServiceDTOs.CreateServiceDto
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Yeni Lokasyon Ekleme Sayfasi</h4>
+        <p class="card-subtitle mb-4">Sisteme Eklemek Istediginiz Lokasyonu Giriniz </p>
+
+        <form asp-action="CreateService"  asp-controller="AdminService" method="post">
+
+            <div class="form-group">
+                <label>Başlık Giriniz</label>
+                <input type="text" asp-for="Title" placeholder="Başlık Giriniz" class="form-control">
+            </div>
+            
+            <div class="form-group">
+                <label>Açıklama Giriniz</label>
+                <input type="text" asp-for="Description" placeholder="Açıklama Giriniz" class="form-control">
+            </div>
+            
+            <div class="form-group">
+                <label>Icon URL Giriniz</label>
+                <input type="text" asp-for="IconURL" placeholder="Icon URL Giriniz" class="form-control">
+            </div>
+
+            <button type="submit" class="btn btn-success">
+                Ekle
+            </button>
+
+
+        </form>
+    </div>
+
+</div>

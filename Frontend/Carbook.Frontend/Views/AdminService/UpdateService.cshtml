@@ -1,0 +1,36 @@
+@model CarBook.Dto.ServiceDTOs.UpdateServiceDto
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Lokasyon Güncelleme Sayfasi</h4>
+        <p class="card-subtitle mb-4">Sistemden Güncellemek Istediginiz Lokasyonu Giriniz </p>
+
+        <form asp-action="UpdateService"  asp-controller="AdminService" method="post">
+
+            <div class="form-group">
+                <label>Başlık Giriniz</label>
+                <input type="text" asp-for="Title" placeholder="Başlık Giriniz" class="form-control">
+            </div>
+            
+            <div class="form-group">
+                <label>Açıklama Giriniz</label>
+                <input type="text" asp-for="Description" placeholder="Açıklama Giriniz" class="form-control">
+            </div>
+            
+            <div class="form-group">
+                <label>Icon URL Giriniz</label>
+                <input type="text" asp-for="IconURL" placeholder="Icon URL Giriniz" class="form-control">
+            </div>
+
+            <button type="submit" class="btn btn-success">
+                Güncelle
+            </button>
+
+
+        </form>
+    </div>
+
+</div>

@@ -1,0 +1,56 @@
+@model List<CarBook.Dto.ServiceDTOs.ResultServiceDto>
+
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Hizmetler Sayfası</h4>
+                <p class="card-subtitle mb-4">Şirketinize ait hizmetleri buradan görebilirsiniz.
+                </p>
+                <div class="table-responsive">
+
+                    <table class="table mb-12">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Başlık</th>
+                            <th>Açıklama</th>
+                            <th>Icon URL</th>
+                            <th>Sil</th>
+                            <th>Guncelle</th>
+                        </tr>
+                        </thead>
+                        @foreach (var item in Model)
+                        {
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>@item.Title</td>
+                                <td>@item.Description</td>
+                                <td>@item.IconURL</td>
+                                <td><a href="/AdminService/RemoveService/@item.Id" class="btn btn-outline-danger">Sil</a></td>
+                                <td><a href="/AdminService/UpdateService/@item.Id" class="btn btn-outline-success">Guncelle</a></td>
+
+                            </tr>
+                            </tbody>
+                        }
+                    </table>
+                    <a href="/AdminService/CreateService/">Yeni Hizmet Ekleme</a>
+                </div>
+
+            </div>
+            <!-- end card-body-->
+        </div>
+        <!-- end card -->
+
+    </div>
+    <!-- end col -->
+
+
+
+    <!-- end col -->
+</div>

@@ -1,0 +1,54 @@
+@model List<Carbook.Dto.LocationDTOs.ResultLocationDto>
+
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Lokasyon Sayfası</h4>
+                <p class="card-subtitle mb-4"> Ana Sayfa ve araç kiralama sayfasında bulunan araçların alınış ve bırakılış noktalarını temsil etmektedir.
+                </p>
+                <div class="table-responsive">
+
+                    <table class="table mb-12">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Lokasyon</th>
+                            <th>Sil</th>
+                            <th>Guncelle</th>
+                            <th>Haritada Göster</th>
+                        </tr>
+                        </thead>
+                        @foreach (var item in Model)
+                        {
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>@item.Name</td>
+                                <td><a href="/AdminLocation/RemoveLocation/@item.Id" class="btn btn-outline-danger">Sil</a></td>
+                                <td><a href="/AdminLocation/UpdateLocation/@item.Id" class="btn btn-outline-success">Guncelle</a></td>
+                                <td><a href="/AdminLocation/LocationDetail/@item.Id" class="btn btn-outline-success">Haritada Göster</a></td>
+                            </tr>
+                            </tbody>
+                        }
+                    </table>
+
+                    <a href="/AdminLocation/CreateLocation/">Yeni Lokasyon Ekleme</a>
+                </div>
+
+            </div>
+            <!-- end card-body-->
+        </div>
+        <!-- end card -->
+
+    </div>
+    <!-- end col -->
+
+
+
+    <!-- end col -->
+</div>
