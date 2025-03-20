@@ -1,12 +1,10 @@
-﻿using System.Text;
+using System.Text;
 using CarBook.Dto.ContactDTOs;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+namespace Carbook.Frontend.Controllers;
 
-namespace CarBook.Frontend.Controllers
-{
     public class ContactController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;
@@ -30,7 +28,7 @@ namespace CarBook.Frontend.Controllers
             createContactDto.DateTime = DateTime.UtcNow;
             var jsonData = JsonConvert.SerializeObject(createContactDto);
             StringContent stringContent = new StringContent(jsonData, encoding: Encoding.UTF8, "application/json");
-            var response = await client.PostAsync("http://localhost:7070/api/Contact", stringContent);
+            var response = await client.PostAsync("http://localhost:5128/api/Contact", stringContent);
             if (response.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index", "About");
@@ -40,5 +38,3 @@ namespace CarBook.Frontend.Controllers
             
         }
     }
-}
-

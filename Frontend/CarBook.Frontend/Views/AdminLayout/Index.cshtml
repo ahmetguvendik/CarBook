@@ -1,42 +1,48 @@
-﻿@{
+@{
     Layout = null;
 }
-
-
 <!DOCTYPE html>
 <html lang="en">
 
-@await Html.PartialAsync("~/Views/AdminLayout/AdminLayoutHead.cshtml")
+@await Component.InvokeAsync("_AdminHeadComponentPartial")
 
 <body>
 
-    <!-- Begin page -->
-    <div id="layout-wrapper">
+<!-- Begin page -->
+<div id="layout-wrapper">
 
-        @await Html.PartialAsync("~/Views/AdminLayout/AdminLayoutNavBar.cshtml")
+    @await Component.InvokeAsync("_AdminHeaderComponentPartial")
 
-        <!-- ========== Left Sidebar Start ========== -->
-        @await Html.PartialAsync("~/Views/AdminLayout/AdminLayoutSideBar.cshtml")
-        <!-- Left Sidebar End -->
-        <!-- ============================================================== -->
-        <!-- Start right Content here -->
-        <!-- ============================================================== -->
-        <div class="main-content">
+    <!-- ========== Left Sidebar Start ========== -->
+    @await Component.InvokeAsync("_AdminVerticalMenuComponentPartial") 
+    <!-- Left Sidebar End -->
 
-            <div class="page-content">
-                @RenderBody() <!-- container-fluid -->
-            </div>
-            <!-- End Page-content -->
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
 
+        <div class="page-content">
+            <div class="container-fluid">
 
-            @await Html.PartialAsync("~/Views/AdminLayout/AdminLayoutFooter.cshtml")
+                <!-- start page title -->
+                @RenderBody()
+                <!-- end page title -->
+
+            </div> <!-- container-fluid -->
         </div>
-        <!-- end main content-->
+        <!-- End Page-content -->
+
+        @await Component.InvokeAsync("_AdminFooterComponentPartial")
 
     </div>
-    <!-- END layout-wrapper -->
-    <!-- Overlay-->
-    @await Html.PartialAsync("~/Views/AdminLayout/AdminLayoutScript.cshtml")
+    <!-- end main content-->
+
+</div>
+<!-- END layout-wrapper -->
+
+<!-- Overlay-->
+@await Component.InvokeAsync("_AdminScriptComponentPartial")
 
 </body>
 

@@ -1,15 +1,13 @@
-﻿using System;
-namespace CarBook.Application.Features.CQRS.Commands.BannerCommands
+using MediatR;
+
+namespace Carbook.Application.Features.CQRS.Commands.BannerCommands;
+
+public class RemoveBannerCommand : IRequest
 {
-	public class RemoveBannerCommand
-	{
-        public string id { get; set; }
+    public string Id { get; set; }
 
-        public RemoveBannerCommand(string _id)
-        {
-            id = _id;
-        }
-
+    public RemoveBannerCommand(string id)
+    {
+         Id = id;
     }
 }
-

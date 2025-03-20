@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using CarBook.Dto.AboutDTOs;
 using CarBook.Dto.CategoryDTOs;
 using Microsoft.AspNetCore.Mvc;
@@ -6,8 +6,8 @@ using Newtonsoft.Json;
 
 namespace CarBook.Frontend.ViewComponents.BlogDetailViewComponents
 {
-	public class _BlogDetailCategoryComponentPartial : ViewComponent
-	{
+    public class _BlogDetailCategoryComponentPartial : ViewComponent
+    {
         private readonly IHttpClientFactory _httpClientFactory;
 
         public _BlogDetailCategoryComponentPartial(IHttpClientFactory httpClientFactory)
@@ -17,7 +17,7 @@ namespace CarBook.Frontend.ViewComponents.BlogDetailViewComponents
         public async Task<IViewComponentResult> InvokeAsync()
         {
             var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync("http://localhost:7070/api/Category");
+            var response = await client.GetAsync("http://localhost:5128/api/Category");
             if (response.IsSuccessStatusCode)
             {
                 var jsonData = await response.Content.ReadAsStringAsync();
@@ -28,4 +28,3 @@ namespace CarBook.Frontend.ViewComponents.BlogDetailViewComponents
         }
     }
 }
-

@@ -1,46 +1,41 @@
-﻿@{
-
-    Layout = null;
-}
 @model CarBook.Dto.BannerDTOs.UpdateBannerDto
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
 
-<div class="row">
-    <div class="col-xl-6">
-        <div class="card">
-            <div class="card-body">
-                <h4 class="card-title">Banner Guncelleme</h4>
-                <p class="card-subtitle mb-4">Guncellemek Istediginiz Banner Yaziniz</p>
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Banner Guncelleme Sayfasi</h4>
+        <p class="card-subtitle mb-4">Sistemde Guncellemek Istediginiz Banner Giriniz </p>
 
-                <form asp-controller="AdminBanner" asp-action="UpdateBanner" method="post">
+        <form asp-action="UpdateBanner"  asp-controller="AdminBanner" method="post">
 
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Baslik</label>
-                        <input type="text" class="form-control" placeholder="Baslik" asp-for="@Model.Title">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Aciklama</label>
-                        <input type="text" class="form-control" placeholder="Aciklama" asp-for="@Model.Description">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Video Aciklamasi</label>
-                        <input type="text" class="form-control" placeholder="Video Aciklamasi" asp-for="@Model.VideoDescription">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Video Linki</label>
-                        <input type="text" class="form-control" placeholder="Video Linki" asp-for="@Model.VideoURL">
-                    </div>
-
-                    <button>
-                        Guncelle
-                    </button>
-
-                </form>
+            <div class="form-group">
+                <label>Başlık Giriniz</label>
+                <input type="text" asp-for="Title" placeholder="Başlık Giriniz" class="form-control">
             </div>
-            <!-- end card-body-->
-        </div>
-        <!-- end card -->
+            <div class="form-group">
+                <label>Açıklama Giriniz</label>
+                <input type="text" asp-for="Description" placeholder="Açıklama Giriniz" class="form-control">
+            </div>
 
-    </div> <!-- end col -->
+            <div class="form-group">
+                <label>Video Açıklama Giriniz</label>
+                <input type="text" asp-for="VideoDescription" placeholder="Video Açıklama Giriniz" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>Video Linki Giriniz</label>
+                <input type="text" asp-for="VideoURL" placeholder="Video Linki Giriniz" class="form-control">
+            </div>
 
 
+            <button type="submit" class="btn btn-success">
+                Güncelle
+            </button>
+            
+
+        </form>
+    </div>
+    <!-- end card-body-->
 </div>

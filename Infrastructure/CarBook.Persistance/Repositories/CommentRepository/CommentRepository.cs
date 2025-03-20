@@ -3,6 +3,7 @@ using CarBook.Application.Repositories;
 using CarBook.Application.Repositories.GenericRepository;
 using CarBook.Domain.Entities;
 using CarBook.Persistance.Context;
+using Carbook.Persistance.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace CarBook.Persistance.Repositories.CommentRepository

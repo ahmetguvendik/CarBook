@@ -1,29 +1,26 @@
-﻿using System;
-using CarBook.Application.Features.CQRS.Results.BrandResults;
-using CarBook.Application.Features.CQRS.Results.CategoryResults;
-using CarBook.Application.Repositories;
+using Carbook.Application.Features.CQRS.Queries.CategoryQueries;
+using Carbook.Application.Features.CQRS.Results.CategoryResults;
+using Carbook.Application.Repositories;
 using CarBook.Domain.Entities;
+using MediatR;
 
-namespace CarBook.Application.Features.CQRS.Handlers.CategoryHandlers.Read
+namespace Carbook.Application.Features.CQRS.Handlers.CategoryHandlers.Read;
+
+public class GetCategoryQueryHandler : IRequestHandler<GetCategoryQuery,List<GetCategoryQueryResult>>
 {
-	public class GetCategoryQueryHandler
-	{
-		private readonly IRepository<Category> _repository;
+    private readonly IRepository<Category> _categoryRepository;
 
-        public GetCategoryQueryHandler(IRepository<Category> repository)
-		{
-			_repository = repository;
-		}
-
-		public async Task<List<GetCategoryQueryResult>> Handle()
-		{
-			var category = await _repository.GetAllAsync();
-            return category.Select(x => new GetCategoryQueryResult
-            {
-				Id = x.Id,
-                Name = x.Name
-            }).ToList();
-        }
-	}
+    public GetCategoryQueryHandler( IRepository<Category> categoryRepository)
+    {
+         _categoryRepository = categoryRepository;
+    }
+    public async Task<List<GetCategoryQueryResult>> Handle(GetCategoryQuery request, CancellationToken cancellationToken)
+    {
+        var value = await _categoryRepository.GetAllAsync();
+        return value.Select(x => new GetCategoryQueryResult
+        {
+            Id = x.Id,
+            Name = x.Name,
+        }).ToList();
+    }
 }
-

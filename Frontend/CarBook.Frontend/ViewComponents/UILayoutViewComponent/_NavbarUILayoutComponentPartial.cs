@@ -1,14 +1,11 @@
-﻿using System;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CarBook.Frontend.ViewComponents
+namespace Carbook.Frontend.ViewComponents.UILayoutViewComponent;
+
+public class _NavbarUILayoutComponentPartial : ViewComponent
 {
-	public class _NavbarUILayoutComponentPartial : ViewComponent
-	{
-        public IViewComponentResult Invoke()
-        {
-            return View();
-        }
+    public IViewComponentResult Invoke()
+    {
+        return View();
     }
 }
-

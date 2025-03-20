@@ -1,26 +1,24 @@
-﻿using System;
-using CarBook.Application.Features.CQRS.Commands.AboutCommands;
-using CarBook.Application.Repositories;
+using Carbook.Application.Features.CQRS.Commands.AboutCommands;
+using Carbook.Application.Repositories;
 using CarBook.Domain.Entities;
+using MediatR;
 
-namespace CarBook.Application.Features.CQRS.Handlers.AboutHandlers.Write
+namespace Carbook.Application.Features.CQRS.Handlers.AboutHandlers.Write;
+
+public class UpdateAboutCommandHandler : IRequestHandler<UpdateAboutCommand>
 {
-	public class UpdateAboutCommandHandler
-	{
-		private readonly IRepository<About> _repository;
-		public UpdateAboutCommandHandler(IRepository<About> repository)
-		{
-			_repository = repository;
-		}
+    private readonly IRepository<About>  _repository;
 
-		public async Task Handle(UpdateAboutCommand command)
-		{
-			var about = await _repository.GetByIdAsync(command.id);
-			about.Description = command.Description;
-			about.ImageURL = command.ImageURL;
-			about.Title = command.Title;
-			await _repository.UpdateAsync(about);
-		}
-	}
+    public UpdateAboutCommandHandler( IRepository<About> repository)
+    {
+         _repository = repository;
+    }
+    public async Task Handle(UpdateAboutCommand request, CancellationToken cancellationToken)
+    {
+        var value = await _repository.GetByIdAsync(request.Id);
+        value.Description = request.Description;
+        value.ImageURL = request.ImageURL;
+        value.Title = request.Title;
+        await _repository.UpdateAsync(value);
+    }
 }
-

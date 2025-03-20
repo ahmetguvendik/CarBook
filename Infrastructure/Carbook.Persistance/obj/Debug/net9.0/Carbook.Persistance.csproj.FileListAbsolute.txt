@@ -1,0 +1,17 @@
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Persistance/bin/Debug/net9.0/Carbook.Persistance.deps.json
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Persistance/bin/Debug/net9.0/Carbook.Persistance.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Persistance/bin/Debug/net9.0/Carbook.Persistance.pdb
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Persistance/bin/Debug/net9.0/Carbook.Domain.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Persistance/bin/Debug/net9.0/Carbook.Domain.pdb
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Persistance/obj/Debug/net9.0/Carbook.Persistance.csproj.AssemblyReference.cache
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Persistance/obj/Debug/net9.0/Carbook.Persistance.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Persistance/obj/Debug/net9.0/Carbook.Persistance.AssemblyInfoInputs.cache
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Persistance/obj/Debug/net9.0/Carbook.Persistance.AssemblyInfo.cs
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Persistance/obj/Debug/net9.0/Carbook.Persistance.csproj.CoreCompileInputs.cache
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Persistance/obj/Debug/net9.0/Carbook..81177045.Up2Date
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Persistance/obj/Debug/net9.0/Carbook.Persistance.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Persistance/obj/Debug/net9.0/refint/Carbook.Persistance.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Persistance/obj/Debug/net9.0/Carbook.Persistance.pdb
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Persistance/obj/Debug/net9.0/ref/Carbook.Persistance.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Persistance/bin/Debug/net9.0/Carbook.Application.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Persistance/bin/Debug/net9.0/Carbook.Application.pdb

@@ -1,100 +1,104 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using CarBook.Dto.BannerDTOs;
-using CarBook.Dto.BrandDTOs;
+using CarBook.Dto.FooterAdressDTOs;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+namespace Carbook.Frontend.Controllers;
 
-namespace CarBook.Frontend.Controllers
+public class AdminBannerController : Controller
 {
-    public class AdminBannerController : Controller
+    private readonly IHttpClientFactory _httpClientFactory;
+
+    public AdminBannerController( IHttpClientFactory clientFactory )
     {
-        private readonly IHttpClientFactory _httpClientFactory;
-        public AdminBannerController(IHttpClientFactory httpClientFactory)
+        _httpClientFactory = clientFactory;
+    }
+    public async Task<IActionResult> Index()
+    {
+        var client = _httpClientFactory.CreateClient();
+        var response = await client.GetAsync("http://localhost:5128/api/Banner");
+        if (response.IsSuccessStatusCode)
         {
-            _httpClientFactory = httpClientFactory;
+            var jsonData = await response.Content.ReadAsStringAsync();
+            var values = JsonConvert.DeserializeObject<List<ResultBannerDto>>(jsonData);
+            return View(values);
+        }
+        return View();
+    }
+    
+    [HttpGet]
+    public async Task<IActionResult> CreateBanner()
+    {
+        return View();  
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> CreateBanner(CreateBannerDto createBannerDto)
+    {
+        var client = _httpClientFactory.CreateClient();
+        var jsonData = JsonConvert.SerializeObject(createBannerDto);
+        StringContent stringContent = new StringContent(jsonData, encoding: Encoding.UTF8, "application/json");
+        var response = await client.PostAsync("http://localhost:5128/api/Banner", stringContent);
+        if (response.IsSuccessStatusCode)
+        {
+            return RedirectToAction("Index", "AdminBanner");    
         }
 
-        public async Task<IActionResult> Index()
+        return View();
+           
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> UpdateBanner(string id)
+    {
+        var client = _httpClientFactory.CreateClient();
+         var response = await client.GetAsync($"http://localhost:5128/api/Banner");
+         var jsonData = await response.Content.ReadAsStringAsync();
+         var values = JsonConvert.DeserializeObject<List<ResultBannerDto>>(jsonData);
+         List<SelectListItem> brandValue = (from x in values
+             select new SelectListItem
+             {
+                 Text = x.Title,
+                 Value = x.Id.ToString()
+             }).ToList();
+         ViewBag.Brands = brandValue;
+         
+         var responseMesage = await client.GetAsync($"http://localhost:5128/api/Banner/{id}");
+         if (responseMesage.IsSuccessStatusCode)
+         {
+             var jsonData1 = await responseMesage.Content.ReadAsStringAsync();
+             var values1 = JsonConvert.DeserializeObject<UpdateBannerDto>(jsonData1);
+             return View(values1);
+         }
+              return View();
+    }
+    
+    [HttpPost]
+    public async Task<IActionResult> UpdateBanner(UpdateBannerDto updateBannerDto)
+    {
+        var client = _httpClientFactory.CreateClient();
+        var jsonData = JsonConvert.SerializeObject(updateBannerDto);
+        StringContent stringContent = new StringContent(jsonData, encoding: Encoding.UTF8, "application/json");
+        var response = await client.PutAsync("http://localhost:5128/api/Banner", stringContent);
+        
+        if (response.IsSuccessStatusCode)
         {
-            var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync("http://localhost:7070/api/Banner");
-            if (response.IsSuccessStatusCode)
-            {
-                var jsonData = await response.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<List<ResultBannerDto>>(jsonData);
-                return View(values);
-            }
-            return View();
+            return RedirectToAction("Index", "AdminBanner");    
         }
 
-        public IActionResult CreateBanner()
+        return View();
+    }
+    
+    public async Task<IActionResult> RemoveBanner(string id)
+    {
+        var client = _httpClientFactory.CreateClient();
+        var response = await client.DeleteAsync($"http://localhost:5128/api/Banner?id={id}");
+        if (response.IsSuccessStatusCode)
         {
-            return View();
+            return RedirectToAction(nameof(Index));
         }
-
-        [HttpPost]
-        public async Task<IActionResult> CreateBanner(CreateBannerDto createBannerDto)
-        {
-            var client = _httpClientFactory.CreateClient();
-            var jsonData = JsonConvert.SerializeObject(createBannerDto);
-            StringContent stringContent = new StringContent(jsonData, encoding: Encoding.UTF8, "application/json");
-            var response = await client.PostAsync("http://localhost:7070/api/Banner", stringContent);
-            if (response.IsSuccessStatusCode)
-            {
-                return RedirectToAction("Index", "AdminBanner");
-            }
-
-            return View();
-        }
-
-        public async Task<IActionResult> UpdateBanner(string id)
-        {
-            var client = _httpClientFactory.CreateClient();
-            var responseMeesage = await client.GetAsync($"http://localhost:7070/api/Banner/{id}");
-            if (responseMeesage.IsSuccessStatusCode)
-            {
-                var jsonData1 = await responseMeesage.Content.ReadAsStringAsync();
-                var values1 = JsonConvert.DeserializeObject<UpdateBannerDto>(jsonData1);
-                return View(values1);
-            }
-
-            return View();
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> UpdateBanner(UpdateBannerDto updateBannerDto, string id)
-        {
-            updateBannerDto.Id = id;
-            var client = _httpClientFactory.CreateClient();
-            var jsonData = JsonConvert.SerializeObject(updateBannerDto);
-            StringContent stringContent = new StringContent(jsonData, encoding: Encoding.UTF8, "application/json");
-            var response = await client.PutAsync("http://localhost:7070/api/Banner", stringContent);
-            if (response.IsSuccessStatusCode)
-            {
-                return RedirectToAction("Index", "AdminBrand");
-            }
-
-            return View();
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> RemoveBanner(string id)    
-        {
-            var client = _httpClientFactory.CreateClient();
-            var response = await client.DeleteAsync($"http://localhost:7070/api/Banner?id={id}");
-            if (response.IsSuccessStatusCode)
-            {
-                return RedirectToAction("Index", "AdminBanner");
-            }
-            return View();
-
-        }
+       return RedirectToAction("Error", "Home");
     }
 }
-

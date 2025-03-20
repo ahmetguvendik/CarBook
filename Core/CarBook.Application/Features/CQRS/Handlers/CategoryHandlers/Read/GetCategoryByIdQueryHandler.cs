@@ -1,28 +1,26 @@
-﻿using System;
-using CarBook.Application.Features.CQRS.Queries.CategoryQueries;
-using CarBook.Application.Features.CQRS.Results.CategoryResults;
-using CarBook.Application.Repositories;
+using Carbook.Application.Features.CQRS.Queries.CategoryQueries;
+using Carbook.Application.Features.CQRS.Results.CategoryResults;
+using Carbook.Application.Repositories;
 using CarBook.Domain.Entities;
+using MediatR;
 
-namespace CarBook.Application.Features.CQRS.Handlers.CategoryHandlers.Read
+namespace Carbook.Application.Features.CQRS.Handlers.CategoryHandlers.Read;
+
+public class GetCategoryByIdQueryHandler : IRequestHandler<GetCategoryByIdQuery, GetCategoryByIdQueryResult>
 {
-	public class GetCategoryByIdQueryHandler
-	{
-		private readonly IRepository<Category> _repository;
-		public GetCategoryByIdQueryHandler(IRepository<Category> repository)
-		{
-			_repository = repository;
-		}
+    private readonly IRepository<Category> _categoryRepository;
 
-		public async Task<GetCategoryByIdQueryResult> Handle(GetCategoryByIdQuery query)
-		{
-			var category = await _repository.GetByIdAsync(query.Id);
-			return new GetCategoryByIdQueryResult()
-			{
-				Id = category.Id,
-				Name = category.Name
-			};
-		}
-	}
+    public GetCategoryByIdQueryHandler( IRepository<Category> categoryRepository)
+    { 
+         _categoryRepository = categoryRepository;
+    }
+    public async Task<GetCategoryByIdQueryResult> Handle(GetCategoryByIdQuery request, CancellationToken cancellationToken)
+    {
+        var values = await _categoryRepository.GetByIdAsync(request.Id);
+        return new GetCategoryByIdQueryResult()
+        {
+            Id = values.Id,
+            Name = values.Name,
+        };
+    }
 }
-

@@ -1,0 +1,68 @@
+@model List<CarBook.Dto.CarDTOs.ResultCarWithBrandsDto>
+
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Araba Listesi</h4>
+                <p class="card-subtitle mb-4"> Sisteme Kayitli Araba Listesi
+                </p>
+                <div class="table-responsive">
+                
+                        <table class="table mb-12">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Marka</th>
+                                <th>Model</th>
+                                <th>Km</th>
+                                <th>Vites</th>
+                                <th>Koltuk</th>
+                                <th>Bagaj</th>
+                                <th>Benzin</th>
+                                <th>Kapak Foto</th>
+                                <th>Detay Foto</th>>
+                                <th>Sil</th>
+                                <th>Guncelle</th>
+                            </tr>
+                            </thead>
+                            @foreach (var item in Model)
+                            {
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>@item.BrandName</td>
+                                    <td>@item.Model</td>
+                                    <td>@item.Km</td>
+                                    <td>@item.Vites</td>
+                                    <td>@item.Koltuk</td>
+                                    <td>@item.Bagaj</td>
+                                    <td>@item.Fuel</td>
+                                    <td>@item.CoverImageUrl</td>
+                                    <td>@item.DetailImageUrl</td>
+                                    <td><a href="/AdminCar/RemoveCar/@item.Id" class="btn btn-outline-danger">Sil</a></td>
+                                    <td><a href="/AdminCar/UpdateCar/@item.Id" class="btn btn-outline-success">Guncelle</a></td>
+                                </tr>
+                                </tbody>
+                            }
+                        </table>
+                   
+                    <a href="/AdminCar/CreateCar">Yeni Arac Ekleme</a>
+                </div>
+
+            </div>
+            <!-- end card-body-->
+        </div>
+        <!-- end card -->
+
+    </div>
+    <!-- end col -->
+
+
+
+    <!-- end col -->
+</div>

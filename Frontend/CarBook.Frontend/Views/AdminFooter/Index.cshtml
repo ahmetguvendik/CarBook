@@ -1,71 +1,66 @@
-﻿@{
-    ViewData["Title"] = "Index";
-    Layout = "~/Views/AdminLayout/Index.cshtml";
-    int count = 0;
-}
-
+@using CarBook.Frontend.ViewComponents.ContactViewComponents
 @model List<CarBook.Dto.FooterAdressDTOs.ResulFooterAdressDto>
+
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
 
 <div class="row">
     <div class="col-xl-12">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Footer Sayfasi</h4>
-                <p class="card-subtitle mb-4">
-                    Sisteme kayıtlı olan Footer bilgilerini buradan görebilmektesiniz(Veri Butunlugu Icin Tek(1) Veri Olmalidir!!)
-                </p>
+                <h4 class="card-title">Footer İşlem Sayfası</h4>
+                <p>!!!Proje Bütünlüğü İçin Eğer 1 Tane Veri Varsa Başka Veri Eklenemez!!!</p>
                 <div class="table-responsive">
-                    <table class="table table-bordered mb-0">
-                        <thead>
+                <table class="table mb-12">
+                            <thead>
                             <tr>
                                 <th>#</th>
                                 <th>Adres</th>
+                                <th>Açıklama</th>
                                 <th>Email</th>
-                                <th>Aciklama</th>
-                                <th>Telefon Numarasi</th>
-                                <th>Adres</th>
+                                <th>Facebook Link</th>
                                 <th>Instagram Link</th>
                                 <th>Twitter Link</th>
-                                <th>Facebook Link</th>
+                                <th>Telefon Numarası</th>
                                 <th>Sil</th>
                                 <th>Guncelle</th>
-
                             </tr>
-                        </thead>
-                        <tbody>
+                            </thead>
                             @foreach (var item in Model)
                             {
-                                count++;
+                                <tbody>
                                 <tr>
-                                    <th scope="row">@count</th>
+                                    <th scope="row">1</th>
                                     <td>@item.Adress</td>
-                                    <td>@item.Email</td>
                                     <td>@item.Description</td>
-                                    <td>@item.PhoneNumber</td>
+                                    <td>@item.Email</td>
+                                    <td>@item.FacebookLink</td>
                                     <td>@item.InstagramLink</td>
                                     <td>@item.TwitterLink</td>
-                                    <th>@item.FacebookLink</th>
-                                    <th>@item.FacebookLink</th>
+                                    <td>@item.PhoneNumber</td>
                                     <td><a href="/AdminFooter/RemoveFooter/@item.Id" class="btn btn-outline-danger">Sil</a></td>
                                     <td><a href="/AdminFooter/UpdateFooter/@item.Id" class="btn btn-outline-success">Guncelle</a></td>
-
                                 </tr>
+                                </tbody>
                             }
-                        </tbody>
-                    </table>
-
-
-                    @if (Model.Count < 1)
+                        </table>
+                    @if (Model.Count ==  0)
                     {
-                        <a href="/AdminFooter/CreateFooter/" class="btn btn-outline-primary">Yeni Footer Girisi</a>
+                        <a href="/AdminFooter/CreateFooter">Yeni Footer Ekleme</a>
                     }
+                    
                 </div>
 
             </div>
             <!-- end card-body-->
         </div>
         <!-- end card -->
+
     </div>
     <!-- end col -->
+
+
+
     <!-- end col -->
 </div>

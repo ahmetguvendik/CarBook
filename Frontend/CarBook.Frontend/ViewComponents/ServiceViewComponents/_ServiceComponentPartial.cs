@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using CarBook.Dto.AboutDTOs;
 using CarBook.Dto.ServiceDTOs;
 using Microsoft.AspNetCore.Mvc;
@@ -6,8 +6,8 @@ using Newtonsoft.Json;
 
 namespace CarBook.Frontend.ViewComponents.ServiceViewComponents
 {
-	public class _ServiceComponentPartial : ViewComponent
-	{
+    public class _ServiceComponentPartial : ViewComponent
+    {
         private readonly IHttpClientFactory _httpClientFactory;
 
         public _ServiceComponentPartial(IHttpClientFactory httpClientFactory)
@@ -17,7 +17,7 @@ namespace CarBook.Frontend.ViewComponents.ServiceViewComponents
         public async Task<IViewComponentResult> InvokeAsync()
         {
             var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync("http://localhost:7070/api/Service");
+            var response = await client.GetAsync("http://localhost:5128/api/Service");
             if (response.IsSuccessStatusCode)
             {
                 var jsonData = await response.Content.ReadAsStringAsync();
@@ -28,4 +28,3 @@ namespace CarBook.Frontend.ViewComponents.ServiceViewComponents
         }
     }
 }
-

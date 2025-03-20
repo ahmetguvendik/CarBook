@@ -1,32 +1,31 @@
-﻿using System;
-using CarBook.Application.Features.CQRS.Queries.ContactQueries;
-using CarBook.Application.Features.CQRS.Results.ContactResults;
-using CarBook.Application.Repositories;
+using Carbook.Application.Features.CQRS.Queries.ContactQueries;
+using Carbook.Application.Features.CQRS.Results.ContactResults;
+using Carbook.Application.Repositories;
 using CarBook.Domain.Entities;
+using MediatR;
 
-namespace CarBook.Application.Features.CQRS.Handlers.ContactHandlers.Read
+namespace Carbook.Application.Features.CQRS.Handlers.ContactHandlers.Read;
+
+public class GetContactByIdQueryHandler : IRequestHandler<GetContactByIdQuery, GetContactByIdQueryResult>
 {
-	public class GetContactByIdQueryHandler
-	{
-		private readonly IRepository<Contact> _repository;
+    private readonly IRepository<Contact> _repository;
 
-        public GetContactByIdQueryHandler(IRepository<Contact> repository)
-		{
-			_repository = repository;
-		}
+    public GetContactByIdQueryHandler( IRepository<Contact> repository)
+    {
+         _repository = repository;
+    }
+    public async Task<GetContactByIdQueryResult> Handle(GetContactByIdQuery request, CancellationToken cancellationToken)
+    {
+        var value = await _repository.GetByIdAsync(request.Id);
+        return new GetContactByIdQueryResult()
+        {
+            Id = value.Id,
+            Name = value.Name,
+            Email = value.Email,
+            DateTime = value.DateTime,
+            Description = value.Description,
+            Subject = value.Subject,
 
-		public async Task<GetContactByIdQueryResult> Handle(GetContactByIdQuery query)
-		{
-			var contact = await _repository.GetByIdAsync(query.Id);
-			return new GetContactByIdQueryResult()
-			{
-				DateTime = contact.DateTime,
-				Description = contact.Description,
-				Email = contact.Email,
-				Name = contact.Name,
-				Subject = contact.Subject
-			};
-		}
-	}
+        };
+    }
 }
-

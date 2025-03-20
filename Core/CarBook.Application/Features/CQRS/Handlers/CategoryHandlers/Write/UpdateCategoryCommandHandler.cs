@@ -1,25 +1,22 @@
-﻿using System;
-using CarBook.Application.Features.CQRS.Commands.CategoryCommands;
-using CarBook.Application.Repositories;
+using Carbook.Application.Features.CQRS.Commands.CategoryCommands;
+using Carbook.Application.Repositories;
 using CarBook.Domain.Entities;
+using MediatR;
 
-namespace CarBook.Application.Features.CQRS.Handlers.CategoryHandlers.Write
+namespace Carbook.Application.Features.CQRS.Handlers.CategoryHandlers.Write;
+
+public class UpdateCategoryCommandHandler : IRequestHandler<UpdateCategoryCommand>
 {
-	public class UpdateCategoryCommandHandler
-	{
-		private readonly IRepository<Category> _repository;
+    private readonly IRepository<Category> _categoryRepository;
 
-        public UpdateCategoryCommandHandler(IRepository<Category> repository)
-		{
-			_repository = repository;
-		}
-
-		public async Task Handle(UpdateCategoryCommand command)
-		{
-			var category = await _repository.GetByIdAsync(command.Id);
-			category.Name = command.Name;
-			await _repository.UpdateAsync(category);
-		}
-	}
+    public UpdateCategoryCommandHandler( IRepository<Category> categoryRepository)
+    { 
+       _categoryRepository = categoryRepository;  
+    }
+    public async Task Handle(UpdateCategoryCommand request, CancellationToken cancellationToken)
+    {
+        var value = await _categoryRepository.GetByIdAsync(request.Id);
+        value.Name = request.Name;
+        await _categoryRepository.UpdateAsync(value);
+    }
 }
-

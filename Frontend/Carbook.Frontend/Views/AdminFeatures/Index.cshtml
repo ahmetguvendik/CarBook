@@ -1,0 +1,52 @@
+@model List<Carbook.Dto.FeaturesDTOs.ResultFeaturesDto>
+
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Araba Listesi</h4>
+                <p class="card-subtitle mb-4"> Sisteme Kayitli Araba Listesi
+                </p>
+                <div class="table-responsive">
+
+                    <table class="table mb-12">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Ozellik</th>
+                            <th>Sil</th>
+                            <th>Guncelle</th>
+                        </tr>
+                        </thead>
+                        @foreach (var item in Model)
+                        {
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>@item.Name</td>
+                                <td><a href="/AdminFeatures/RemoveFeature/@item.Id" class="btn btn-outline-danger">Sil</a></td>
+                                <td><a href="/AdminFeatures/UpdateFeature/@item.Id" class="btn btn-outline-success">Guncelle</a></td>
+                            </tr>
+                            </tbody>
+                        }
+                    </table>
+
+                    <a href="/AdminFeatures/CreateFeature/">Yeni Ozellik Ekleme</a>   
+                </div>
+
+            </div>
+            <!-- end card-body-->
+        </div>
+        <!-- end card -->
+
+    </div>
+    <!-- end col -->
+
+
+
+    <!-- end col -->
+</div>

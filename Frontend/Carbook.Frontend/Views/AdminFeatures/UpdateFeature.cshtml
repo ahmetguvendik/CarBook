@@ -1,0 +1,27 @@
+@model Carbook.Dto.FeaturesDTOs.UpdateFeaturesDto
+
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Yeni Arac Ozellik Ekleme Sayfasi</h4>
+        <p class="card-subtitle mb-4">Sisteme Eklemek Istediginiz Yeni Ozellik Sayfasi </p>
+
+        <form asp-action="UpdateFeature"  asp-controller="AdminFeatures" method="post">
+
+            <div class="form-group">
+                <label>Ozellik Giriniz</label>
+                <input type="text" asp-for="Name" placeholder="Ozellik Giriniz" class="form-control">
+            </div>
+            
+            <button type="submit" class="btn btn-success">
+                Guncelle
+            </button>
+            
+
+        </form>
+    </div>
+    <!-- end card-body-->
+</div>

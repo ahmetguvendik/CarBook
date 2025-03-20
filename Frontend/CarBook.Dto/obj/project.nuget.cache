@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3fgFAzrNUdh3EdgHhSalebUSKFUAJoBxgOlw2kwkuPf3Z/IVXvI2mm/tcmlQRg7zI8eDHXpFQDILVSCRPthUag==",
+  "dgSpecHash": "K6QEGEnUZR4=",
   "success": true,
-  "projectFilePath": "/Users/ahmetguvendik/Desktop/Projeler/Asp.NetCore/CarBookProject/Frontend/CarBook.Dto/CarBook.Dto.csproj",
+  "projectFilePath": "/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Dto/Carbook.Dto.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

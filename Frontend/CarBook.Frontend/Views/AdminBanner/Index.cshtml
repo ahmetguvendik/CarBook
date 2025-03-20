@@ -1,63 +1,57 @@
-﻿@{
-    ViewData["Title"] = "Index";
+@model List<CarBook.Dto.BannerDTOs.ResultBannerDto>
+
+@{
     Layout = "~/Views/AdminLayout/Index.cshtml";
 }
-
-@model List<CarBook.Dto.BannerDTOs.ResultBannerDto>
 
 <div class="row">
     <div class="col-xl-12">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Banner</h4>
-                <p class="card-subtitle mb-4">
-                    Uygulama Butunlugu Geregi Sadece Bir Tane Veri Olmasi Gerekmektedir!!!
-                </p>
+                <h4 class="card-title">Banner Alanı</h4>
+                <p>!!!Proje Bütünlüğü İçin Eğer 1 Tane Veri Varsa Başka Veri Eklenemez!!!</p>
                 <div class="table-responsive">
-                    <table class="table table-bordered mb-0">
+
+                    <table class="table mb-12">
                         <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Baslik</th>
-                                <th>Aciklama</th>
-                                <th>Video Aciklamasi</th>
-                                <th>Video Linki</th>
-                                <th>Sil</th>
-                                <th>Guncelle</th>
-                                <th>Videoyu Izle</th>
-                            </tr>
+                        <tr>
+                            <th>#</th>
+                            <th>Başlık</th>
+                            <th>Açıklama</th>
+                            <th>Video Açıklama</th>
+                            <th>Video Link</th> 
+                        </tr>
                         </thead>
-                        <tbody>
-                            @foreach (var item in Model)
-                            {
-
-                                <tr>
-                                    <th scope="row">@Model.Count</th>
-                                    <td>@item.Title</td>
-                                    <td>@item.Description</td>
-                                    <td>@item.VideoDescription</td>
-                                    <td>@item.VideoURL</td>
-                                    <td><a href="/AdminBanner/RemoveBanner/@item.Id" class="btn btn-outline-danger">Sil</a></td>
-                                    <td><a href="/AdminBanner/UpdateBanner/@item.Id" class="btn btn-outline-success">Guncelle</a></td>
-                                    <td><a href="@item.VideoURL" class="btn btn-outline-success">Videoyu Izle</a></td>
-                                </tr>
-                            }
-                        </tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>@item.Title</td>
+                                <td>@item.Description</td>
+                                <td>@item.VideoDescription</td>
+                                <td>@item.VideoURL</td>
+                                <td><a href="/AdminBanner/RemoveBanner/@item.Id" class="btn btn-outline-danger">Sil</a></td>
+                                <td><a href="/AdminBanner/UpdateBanner/@item.Id" class="btn btn-outline-success">Guncelle</a></td>
+                            </tr>
+                            </tbody>
+                        }
                     </table>
-
-                    @if (Model.Count < 1)
-                    {
-                        <a href="/AdminBanner/CreateBanner/" class="btn btn-outline-primary">Yeni Banner Girisi</a>
-                    }
-
-
+                    @if (Model.Count ==  0)
+            {
+            <a href="/AdminBanner/CreateBanner/">Yeni Banner Ekleme</a>
+            }
                 </div>
 
             </div>
             <!-- end card-body-->
         </div>
         <!-- end card -->
+
     </div>
     <!-- end col -->
+
+
+
     <!-- end col -->
 </div>

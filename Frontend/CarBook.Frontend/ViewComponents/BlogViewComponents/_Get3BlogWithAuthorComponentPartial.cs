@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using CarBook.Dto.BlogDTOs;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
 namespace CarBook.Frontend.ViewComponents.BlogViewComponents
 {
-	public class _Get3BlogWithAuthorComponentPartial : ViewComponent
-	{
+    public class _Get3BlogWithAuthorComponentPartial : ViewComponent
+    {
         private readonly IHttpClientFactory _httpClientFactory;
 
         public _Get3BlogWithAuthorComponentPartial(IHttpClientFactory httpClientFactory)
@@ -16,7 +16,7 @@ namespace CarBook.Frontend.ViewComponents.BlogViewComponents
         public async Task<IViewComponentResult> InvokeAsync()
         {
             var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync("http://localhost:7070/api/Blog/Get3BlogWithAuthor");
+            var response = await client.GetAsync("http://localhost:5128/api/Blog/Get3BlogWithAuthor");
             if (response.IsSuccessStatusCode)
             {
                 var jsonData = await response.Content.ReadAsStringAsync();
@@ -27,4 +27,3 @@ namespace CarBook.Frontend.ViewComponents.BlogViewComponents
         }
     }
 }
-

@@ -1,0 +1,11 @@
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Infrastructure/bin/Debug/net9.0/Carbook.Infrastructure.deps.json
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Infrastructure/bin/Debug/net9.0/Carbook.Infrastructure.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Infrastructure/bin/Debug/net9.0/Carbook.Infrastructure.pdb
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Infrastructure/obj/Debug/net9.0/Carbook.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Infrastructure/obj/Debug/net9.0/Carbook.Infrastructure.AssemblyInfoInputs.cache
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Infrastructure/obj/Debug/net9.0/Carbook.Infrastructure.AssemblyInfo.cs
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Infrastructure/obj/Debug/net9.0/Carbook.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Infrastructure/obj/Debug/net9.0/Carbook.Infrastructure.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Infrastructure/obj/Debug/net9.0/refint/Carbook.Infrastructure.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Infrastructure/obj/Debug/net9.0/Carbook.Infrastructure.pdb
+/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Infrastructure/obj/Debug/net9.0/ref/Carbook.Infrastructure.dll

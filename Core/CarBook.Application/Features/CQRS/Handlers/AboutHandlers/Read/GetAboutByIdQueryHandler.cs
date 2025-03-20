@@ -1,31 +1,28 @@
-﻿using System;
-using CarBook.Application.Features.CQRS.Queries.AboutQueries;
-using CarBook.Application.Features.CQRS.Results.AboutResult;
-using CarBook.Application.Repositories;
+using Carbook.Application.Features.CQRS.Queries.AboutQueries;
+using Carbook.Application.Features.CQRS.Results.AboutResults;
+using Carbook.Application.Repositories;
 using CarBook.Domain.Entities;
+using MediatR;
 
-namespace CarBook.Application.Features.CQRS.Handlers.AboutHandlers.Read
+namespace Carbook.Application.Features.CQRS.Handlers.AboutHandlers.Read;
+
+public class GetAboutByIdQueryHandler : IRequestHandler<GetAboutByIdQuery,GetAboutByIdQueryResult>
 {
-	public class GetAboutByIdQueryHandler
-	{
-        private readonly IRepository<About> _repository;
+    private readonly IRepository<About> _repository;
 
-        public GetAboutByIdQueryHandler(IRepository<About> repository)
-		{
-			_repository = repository;
-		}
-
-		public async Task<GetAboutByIdQueryResult> Handle(GetAboutByIdQuery query)
-		{
-			var values = await _repository.GetByIdAsync(query.Id);
-			return new GetAboutByIdQueryResult
-			{
-				Id = values.Id,
-				ImageURL = values.ImageURL,
-				Description = values.Description,
-				Title = values.Title
-			};
-		}
-	}
+    public GetAboutByIdQueryHandler( IRepository<About> repository)
+    {
+       _repository = repository;          
+    }
+    public async Task<GetAboutByIdQueryResult> Handle(GetAboutByIdQuery request, CancellationToken cancellationToken)
+    {
+        var value = await _repository.GetByIdAsync(request.Id);
+        return new GetAboutByIdQueryResult()
+        {
+            Id = value.Id,
+            ImageURL = value.ImageURL,
+            Description = value.Description,
+            Title = value.Title,
+        };
+    }
 }
-

@@ -1,15 +1,13 @@
-﻿using System.Text;
+using System.Text;
 using CarBook.Dto.BlogDTOs;
 using CarBook.Dto.CommentDTOs;
 using CarBook.Dto.ContactDTOs;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+namespace Carbook.Frontend.Controllers;
 
-namespace CarBook.Frontend.Controllers
-{
-    public class BlogController : Controller
+public class BlogController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;
         public BlogController(IHttpClientFactory httpClientFactory)
@@ -23,7 +21,7 @@ namespace CarBook.Frontend.Controllers
             ViewBag.v1 = "Blog";
             ViewBag.v2 = "Kullanici Yorumlarimiz";
             var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync("http://localhost:7070/api/Blog/GetAllBlogWithAuthor");
+            var response = await client.GetAsync("http://localhost:5128/api/Blog/GetAllBlogWithAuthor");
             if (response.IsSuccessStatusCode)
             {
                 var jsonData = await response.Content.ReadAsStringAsync();
@@ -56,7 +54,7 @@ namespace CarBook.Frontend.Controllers
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(createCommentDto);
             StringContent stringContent = new StringContent(jsonData, encoding: Encoding.UTF8, "application/json");
-            var response = await client.PostAsync("http://localhost:7070/api/Comment", stringContent);
+            var response = await client.PostAsync("http://localhost:5128/api/Comment", stringContent);
             if (response.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index", "Default");
@@ -66,6 +64,3 @@ namespace CarBook.Frontend.Controllers
 
         }
     }
-
-    }
-

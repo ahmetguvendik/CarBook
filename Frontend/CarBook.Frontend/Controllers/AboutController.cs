@@ -1,22 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+namespace Carbook.Frontend.Controllers;
 
-namespace CarBook.Frontend.Controllers
+public class AboutController : Controller
 {
-    public class AboutController : Controller
+    // GET
+    public IActionResult Index()
     {
-        // GET: /<controller>/
-        public IActionResult Index()
-        {
-            ViewBag.v1 = "Hakkımızda";
-            ViewBag.v2 = "Vizyonumuz & Misyonumuz";
-            return View();
-        }
+        ViewBag.v1 = "Hakkımızda";
+        ViewBag.v2 = "Vizyonumuz & Misyonumuz";
+        return View();
     }
 }
-

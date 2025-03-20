@@ -1,0 +1,11 @@
+/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Domain/bin/Debug/net9.0/Carbook.Domain.deps.json
+/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Domain/bin/Debug/net9.0/Carbook.Domain.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Domain/bin/Debug/net9.0/Carbook.Domain.pdb
+/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Domain/obj/Debug/net9.0/Carbook.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Domain/obj/Debug/net9.0/Carbook.Domain.AssemblyInfoInputs.cache
+/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Domain/obj/Debug/net9.0/Carbook.Domain.AssemblyInfo.cs
+/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Domain/obj/Debug/net9.0/Carbook.Domain.csproj.CoreCompileInputs.cache
+/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Domain/obj/Debug/net9.0/Carbook.Domain.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Domain/obj/Debug/net9.0/refint/Carbook.Domain.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Domain/obj/Debug/net9.0/Carbook.Domain.pdb
+/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Domain/obj/Debug/net9.0/ref/Carbook.Domain.dll

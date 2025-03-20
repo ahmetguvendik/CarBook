@@ -1,9 +1,8 @@
-﻿using System;
-namespace CarBook.Application.Features.CQRS.Commands.BrandCommands
-{
-	public class CreateBrandCommand
-	{
-        public string Name { get; set; }
-    }
-}
+using MediatR;
 
+namespace Carbook.Application.Features.CQRS.Commands.BrandCommands;
+
+public class CreateBrandCommand : IRequest
+{
+    public string Name { get; set; }
+}

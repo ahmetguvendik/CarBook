@@ -1,8 +1,8 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using CarBook.Frontend.Models;
+using Carbook.Frontend.Models;
 
-namespace CarBook.Frontend.Controllers;
+namespace Carbook.Frontend.Controllers;
 
 public class HomeController : Controller
 {
@@ -29,4 +29,3 @@ public class HomeController : Controller
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 }
-

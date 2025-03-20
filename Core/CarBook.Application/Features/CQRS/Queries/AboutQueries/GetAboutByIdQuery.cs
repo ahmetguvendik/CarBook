@@ -1,14 +1,13 @@
-﻿using System;
-namespace CarBook.Application.Features.CQRS.Queries.AboutQueries
+using Carbook.Application.Features.CQRS.Results.AboutResults;
+using MediatR;
+
+namespace Carbook.Application.Features.CQRS.Queries.AboutQueries;
+
+public class GetAboutByIdQuery : IRequest<GetAboutByIdQueryResult>
 {
-	public class GetAboutByIdQuery
-	{
-		public string Id { get; set; }
-
-		public GetAboutByIdQuery(string id)
-		{
-			Id = id;
-		}
-	}
+    public string Id { get; set; }
+    public GetAboutByIdQuery(string id)
+    {
+        Id = id;
+    }
 }
-

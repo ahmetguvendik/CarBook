@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using CarBook.Dto.AboutDTOs;
 using CarBook.Dto.TestimonialDTOs;
 using Microsoft.AspNetCore.Mvc;
@@ -17,7 +17,7 @@ namespace CarBook.Frontend.ViewComponents.TestimonialViewComponents
         public async Task<IViewComponentResult> InvokeAsync()
         {
             var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync("http://localhost:7070/api/Testimonial");
+            var response = await client.GetAsync("http://localhost:5128/api/Testimonial");
             if (response.IsSuccessStatusCode)
             {
                 var jsonData = await response.Content.ReadAsStringAsync();
@@ -28,5 +28,4 @@ namespace CarBook.Frontend.ViewComponents.TestimonialViewComponents
         }
     }
 
-  }
-
+}

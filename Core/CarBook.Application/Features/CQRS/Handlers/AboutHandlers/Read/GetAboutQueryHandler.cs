@@ -1,30 +1,29 @@
-﻿using System;
-using CarBook.Application.Features.CQRS.Commands.AboutCommands;
-using CarBook.Application.Features.CQRS.Results.AboutResult;
-using CarBook.Application.Repositories;
+using Carbook.Application.Features.CQRS.Queries.AboutQueries;
+using Carbook.Application.Features.CQRS.Results.AboutResults;
+using Carbook.Application.Repositories;
 using CarBook.Domain.Entities;
+using MediatR;
 
-namespace CarBook.Application.Features.CQRS.Handlers.AboutHandlers.Read
+namespace Carbook.Application.Features.CQRS.Handlers.AboutHandlers.Read;
+
+public class GetAboutQueryHandler : IRequestHandler<GetAboutQuery,List<GetAboutQueryResult>>
 {
-	public class GetAboutQueryHandler
-	{
-		private readonly IRepository<About> _repository;
-		public GetAboutQueryHandler(IRepository<About> repository)
-		{
-			_repository = repository;
-		}
+    private readonly IRepository<About> _repository;
 
-        public async Task<List<GetAboutQueryResult>> Handle()
+    public GetAboutQueryHandler( IRepository<About> repository)
+    {
+         _repository = repository;
+    }
+    public async Task<List<GetAboutQueryResult>> Handle(GetAboutQuery request, CancellationToken cancellationToken)
+    {
+        var value = await _repository.GetAllAsync();
+        return value.Select(x => new GetAboutQueryResult
         {
-			var values = await _repository.GetAllAsync();
-			return values.Select(x => new GetAboutQueryResult
-			{
-				Description = x.Description,
-				Id = x.Id,
-				ImageURL = x.ImageURL,
-				Title = x.Title
-			}).ToList();
-        }
+            Id = x.Id,
+            Title = x.Title,
+            Description = x.Description,
+            ImageURL = x.ImageURL,
+            
+        }).ToList();
     }
 }
-

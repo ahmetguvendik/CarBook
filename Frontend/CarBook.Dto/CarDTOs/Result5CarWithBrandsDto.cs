@@ -3,6 +3,7 @@ namespace CarBook.Dto.CarDTOs
 {
 	public class Result5CarWithBrandsDto
 	{
+		public string Id { get; set; }
         public string Model { get; set; }
         public string CoverImageUrl { get; set; }
         public int Km { get; set; }

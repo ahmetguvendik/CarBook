@@ -1,32 +1,30 @@
-﻿using System;
-using CarBook.Application.Features.CQRS.Results.AboutResult;
-using CarBook.Application.Features.CQRS.Results.BannerResults;
-using CarBook.Application.Repositories;
+using Carbook.Application.Features.CQRS.Queries.Banner;
+using Carbook.Application.Features.CQRS.Results.BannerResults;
+using Carbook.Application.Repositories;
 using CarBook.Domain.Entities;
+using MediatR;
 
-namespace CarBook.Application.Features.CQRS.Handlers.BannerHandlers.Read
+namespace Carbook.Application.Features.CQRS.Handlers.BannerHandlers.Read;
+
+public class GetBannerQueryHandler : IRequestHandler<GetBannerQuery,List<GetBannerQueryResult>>
 {
-	public class GetBannerQueryHandler
-	{
-		private readonly IRepository<Banner> _repository;
-		public GetBannerQueryHandler(IRepository<Banner> repository)
-		{
-			_repository = repository;
-		}
+    private readonly IRepository<Banner> _repository;
 
-        public async Task<List<GetBannerQueryResult>> Handle()
-		{
-			var banners = await _repository.GetAllAsync();
-			return banners.Select(x => new GetBannerQueryResult
-            {
-				Id = x.Id,
-				VideoDescription = x.VideoDescription,
-				VideoURL = x.VideoURL,
-                Description = x.Description,
-                Title = x.Title
-            }).ToList();
-        }
-
+    public GetBannerQueryHandler( IRepository<Banner> repository )
+    {
+              _repository = repository;
+    }
+    public async Task<List<GetBannerQueryResult>> Handle(GetBannerQuery request, CancellationToken cancellationToken)
+    {
+        var author = await _repository.GetAllAsync();
+        return author.Select(x => new GetBannerQueryResult
+        {
+            Id = x.Id,
+            VideoDescription = x.Description,
+            Description = x.Description,
+            VideoURL = x.VideoURL,
+            Title = x.Title
+            
+        }).ToList();
     }
 }
-

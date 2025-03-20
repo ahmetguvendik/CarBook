@@ -1,14 +1,14 @@
-﻿using System;
-namespace CarBook.Application.Features.CQRS.Commands.AboutCommands
-{
-	public class RemoveAboutCommand
-	{
-        public string id { get; set; }
+using MediatR;
 
-        public RemoveAboutCommand(string Id)
-        {
-            id = Id;
-        }
+namespace Carbook.Application.Features.CQRS.Commands.AboutCommands;
+
+
+public class RemoveAboutCommand: IRequest
+{
+    public string Id { get; set; }
+
+    public RemoveAboutCommand(string id)
+    {
+         Id = id;
     }
 }
-

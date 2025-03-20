@@ -1,25 +1,23 @@
-﻿using System;
-using CarBook.Application.Features.CQRS.Commands.BrandCommands;
-using CarBook.Application.Repositories;
+using Carbook.Application.Features.CQRS.Commands.BrandCommands;
+using Carbook.Application.Repositories;
 using CarBook.Domain.Entities;
+using MediatR;
 
-namespace CarBook.Application.Features.CQRS.Handlers.BrandHandlers.Write
+namespace Carbook.Application.Features.CQRS.Handlers.BrandHandlers.Write;
+
+public class CreateBrandCommandHandler : IRequestHandler<CreateBrandCommand>
 {
-	public class CreateBrandCommandHandler
-	{
-		private readonly IRepository<Brand> _repository;
-		public CreateBrandCommandHandler(IRepository<Brand> repository)
-		{
-			_repository = repository;
-		}
+    private readonly IRepository<Brand> _repository;
 
-		public async Task Handle(CreateBrandCommand command)
-		{
-			var brand = new Brand();
-			brand.Id = Guid.NewGuid().ToString();
-			brand.Name = command.Name;
-			await _repository.CreateAsync(brand);
-		}
-	}
+    public CreateBrandCommandHandler( IRepository<Brand> repository)
+    {
+         _repository = repository;
+    }
+    public async Task Handle(CreateBrandCommand request, CancellationToken cancellationToken)
+    {
+        var brand = new Brand();
+        brand.Id = Guid.NewGuid().ToString();
+        brand.Name = request.Name;
+        await _repository.CreateAsync(brand);
+    }
 }
-

@@ -1,33 +1,29 @@
-﻿using System;
-using CarBook.Application.Features.CQRS.Queries.AboutQueries;
-using CarBook.Application.Features.CQRS.Queries.BannerQueries;
-using CarBook.Application.Features.CQRS.Results.AboutResult;
-using CarBook.Application.Features.CQRS.Results.BannerResults;
-using CarBook.Application.Repositories;
+using Carbook.Application.Features.CQRS.Queries.Banner;
+using Carbook.Application.Features.CQRS.Results.BannerResults;
+using Carbook.Application.Repositories;
 using CarBook.Domain.Entities;
+using MediatR;
 
-namespace CarBook.Application.Features.CQRS.Handlers.BannerHandlers.Read
+namespace Carbook.Application.Features.CQRS.Handlers.BannerHandlers.Read;
+
+public class GetBannerByIdQueryHandler : IRequestHandler<GetBannerByIdQuery,GetBannerByIdQueryResult>
 {
-	public class GetBannerByIdQueryHandler
-	{
-		private readonly IRepository<Banner> _repository;
-		public GetBannerByIdQueryHandler(IRepository<Banner> repository)
-		{
-			_repository = repository;
-		}
+    private readonly IRepository<Banner> _repository;
 
-        public async Task<GetBannerByIdQueryResult> Handle(GetBannerByIdQuery query)
-		{
-            var values = await _repository.GetByIdAsync(query.Id);
-            return new GetBannerByIdQueryResult
-            {
-                VideoURL = values.VideoURL,
-                VideoDescription = values.VideoDescription,
-                Description = values.Description,
-                Title = values.Title
-            };
-        }
-
+    public GetBannerByIdQueryHandler( IRepository<Banner> repository )
+    {
+         _repository = repository;
+    }
+    public async Task<GetBannerByIdQueryResult> Handle(GetBannerByIdQuery request, CancellationToken cancellationToken)
+    {
+        var value = await _repository.GetByIdAsync(request.Id);
+        return new GetBannerByIdQueryResult()
+        {
+            Description = value.Description,
+            Id = value.Id,
+            VideoDescription = value.VideoDescription,
+            VideoURL = value.VideoURL,
+            
+        };
     }
 }
-

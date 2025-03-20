@@ -1,14 +1,14 @@
-﻿using System;
-namespace CarBook.Application.Features.CQRS.Queries.CategoryQueries
+using Carbook.Application.Features.CQRS.Results.CategoryResults;
+using MediatR;
+
+namespace Carbook.Application.Features.CQRS.Queries.CategoryQueries;
+
+public class GetCategoryByIdQuery : IRequest<GetCategoryByIdQueryResult>
 {
-	public class GetCategoryByIdQuery
-	{
-		public string Id { get; set; }
+    public string Id { get; set; }
 
-		public GetCategoryByIdQuery(string id)
-		{
-			Id = id;
-		}
-	}
+    public GetCategoryByIdQuery(string id)
+    {
+         Id = id;
+    }
 }
-

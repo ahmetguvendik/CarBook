@@ -1,230 +1,33 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="Repositories\" />
-    <None Remove="Features\" />
-    <None Remove="Features\CQRS\" />
-    <None Remove="Features\CQRS\Commands\" />
-    <None Remove="Features\CQRS\Handlers\" />
-    <None Remove="Features\CQRS\Queries\" />
-    <None Remove="Features\CQRS\Results\" />
-    <None Remove="Features\CQRS\Results\AboutResult\" />
-    <None Remove="Features\CQRS\Queries\AboutQueries\" />
-    <None Remove="Features\CQRS\Handlers\AboutHandlers\" />
-    <None Remove="Features\CQRS\Commands\AboutCommands\" />
-    <None Remove="Features\CQRS\Handlers\AboutHandlers\Read\" />
-    <None Remove="Features\CQRS\Handlers\AboutHandlers\Write\" />
-    <None Remove="Features\CQRS\Commands\BannerCommands\" />
-    <None Remove="Features\CQRS\Handlers\BannerHandlers\" />
-    <None Remove="Features\CQRS\Queries\BannerQueries\" />
-    <None Remove="Features\CQRS\Results\BannerResults\" />
-    <None Remove="Features\CQRS\Handlers\BannerHandlers\Write\" />
-    <None Remove="Features\CQRS\Handlers\BannerHandlers\Read\" />
-    <None Remove="Features\CQRS\Commands\BrandCommands\" />
-    <None Remove="Features\CQRS\Handlers\BrandHandlers\" />
-    <None Remove="Features\CQRS\Queries\BrandQueries\" />
-    <None Remove="Features\CQRS\Results\BrandResults\" />
-    <None Remove="Features\CQRS\Handlers\BrandHandlers\Read\" />
-    <None Remove="Features\CQRS\Handlers\BrandHandlers\Write\" />
-    <None Remove="Features\CQRS\Commands\CategoryCommands\" />
-    <None Remove="Features\CQRS\Handlers\CategoryHandlers\" />
-    <None Remove="Features\CQRS\Queries\CategoryQueries\" />
-    <None Remove="Features\CQRS\Results\CategoryResults\" />
-    <None Remove="Features\CQRS\Handlers\CategoryHandlers\Read\" />
-    <None Remove="Features\CQRS\Handlers\CategoryHandlers\Write\" />
-    <None Remove="Features\CQRS\Commands\ContactCommands\" />
-    <None Remove="Features\CQRS\Handlers\ContactHandlers\" />
-    <None Remove="Features\CQRS\Queries\ContactQueries\" />
-    <None Remove="Features\CQRS\Results\ContactResults\" />
-    <None Remove="Features\CQRS\Handlers\ContactHandlers\Write\" />
-    <None Remove="Features\CQRS\Handlers\ContactHandlers\Read\" />
-    <None Remove="Features\Mediator\" />
-    <None Remove="Features\Mediator\Commands\" />
-    <None Remove="Features\Mediator\Handlers\" />
-    <None Remove="Features\Mediator\Queries\" />
-    <None Remove="Features\Mediator\Results\" />
-    <None Remove="Features\Mediator\Results\FeatureResults\" />
-    <None Remove="Features\Mediator\Queries\FeatureQueries\" />
-    <None Remove="Features\Mediator\Handlers\FeatureHandlers\" />
-    <None Remove="Features\Mediator\Commands\FeatureCommands\" />
-    <None Remove="Features\Mediator\Handlers\FeatureHandlers\Write\" />
-    <None Remove="Features\Mediator\Results\TestimonialResults\" />
-    <None Remove="Features\Mediator\Queries\TestimonialQueries\" />
-    <None Remove="Features\Mediator\Handlers\TestimonialHandlers\" />
-    <None Remove="Features\Mediator\Commands\TestimonialCommands\" />
-    <None Remove="Features\Mediator\Handlers\TestimonialHandlers\Write\" />
-    <None Remove="Features\Mediator\Handlers\TestimonialHandlers\Read\" />
-    <None Remove="Features\Mediator\Commands\ServiceCommands\" />
-    <None Remove="Features\Mediator\Handlers\ServiceHandlers\" />
-    <None Remove="Features\Mediator\Queries\ServiceQueries\" />
-    <None Remove="Features\Mediator\Results\ServiceResults\" />
-    <None Remove="Features\Mediator\Handlers\ServiceHandlers\Write\" />
-    <None Remove="Features\Mediator\Handlers\ServiceHandlers\Read\" />
-    <None Remove="Features\Mediator\Commands\FooterAdressCommands\" />
-    <None Remove="Features\Mediator\Handlers\FooterAdressHandlers\" />
-    <None Remove="Features\Mediator\Queries\FooterAdressQueries\" />
-    <None Remove="Features\Mediator\Results\FooterAdressResults\" />
-    <None Remove="Features\Mediator\Handlers\FooterAdressHandlers\Write\" />
-    <None Remove="Features\Mediator\Handlers\FooterAdressHandlers\Read\" />
-    <None Remove="Repositories\CarRepositories\" />
-    <None Remove="Features\Mediator\Results\CarResults\" />
-    <None Remove="Features\Mediator\Queries\CarQueries\" />
-    <None Remove="Features\Mediator\Handlers\CarHandlers\" />
-    <None Remove="Features\Mediator\Commands\CarCommands\" />
-    <None Remove="Features\Mediator\Handlers\CarHandlers\Write\" />
-    <None Remove="Features\Mediator\Handlers\CarHandlers\Read\" />
-    <None Remove="Features\Mediator\Results\BlogResults\" />
-    <None Remove="Features\Mediator\Queries\BlogQueries\" />
-    <None Remove="Features\Mediator\Handlers\BlogHandlers\" />
-    <None Remove="Features\Mediator\Commands\BlogCommands\" />
-    <None Remove="Features\Mediator\Commands\AuthorCommands\" />
-    <None Remove="Features\Mediator\Handlers\AuthorHandlers\" />
-    <None Remove="Features\Mediator\Queries\AuthorQueries\" />
-    <None Remove="Features\Mediator\Results\AuthorResults\" />
-    <None Remove="Features\Mediator\Handlers\AuthorHandlers\Write\" />
-    <None Remove="Features\Mediator\Handlers\AuthorHandlers\Read\" />
-    <None Remove="Features\Mediator\Handlers\BlogHandlers\Write\" />
-    <None Remove="Features\Mediator\Handlers\BlogHandlers\Read\" />
-    <None Remove="Repositories\BlogRepository\" />
-    <None Remove="Repositories\CarPricingReposiyories\" />
-    <None Remove="Features\Mediator\Results\CarPricingResults\" />
-    <None Remove="Features\Mediator\Queries\CarPricingQueries\" />
-    <None Remove="Features\Mediator\Handlers\CarPricingHandlers\" />
-    <None Remove="Features\Mediator\Commands\CarPricingCommands\" />
-    <None Remove="Features\Mediator\Handlers\CarPricingHandlers\Read\" />
-    <None Remove="Repositories\CommentRepository\" />
-    <None Remove="Features\Mediator\Results\CommentResults\" />
-    <None Remove="Features\Mediator\Queries\CommentQueries\" />
-    <None Remove="Features\Mediator\Handlers\CommentHandlers\" />
-    <None Remove="Features\Mediator\Commands\CommetCommands\" />
-    <None Remove="Features\Mediator\Handlers\CommentHandlers\Read\" />
-    <None Remove="Features\Mediator\Handlers\CommentHandlers\Write\" />
-    <None Remove="Features\Mediator\Results\PricingResults\" />
-    <None Remove="Features\Mediator\Queries\PricingQueries\" />
-    <None Remove="Features\Mediator\Commands\PricingCommands\" />
-    <None Remove="Features\Mediator\Handlers\PricingHandlers\" />
-    <None Remove="Features\Mediator\Handlers\PricingHandlers\Read\" />
-    <None Remove="Features\Mediator\Handlers\PricingHandlers\Write\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-    <Folder Include="Features\" />
-    <Folder Include="Features\CQRS\" />
-    <Folder Include="Features\CQRS\Commands\" />
-    <Folder Include="Features\CQRS\Handlers\" />
-    <Folder Include="Features\CQRS\Queries\" />
-    <Folder Include="Features\CQRS\Results\" />
-    <Folder Include="Features\CQRS\Results\AboutResult\" />
-    <Folder Include="Features\CQRS\Queries\AboutQueries\" />
-    <Folder Include="Features\CQRS\Handlers\AboutHandlers\" />
-    <Folder Include="Features\CQRS\Commands\AboutCommands\" />
-    <Folder Include="Features\CQRS\Handlers\AboutHandlers\Read\" />
-    <Folder Include="Features\CQRS\Handlers\AboutHandlers\Write\" />
-    <Folder Include="Features\CQRS\Commands\BannerCommands\" />
-    <Folder Include="Features\CQRS\Handlers\BannerHandlers\" />
-    <Folder Include="Features\CQRS\Queries\BannerQueries\" />
-    <Folder Include="Features\CQRS\Results\BannerResults\" />
-    <Folder Include="Features\CQRS\Handlers\BannerHandlers\Write\" />
-    <Folder Include="Features\CQRS\Handlers\BannerHandlers\Read\" />
-    <Folder Include="Features\CQRS\Commands\BrandCommands\" />
-    <Folder Include="Features\CQRS\Handlers\BrandHandlers\" />
-    <Folder Include="Features\CQRS\Queries\BrandQueries\" />
-    <Folder Include="Features\CQRS\Results\BrandResults\" />
-    <Folder Include="Features\CQRS\Handlers\BrandHandlers\Read\" />
-    <Folder Include="Features\CQRS\Handlers\BrandHandlers\Write\" />
-    <Folder Include="Features\CQRS\Commands\CategoryCommands\" />
-    <Folder Include="Features\CQRS\Handlers\CategoryHandlers\" />
-    <Folder Include="Features\CQRS\Queries\CategoryQueries\" />
-    <Folder Include="Features\CQRS\Results\CategoryResults\" />
-    <Folder Include="Features\CQRS\Handlers\CategoryHandlers\Read\" />
-    <Folder Include="Features\CQRS\Handlers\CategoryHandlers\Write\" />
-    <Folder Include="Features\CQRS\Commands\ContactCommands\" />
-    <Folder Include="Features\CQRS\Handlers\ContactHandlers\" />
-    <Folder Include="Features\CQRS\Queries\ContactQueries\" />
-    <Folder Include="Features\CQRS\Results\ContactResults\" />
-    <Folder Include="Features\CQRS\Handlers\ContactHandlers\Write\" />
-    <Folder Include="Features\CQRS\Handlers\ContactHandlers\Read\" />
-    <Folder Include="Features\Mediator\" />
-    <Folder Include="Features\Mediator\Commands\" />
-    <Folder Include="Features\Mediator\Handlers\" />
-    <Folder Include="Features\Mediator\Queries\" />
-    <Folder Include="Features\Mediator\Results\" />
-    <Folder Include="Features\Mediator\Results\FeatureResults\" />
-    <Folder Include="Features\Mediator\Queries\FeatureQueries\" />
-    <Folder Include="Features\Mediator\Handlers\FeatureHandlers\" />
-    <Folder Include="Features\Mediator\Commands\FeatureCommands\" />
-    <Folder Include="Features\Mediator\Handlers\FeatureHandlers\Write\" />
-    <Folder Include="Features\Mediator\Results\TestimonialResults\" />
-    <Folder Include="Features\Mediator\Queries\TestimonialQueries\" />
-    <Folder Include="Features\Mediator\Handlers\TestimonialHandlers\" />
-    <Folder Include="Features\Mediator\Commands\TestimonialCommands\" />
-    <Folder Include="Features\Mediator\Handlers\TestimonialHandlers\Write\" />
-    <Folder Include="Features\Mediator\Handlers\TestimonialHandlers\Read\" />
-    <Folder Include="Features\Mediator\Commands\ServiceCommands\" />
-    <Folder Include="Features\Mediator\Handlers\ServiceHandlers\" />
-    <Folder Include="Features\Mediator\Queries\ServiceQueries\" />
-    <Folder Include="Features\Mediator\Results\ServiceResults\" />
-    <Folder Include="Features\Mediator\Handlers\ServiceHandlers\Write\" />
-    <Folder Include="Features\Mediator\Handlers\ServiceHandlers\Read\" />
-    <Folder Include="Features\Mediator\Commands\FooterAdressCommands\" />
-    <Folder Include="Features\Mediator\Handlers\FooterAdressHandlers\" />
-    <Folder Include="Features\Mediator\Queries\FooterAdressQueries\" />
-    <Folder Include="Features\Mediator\Results\FooterAdressResults\" />
-    <Folder Include="Features\Mediator\Handlers\FooterAdressHandlers\Write\" />
-    <Folder Include="Features\Mediator\Handlers\FooterAdressHandlers\Read\" />
-    <Folder Include="Repositories\CarRepositories\" />
-    <Folder Include="Features\Mediator\Results\CarResults\" />
-    <Folder Include="Features\Mediator\Queries\CarQueries\" />
-    <Folder Include="Features\Mediator\Handlers\CarHandlers\" />
-    <Folder Include="Features\Mediator\Commands\CarCommands\" />
-    <Folder Include="Features\Mediator\Handlers\CarHandlers\Write\" />
-    <Folder Include="Features\Mediator\Handlers\CarHandlers\Read\" />
-    <Folder Include="Features\Mediator\Results\BlogResults\" />
-    <Folder Include="Features\Mediator\Queries\BlogQueries\" />
-    <Folder Include="Features\Mediator\Handlers\BlogHandlers\" />
-    <Folder Include="Features\Mediator\Commands\BlogCommands\" />
-    <Folder Include="Features\Mediator\Commands\AuthorCommands\" />
-    <Folder Include="Features\Mediator\Handlers\AuthorHandlers\" />
-    <Folder Include="Features\Mediator\Queries\AuthorQueries\" />
-    <Folder Include="Features\Mediator\Results\AuthorResults\" />
-    <Folder Include="Features\Mediator\Handlers\AuthorHandlers\Write\" />
-    <Folder Include="Features\Mediator\Handlers\AuthorHandlers\Read\" />
-    <Folder Include="Features\Mediator\Handlers\BlogHandlers\Write\" />
-    <Folder Include="Features\Mediator\Handlers\BlogHandlers\Read\" />
-    <Folder Include="Repositories\BlogRepository\" />
-    <Folder Include="Repositories\CarPricingReposiyories\" />
-    <Folder Include="Features\Mediator\Results\CarPricingResults\" />
-    <Folder Include="Features\Mediator\Queries\CarPricingQueries\" />
-    <Folder Include="Features\Mediator\Handlers\CarPricingHandlers\" />
-    <Folder Include="Features\Mediator\Commands\CarPricingCommands\" />
-    <Folder Include="Features\Mediator\Handlers\CarPricingHandlers\Read\" />
-    <Folder Include="Repositories\CommentRepository\" />
-    <Folder Include="Features\Mediator\Results\CommentResults\" />
-    <Folder Include="Features\Mediator\Queries\CommentQueries\" />
-    <Folder Include="Features\Mediator\Handlers\CommentHandlers\" />
-    <Folder Include="Features\Mediator\Commands\CommetCommands\" />
-    <Folder Include="Features\Mediator\Handlers\CommentHandlers\Read\" />
-    <Folder Include="Features\Mediator\Handlers\CommentHandlers\Write\" />
-    <Folder Include="Features\Mediator\Results\PricingResults\" />
-    <Folder Include="Features\Mediator\Queries\PricingQueries\" />
-    <Folder Include="Features\Mediator\Commands\PricingCommands\" />
-    <Folder Include="Features\Mediator\Handlers\PricingHandlers\" />
-    <Folder Include="Features\Mediator\Handlers\PricingHandlers\Read\" />
-    <Folder Include="Features\Mediator\Handlers\PricingHandlers\Write\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CarBook.Domain\CarBook.Domain.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.20" />
-    <PackageReference Include="MediatR" Version="12.3.0" />
-    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
-  </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="12.4.1" />
+      <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Carbook.Domain\Carbook.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Features\CQRS\Commands\AuthorCommands\" />
+      <Folder Include="Features\CQRS\Commands\BlogCommands\" />
+      <Folder Include="Features\CQRS\Commands\FooterAdressCommands\" />
+      <Folder Include="Features\CQRS\Commands\PricingCommands\" />
+      <Folder Include="Features\CQRS\Commands\TestimonialCommands\" />
+      <Folder Include="Features\CQRS\Handlers\AuthorHandlers\" />
+      <Folder Include="Features\CQRS\Handlers\BlogHandlers\" />
+      <Folder Include="Features\CQRS\Handlers\CarHandlers\" />
+      <Folder Include="Features\CQRS\Handlers\CommentHandlers\" />
+      <Folder Include="Features\CQRS\Handlers\PricingHandlers\" />
+      <Folder Include="Features\CQRS\Handlers\TestimonialHandlers\" />
+    </ItemGroup>
+
 </Project>

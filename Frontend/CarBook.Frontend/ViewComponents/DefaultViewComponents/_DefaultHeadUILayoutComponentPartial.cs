@@ -1,29 +1,27 @@
-﻿using CarBook.Dto.DefaultDTOs;
+using CarBook.Dto.BannerDTOs;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-namespace CarBook.Frontend.ViewComponents.DefaultViewComponents
-{
-	public class _DefaultHeadUILayoutComponentPartial : ViewComponent
-	{
-        private readonly IHttpClientFactory _httpClientFactory;
+namespace Carbook.Frontend.ViewComponents.DefaultViewComponents;
 
-        public _DefaultHeadUILayoutComponentPartial(IHttpClientFactory httpClientFactory)
+public class _DefaultHeadUILayoutComponentPartial : ViewComponent
+{
+    private readonly IHttpClientFactory _httpClientFactory;
+
+    public _DefaultHeadUILayoutComponentPartial(IHttpClientFactory httpClientFactory)
+    {
+        _httpClientFactory = httpClientFactory;
+    }
+    public async Task<IViewComponentResult> InvokeAsync()
+    {
+        var client = _httpClientFactory.CreateClient();
+        var response = await client.GetAsync("http://localhost:5128/api/Banner");
+        if(response.IsSuccessStatusCode)
         {
-            _httpClientFactory = httpClientFactory;
+            var jsonData = await response.Content.ReadAsStringAsync();
+            var values = JsonConvert.DeserializeObject<List<ResultBannerDto>>(jsonData);
+            return View(values);
         }
-        public async Task<IViewComponentResult> InvokeAsync()
-        {
-            var client = _httpClientFactory.CreateClient();
-            var response = await client.GetAsync("http://localhost:7070/api/Banner");
-            if (response.IsSuccessStatusCode)
-            {
-                var jsonData = await response.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<List<ResultBannerDto>>(jsonData);
-                return View(values);
-            }
-            return View();
-        }
+        return View();
     }
 }
-

@@ -1,34 +1,27 @@
-﻿@{
-
-    Layout = null;
-}
 @model CarBook.Dto.BrandDTOs.CreateBrandDto
 
-<div class="row">
-    <div class="col-xl-6">
-        <div class="card">
-            <div class="card-body">
-                <h4 class="card-title">Marka Ekleme</h4>
-                <p class="card-subtitle mb-4">Eklemek Istediginiz Markayi Yaziniz</p>
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
 
-                <form asp-controller="AdminBrand" asp-action="CreateBrand" method="post">
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Yeni Arac Ozellik Ekleme Sayfasi</h4>
+        <p class="card-subtitle mb-4">Sisteme Eklemek Istediginiz Yeni Ozellik Sayfasi </p>
 
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Model</label>
-                        <input type="text" class="form-control" placeholder="Marka Giriniz" asp-for="@Model.Name">
-                    </div>
-                    
-                    <button>
-                        Kaydet
-                    </button>
+        <form asp-action="CreateBrand"  asp-controller="AdminBrand" method="post">
 
-                </form>
+            <div class="form-group">
+                <label>Marka Giriniz</label>
+                <input type="text" asp-for="Name" placeholder="Marka Giriniz" class="form-control">
             </div>
-            <!-- end card-body-->
-        </div>
-        <!-- end card -->
 
-    </div> <!-- end col -->
+            <button type="submit" class="btn btn-success">
+                Kaydet
+            </button>
 
+
+        </form>
+    </div>
 
 </div>

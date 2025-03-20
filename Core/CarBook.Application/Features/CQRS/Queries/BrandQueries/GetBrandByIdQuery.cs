@@ -1,14 +1,14 @@
-﻿using System;
-namespace CarBook.Application.Features.CQRS.Queries.BrandQueries
+using Carbook.Application.Features.CQRS.Results.BrandResults;
+using MediatR;
+
+namespace Carbook.Application.Features.CQRS.Queries.BrandQueries;
+
+public class GetBrandByIdQuery : IRequest<GetBrandByIdQueryResult>
 {
-	public class GetBrandByIdQuery
-	{
-		public string id { get; set; }
+    public string Id { get; set; }
 
-		public GetBrandByIdQuery(string Id)
-		{
-			id = Id;
-		}
-	}
+    public GetBrandByIdQuery(string id)
+    {
+         Id = id;
+    }
 }
-

@@ -1,4 +1,4 @@
-﻿namespace CarBook.Frontend.Models;
+namespace Carbook.Frontend.Models;
 
 public class ErrorViewModel
 {
@@ -6,4 +6,3 @@ public class ErrorViewModel
 
     public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
 }
-

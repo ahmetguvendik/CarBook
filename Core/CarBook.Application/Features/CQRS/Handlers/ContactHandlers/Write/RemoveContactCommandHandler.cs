@@ -1,26 +1,21 @@
-﻿using System;
-using CarBook.Application.Features.CQRS.Commands.CategoryCommands;
-using CarBook.Application.Features.CQRS.Commands.ContactCommands;
-using CarBook.Application.Repositories;
+using Carbook.Application.Features.CQRS.Commands.ContactCommands;
+using Carbook.Application.Repositories;
 using CarBook.Domain.Entities;
+using MediatR;
 
-namespace CarBook.Application.Features.CQRS.Handlers.ContactHandlers.Write
+namespace Carbook.Application.Features.CQRS.Handlers.ContactHandlers.Write;
+
+public class RemoveContactCommandHandler : IRequestHandler<RemoveContactCommand>
 {
-	public class RemoveContactCommandHandler
-	{
-        private readonly IRepository<Contact> _repository;
+    private readonly IRepository<Contact> _repository;
 
-        public RemoveContactCommandHandler(IRepository<Contact> repository)
-        {
-            _repository = repository;
-        }
-
-        public async Task Handle(RemoveContactCommand command)
-        {
-            var category = await _repository.GetByIdAsync(command.Id);
-            await _repository.RemoveAsync(category);
-
-        }
+    public RemoveContactCommandHandler( IRepository<Contact> repository)
+    {
+          _repository = repository;
+    }
+    public async Task Handle(RemoveContactCommand request, CancellationToken cancellationToken)
+    {
+        var value = await _repository.GetByIdAsync(request.Id);
+        await _repository.RemoveAsync(value);
     }
 }
-

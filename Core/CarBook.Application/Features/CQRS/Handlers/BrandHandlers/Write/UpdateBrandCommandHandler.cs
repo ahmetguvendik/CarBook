@@ -1,25 +1,22 @@
-﻿using System;
-using CarBook.Application.Features.CQRS.Commands.BrandCommands;
-using CarBook.Application.Repositories;
+using Carbook.Application.Features.CQRS.Commands.BrandCommands;
+using Carbook.Application.Repositories;
 using CarBook.Domain.Entities;
+using MediatR;
 
-namespace CarBook.Application.Features.CQRS.Handlers.BrandHandlers.Write
+namespace Carbook.Application.Features.CQRS.Handlers.BrandHandlers.Write;
+
+public class UpdateBrandCommandHandler : IRequestHandler<UpdateBrandCommand>
 {
-	public class UpdateBrandCommandHandler
-	{
-		private readonly IRepository<Brand> _repository;
+    private readonly IRepository<Brand> _repository;
 
-        public UpdateBrandCommandHandler(IRepository<Brand> repository)
-		{
-			_repository = repository;
-		}
-
-		public async Task Handle(UpdateBrandCommand command)
-		{
-			var brand = await _repository.GetByIdAsync(command.id);
-			brand.Name = command.Name;
-			await _repository.UpdateAsync(brand);
-		}
-	}
+    public UpdateBrandCommandHandler( IRepository<Brand> repository)
+    {
+         _repository = repository;
+    }
+    public async Task Handle(UpdateBrandCommand request, CancellationToken cancellationToken)
+    {
+        var brand = await _repository.GetByIdAsync(request.Id);
+        brand.Name = request.Name;
+        await _repository.UpdateAsync(brand);
+    }
 }
-

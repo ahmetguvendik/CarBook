@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using CarBook.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace CarBook.Persistance.Context
 {
-	public class CarBookDbContext : DbContext
+    public class CarBookDbContext : DbContext
     {
         public CarBookDbContext(DbContextOptions options) : base(options) { }
 
@@ -30,4 +30,3 @@ namespace CarBook.Persistance.Context
 
     }
 }
-

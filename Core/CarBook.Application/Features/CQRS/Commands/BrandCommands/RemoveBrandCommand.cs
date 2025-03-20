@@ -1,14 +1,13 @@
-﻿using System;
-namespace CarBook.Application.Features.CQRS.Commands.BrandCommands
-{
-	public class RemoveBrandCommand
-	{
-        public string id { get; set; }
+using MediatR;
 
-        public RemoveBrandCommand(string Id)
-        {
-            id = Id;
-        }
+namespace Carbook.Application.Features.CQRS.Commands.BrandCommands;
+
+public class RemoveBrandCommand : IRequest
+{
+    public string Id { get; set; }
+
+    public RemoveBrandCommand(string id)
+    {
+         Id = id;
     }
 }
-

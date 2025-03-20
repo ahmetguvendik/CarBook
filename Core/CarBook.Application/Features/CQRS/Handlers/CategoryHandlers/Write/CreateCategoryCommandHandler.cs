@@ -1,25 +1,23 @@
-﻿using System;
-using CarBook.Application.Features.CQRS.Commands.CategoryCommands;
-using CarBook.Application.Repositories;
+using Carbook.Application.Features.CQRS.Commands.CategoryCommands;
+using Carbook.Application.Repositories;
 using CarBook.Domain.Entities;
+using MediatR;
 
-namespace CarBook.Application.Features.CQRS.Handlers.CategoryHandlers.Write
+namespace Carbook.Application.Features.CQRS.Handlers.CategoryHandlers.Write;
+
+public class CreateCategoryCommandHandler : IRequestHandler<CreateCategoryCommand>
 {
-	public class CreateCategoryCommandHandler
-	{
-		private readonly IRepository<Category> _repository;
-		public CreateCategoryCommandHandler(IRepository<Category> repository)
-		{
-			_repository = repository;
-		}
+    private readonly IRepository<Category> _categoryRepository;
 
-		public async Task Handle(CreateCategoryCommand command)
-		{
-			var category = new Category();
-			category.Id = Guid.NewGuid().ToString();
-			category.Name = command.Name;
-			await _repository.CreateAsync(category);
-		}
-	}
+    public CreateCategoryCommandHandler( IRepository<Category> categoryRepository)
+    {
+         _categoryRepository = categoryRepository;
+    }
+    public async Task Handle(CreateCategoryCommand request, CancellationToken cancellationToken)
+    {
+        var category = new Category();
+        category.Id = Guid.NewGuid().ToString();
+        category.Name = request.Name;
+        await _categoryRepository.CreateAsync(category);
+    }
 }
-

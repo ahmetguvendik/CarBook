@@ -1,27 +1,25 @@
-﻿using System;
-using CarBook.Application.Features.CQRS.Commands.BannerCommands;
-using CarBook.Application.Repositories;
+using Carbook.Application.Features.CQRS.Commands.BannerCommands;
+using Carbook.Application.Repositories;
 using CarBook.Domain.Entities;
+using MediatR;
 
-namespace CarBook.Application.Features.CQRS.Handlers.BannerHandlers.Write
+namespace Carbook.Application.Features.CQRS.Handlers.BannerHandlers.Write;
+
+public class UpdateBannerCommandHandler : IRequestHandler<UpdateBannerCommand>
 {
-	public class UpdateBannerCommandHandler
-	{
-		private readonly IRepository<Banner> _repository;
-		public UpdateBannerCommandHandler(IRepository<Banner> repository)
-		{
-			_repository = repository;
-		}
+    private readonly IRepository<Banner> _repository;
 
-		public async Task Handle(UpdateBannerCommand command)
-		{
-			var banner = await _repository.GetByIdAsync(command.id);
-			banner.Description = command.Description;
-			banner.Title = command.Title;
-			banner.VideoDescription = command.VideoDescription;
-			banner.VideoURL = command.VideoURL;
-			await _repository.UpdateAsync(banner);
-		}
-	}
+    public UpdateBannerCommandHandler( IRepository<Banner> repository)
+    {
+         _repository = repository;
+    }
+    public async Task Handle(UpdateBannerCommand request, CancellationToken cancellationToken)
+    {
+        var banner = await _repository.GetByIdAsync(request.Id);
+        banner.Description = request.Description;
+        banner.Title = request.Title;
+        banner.VideoDescription = request.VideoDescription;
+        banner.VideoURL = request.VideoURL;
+        await _repository.UpdateAsync(banner);
+    }
 }
-

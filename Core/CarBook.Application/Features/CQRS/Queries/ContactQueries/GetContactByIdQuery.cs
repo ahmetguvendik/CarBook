@@ -1,15 +1,14 @@
-﻿using System;
-namespace CarBook.Application.Features.CQRS.Queries.ContactQueries
+using Carbook.Application.Features.CQRS.Results.ContactResults;
+using MediatR;
+
+namespace Carbook.Application.Features.CQRS.Queries.ContactQueries;
+
+public class GetContactByIdQuery : IRequest<GetContactByIdQueryResult>
 {
-	public class GetContactByIdQuery
-	{
-        public string Id { get; set; }
+    public string Id { get; set; }
 
-        public GetContactByIdQuery(string id)
-        {
-            Id = id;
-        }
-
+    public GetContactByIdQuery(string id)
+    {
+         Id = id;
     }
 }
-
