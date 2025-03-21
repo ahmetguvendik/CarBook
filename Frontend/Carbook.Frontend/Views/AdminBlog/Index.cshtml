@@ -1,0 +1,61 @@
+@model List<CarBook.Dto.BlogDTOs.ResultGetAllBlogWithAuthorAndCategory>
+
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Blog Alanı</h4>
+                <p>Sayfanızda Bulıunan Blog Yazıları</p>
+                <div class="table-responsive">
+
+                    <table class="table mb-12">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Başlık</th>
+                            <th>Açıklama</th>
+                            <th>Yazar Adı</th>
+                            <th>Kategori Adı</th>
+                            <th>Kapak Fotoğrafı Linki</th>
+                            <th>Oluşturulma Tarihi</th>
+                            <th>Sil</th>
+                        </tr>
+                        </thead>
+                        @foreach (var item in Model)
+                        {
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>@item.Title</td>
+                                <td>@item.Description</td>
+                                <td>@item.AuthorName</td>
+                                <td>@item.CategoryName</td>
+                                <td>@item.CoverImageUrl</td>
+                                <td>@item.CreatedTime</td>
+                                <td><a href="/AdminBlog/RemoveBlog/@item.Id" class="btn btn-outline-danger">Sil</a></td>
+                                <td><a href="/AdminBlog/UpdateBlog/@item.Id" class="btn btn-outline-danger">Güncelle</a></td>
+                            </tr>
+                            </tbody>
+                        }
+                    </table>
+    
+                        <a href="/AdminBlog/CreateBlog/">Yeni Blog Ekleme</a>
+                    
+                </div>
+
+            </div>
+            <!-- end card-body-->
+        </div>
+        <!-- end card -->
+
+    </div>
+    <!-- end col -->
+
+
+
+    <!-- end col -->
+</div>

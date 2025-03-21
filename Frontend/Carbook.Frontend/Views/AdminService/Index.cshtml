@@ -9,7 +9,7 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Hizmetler Sayfası</h4>
-                <p class="card-subtitle mb-4">Şirketinize ait hizmetleri buradan görebilirsiniz.
+                <p class="card-subtitle mb-4">Site Bütünlüğü İçin 4 Tane Hizmet Girilebilir.
                 </p>
                 <div class="table-responsive">
 
@@ -39,7 +39,10 @@
                             </tbody>
                         }
                     </table>
-                    <a href="/AdminService/CreateService/">Yeni Hizmet Ekleme</a>
+                    @if (Model.Count <  4)
+        {
+            <a href="/AdminService/CreateService/">Yeni Hizmet Ekleme</a>
+        }
                 </div>
 
             </div>

@@ -23,6 +23,7 @@ namespace CarBook.Application.Features.Mediator.Handlers.BlogHandlers.Write
             blog.CoverImageUrl = request.CoverImageUrl;
             blog.CategoryId = request.CategoryId;
             blog.AuthorId = request.AuthorId;
+            blog.Description = request.Description;
             await _repository.CreateAsync(blog);
         }
     }

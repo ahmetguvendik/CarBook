@@ -1,0 +1,58 @@
+@using CarBook.Frontend.ViewComponents.ContactViewComponents
+@model List<CarBook.Dto.CommentDTOs.ResultCommentWİthBlogTitle>
+
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Comment İşlem Sayfası</h4>
+                <p>!!!Proje Bütünlüğü İçin Eğer 1 Tane Veri Varsa Başka Veri Eklenemez!!!</p>
+                <div class="table-responsive">
+                    <table class="table mb-12">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Ad Soyad</th>
+                            <th>Açıklama</th>
+                            <th>Tarih</th>
+                            <th>Blog Başlığı</th>
+                            <th>Sil</th>
+
+                        </tr>
+                        </thead>
+                        @foreach (var item in Model)
+                        {
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>@item.Name</td>
+                                <td>@item.Description</td>
+                                <td>@item.CreatedTime</td>
+                                <td>@item.BlogTitle</td>
+                                <td><a href="/AdminComment/RemoveComment/@item.Id" class="btn btn-outline-danger">Sil</a></td>
+
+                            </tr>
+                            </tbody>
+                        }
+                    </table>
+                    
+                    
+                    
+                </div>
+
+            </div>
+            <!-- end card-body-->
+        </div>
+        <!-- end card -->
+
+    </div>
+    <!-- end col -->
+
+
+
+    <!-- end col -->
+</div>

@@ -1,0 +1,54 @@
+@model List<Carbook.Dto.AuthorDTOs.ResultAuthorDto>
+
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Yazar Listesi</h4>
+                <p class="card-subtitle mb-4"> Sisteme Kayitli Yazar Listesi
+                </p>
+                <div class="table-responsive">
+
+                    <table class="table mb-12">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>İsim Soyisim</th>
+                            <th>Açıklama</th>
+                            <th>ImageURL</th>
+                        </tr>
+                        </thead>
+                        @foreach (var item in Model)
+                        {
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>@item.Name</td>
+                                <td>@item.Description</td>
+                                <td>@item.ImageUrl</td>
+                                <td><a href="/AdminAuthor/RemoveAuthor/@item.Id" class="btn btn-outline-danger">Sil</a></td>
+                                <td><a href="/AdminAuthor/UpdateAuthor/@item.Id" class="btn btn-outline-success">Guncelle</a></td>
+                            </tr>
+                            </tbody>
+                        }
+                    </table>
+
+                    <a href="/AdminAuthor/CreateAuthor/">Yeni Yazar Ekleme</a>
+                </div>
+
+            </div>
+            <!-- end card-body-->
+        </div>
+        <!-- end card -->
+
+    </div>
+    <!-- end col -->
+
+
+
+    <!-- end col -->
+</div>

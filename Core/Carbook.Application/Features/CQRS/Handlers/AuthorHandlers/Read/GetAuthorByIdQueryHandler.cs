@@ -20,6 +20,7 @@ namespace CarBook.Application.Features.Mediator.Handlers.AuthorHandlers.Read
             var author = await _repository.GetByIdAsync(request.Id);
             return new GetAuthorByIdQueryResult
             {
+                Id = author.Id,
                 Description = author.Description,
                 ImageUrl = author.ImageUrl,
                 Name = author.Name

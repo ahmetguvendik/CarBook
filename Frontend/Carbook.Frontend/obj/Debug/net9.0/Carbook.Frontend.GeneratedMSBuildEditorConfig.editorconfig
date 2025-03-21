@@ -24,6 +24,18 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWJvdXQvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/AdminAuthor/CreateAuthor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5BdXRob3IvQ3JlYXRlQXV0aG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/AdminAuthor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5BdXRob3IvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/AdminAuthor/UpdateAuthor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5BdXRob3IvVXBkYXRlQXV0aG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/AdminBanner/CreateBanner.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5CYW5uZXIvQ3JlYXRlQmFubmVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,6 +46,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/AdminBanner/UpdateBanner.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5CYW5uZXIvVXBkYXRlQmFubmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/AdminBlog/CreateBlog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5CbG9nL0NyZWF0ZUJsb2cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/AdminBlog/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5CbG9nL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/AdminBlog/UpdateBlog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5CbG9nL1VwZGF0ZUJsb2cuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/AdminBrand/CreateBrand.cshtml]
@@ -58,6 +82,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/AdminCar/UpdateCar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5DYXIvVXBkYXRlQ2FyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/AdminCategory/CreateCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5DYXRlZ29yeS9DcmVhdGVDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/AdminCategory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5DYXRlZ29yeS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/AdminCategory/UpdateCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5DYXRlZ29yeS9VcGRhdGVDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/AdminComment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5Db21tZW50L0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/AdminFeatures/CreateFeature.cshtml]
@@ -110,6 +150,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/AdminService/UpdateService.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5TZXJ2aWNlL1VwZGF0ZVNlcnZpY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/AdminTestimonial/CreateTestimonial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5UZXN0aW1vbmlhbC9DcmVhdGVUZXN0aW1vbmlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/AdminTestimonial/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5UZXN0aW1vbmlhbC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/AdminTestimonial/UpdateTestimonial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5UZXN0aW1vbmlhbC9VcGRhdGVUZXN0aW1vbmlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/Blog/BlogDetail.cshtml]

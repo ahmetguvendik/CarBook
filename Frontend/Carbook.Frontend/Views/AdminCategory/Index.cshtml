@@ -1,0 +1,52 @@
+@model List<CarBook.Dto.CategoryDTOs.ResultCategoryDto>
+
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="Categoryd">
+            <div class="Categoryd-body">
+                <h4 class="Categoryd-title">Blog Kategori Listesi</h4>
+                <p class="Categoryd-subtitle mb-4"> Sisteme Kayitli Blog Kategori Listesi
+                </p>
+                <div class="table-responsive">
+                
+                        <table class="table mb-12">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Ad</th>
+                                <th>Sil</th>
+                                <th>Guncelle</th>
+                            </tr>
+                            </thead>
+                            @foreach (var item in Model)
+                            {
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>@item.Name</td>
+                                    <td><a href="/AdminCategory/RemoveCategory/@item.Id" class="btn btn-outline-danger">Sil</a></td>
+                                    <td><a href="/AdminCategory/UpdateCategory/@item.Id" class="btn btn-outline-success">Guncelle</a></td>
+                                </tr>
+                                </tbody>
+                            }
+                        </table>
+                   
+                    <a href="/AdminCategory/CreateCategory">Yeni Kategori Ekleme</a>
+                </div>
+
+            </div>
+            <!-- end Categoryd-body-->
+        </div>
+        <!-- end Categoryd -->
+
+    </div>
+    <!-- end col -->
+
+
+
+    <!-- end col -->
+</div>

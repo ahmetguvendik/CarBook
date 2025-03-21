@@ -38,6 +38,13 @@ namespace CarBook.Presentation.Controllers
             var value = await _mediator.Send(new GetCommentsWithBlogIdQuery(id));
             return Ok(value);
         }
+        
+        [HttpGet("[action]")]
+        public async Task<IActionResult> GetAllCommentsWithBlogTitle()
+        {
+            var values = await _mediator.Send(new GetCommentWithBlogTitleQuery());
+            return Ok(values);
+        }
 
 
         // POST api/values

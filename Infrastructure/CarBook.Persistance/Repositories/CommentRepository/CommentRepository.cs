@@ -11,6 +11,8 @@ namespace CarBook.Persistance.Repositories.CommentRepository
     public class CommentRepository : Repository<Comment>, ICommentRepository
 	{
         private readonly CarBookDbContext _carBookDbContext;
+        private ICommentRepository _commentRepositoryImplementation;
+
         public CommentRepository(CarBookDbContext context) : base(context)
         {
             _carBookDbContext = context;
@@ -20,6 +22,12 @@ namespace CarBook.Persistance.Repositories.CommentRepository
         {
             var values = _carBookDbContext.Comments.Include(x => x.Blog).Where(x => x.BlogId == id).ToList();
             return values;
+        }
+
+        public async Task<List<Comment>> GetAllCommentsWithBlogTitle()
+        {
+            var values = _carBookDbContext.Comments.Include(x => x.Blog).ToList();
+           return values;
         }
     }
 }

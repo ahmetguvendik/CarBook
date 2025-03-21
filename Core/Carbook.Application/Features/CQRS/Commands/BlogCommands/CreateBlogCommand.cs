@@ -10,6 +10,8 @@ namespace CarBook.Application.Features.Mediator.Commands.BlogCommands
         public DateTime CreatedTime { get; set; }
         public string AuthorId { get; set; }
         public string CategoryId { get; set; }
+
+        public string Description { get; set; }
     }
 }
 

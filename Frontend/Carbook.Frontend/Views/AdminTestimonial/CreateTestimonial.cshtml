@@ -1,0 +1,41 @@
+@model CarBook.Dto.TestimonialDTOs.CreateTestimonialDto
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Yeni Testimonial Ekleme Sayfasi</h4>
+        <p class="card-subtitle mb-4">Sisteme Eklemek Istediginiz Testimonial Giriniz </p>
+
+        <form asp-action="CreateTestimonial"  asp-controller="AdminTestimonial" method="post">
+
+            <div class="form-group">
+                <label>Başlık Giriniz</label>
+                <input type="text" asp-for="Title" placeholder="Başlık Giriniz" class="form-control">
+            </div>
+            
+            <div class="form-group">
+                <label>Açıklama Giriniz</label>
+                <input type="text" asp-for="Name" placeholder="Açıklama Giriniz" class="form-control">
+            </div>
+            
+            <div class="form-group">
+                <label>Yorum Giriniz</label>
+                <input type="text" asp-for="Comment" placeholder="Yorum Giriniz" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>Image URL Giriniz</label>
+                <input type="text" asp-for="ImageURL" placeholder="Image URL Giriniz" class="form-control">
+            </div>
+
+            <button type="submit" class="btn btn-success">
+                Ekle
+            </button>
+
+
+        </form>
+    </div>
+
+</div>
