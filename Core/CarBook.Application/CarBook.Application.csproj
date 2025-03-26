@@ -27,6 +27,7 @@
       <Folder Include="Features\CQRS\Handlers\CarHandlers\" />
       <Folder Include="Features\CQRS\Handlers\CommentHandlers\" />
       <Folder Include="Features\CQRS\Handlers\PricingHandlers\" />
+      <Folder Include="Features\CQRS\Handlers\StatisticsHandlers\Write\" />
       <Folder Include="Features\CQRS\Handlers\TestimonialHandlers\" />
     </ItemGroup>
 
