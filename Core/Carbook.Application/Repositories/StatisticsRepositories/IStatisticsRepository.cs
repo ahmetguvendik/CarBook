@@ -8,11 +8,9 @@ public interface IStatisticsRepository
     int GetBlogCount();
     int GetBrandCount();
     decimal GetAvgRentPriceForDaily();
-    string GetAvgRentPriceForWeekly();
-    string GetAvgRentPriceForMonthly();
+    decimal GetAvgRentPriceForWeekly();
+    decimal GetAvgRentPriceForMonthly();
     int GetCountByTranmissionIsAuto();
-    string GetBrandNameByMaxCar();
-    string GetBlogTitleByMaxBlogComment();
     int GetCarCountByKmSmallerThan1000();
     int GetCarCountByFuelElectric();
 }

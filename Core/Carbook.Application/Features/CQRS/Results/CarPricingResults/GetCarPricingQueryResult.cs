@@ -6,7 +6,7 @@ namespace CarBook.Application.Features.Mediator.Results.CarPricingResults
         public string Model { get; set; }
         public string CoverImageUrl { get; set; }
         public string BrandName { get; set; }
-        public string Price { get; set; }
-    }
+        public decimal Price { get; set; }
+    }	
 }
 

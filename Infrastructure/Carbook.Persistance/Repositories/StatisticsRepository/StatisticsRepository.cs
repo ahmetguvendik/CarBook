@@ -44,46 +44,50 @@ public class StatisticsRepository : IStatisticsRepository
 
     public decimal GetAvgRentPriceForDaily()
     {
-       var id = _context.Pricings.Where(x => x.Name == "Gunluk").Select(y=>y.Id).First();
+       var id = _context.Pricings.Where(x => x.Name == "Gunluk").Select(y=>y.Id).FirstOrDefault();
        decimal averagePrice = _context.CarPricings
            .Where(x => x.PricingId == id)
-           .Select(x => decimal.Parse(x.Price))  // Convert string to decimal
+           .Select(x => (x.Price))  // Convert string to decimal
            .Average();
         return averagePrice;
     }
 
-    public string GetAvgRentPriceForWeekly()
+    public decimal GetAvgRentPriceForWeekly()
     {
-        throw new NotImplementedException();
+        var id = _context.Pricings.Where(x => x.Name == "Haftalik").Select(y=>y.Id).FirstOrDefault();
+        decimal averagePrice = _context.CarPricings
+            .Where(x => x.PricingId == id)
+            .Select(x => (x.Price))  // Convert string to decimal
+            .Average();
+        return averagePrice;
     }
 
-    public string GetAvgRentPriceForMonthly()
+    public decimal GetAvgRentPriceForMonthly()
     {
-        throw new NotImplementedException();
+        var id = _context.Pricings.Where(x => x.Name == "Aylik").Select(y=>y.Id).FirstOrDefault();
+        decimal averagePrice = _context.CarPricings
+            .Where(x => x.PricingId == id)
+            .Select(x => (x.Price))  // Convert string to decimal
+            .Average();
+        return averagePrice;
     }
 
     public int GetCountByTranmissionIsAuto()
     {
-        throw new NotImplementedException();
+        var count = _context.Cars.Where(x => x.Vites =="Otomatik").Count();
+        return count;
     }
-
-    public string GetBrandNameByMaxCar()
-    {
-        throw new NotImplementedException();
-    }
-
-    public string GetBlogTitleByMaxBlogComment()
-    {
-        throw new NotImplementedException();
-    }
+    
 
     public int GetCarCountByKmSmallerThan1000()
     {
-        throw new NotImplementedException();
+        var value = _context.Cars.Where(x => x.Km <=1000).Count();
+        return value;
     }
 
     public int GetCarCountByFuelElectric()
     {
-        throw new NotImplementedException();
+        var count = _context.Cars.Where(x => x.Fuel =="Elektrik").Count();
+        return count;
     }
 }
