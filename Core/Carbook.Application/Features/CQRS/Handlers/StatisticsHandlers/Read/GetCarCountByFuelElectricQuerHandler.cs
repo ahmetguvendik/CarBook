@@ -18,7 +18,7 @@ public class GetCarCountByFuelElectricQuerHandler : IRequestHandler<GetCarCountB
         var value = _statisticsRepository.GetCarCountByFuelElectric();
         return new GetCarCountByFuelElectricQueryResult()
         {
-            Count = value,
+            FuelEletricCount = value,
         };
     }
 }

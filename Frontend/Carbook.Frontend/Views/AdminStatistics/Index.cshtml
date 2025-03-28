@@ -1,139 +1,206 @@
 @{
     Layout = "~/Views/AdminLayout/Index.cshtml";
-}
-<div class="container-fluid"/>
+} 
+
 <div class="row">
     <div class="col-md-6 col-xl-3">
         <div class="card bg-primary border-primary">
             <div class="card-body">
                 <div class="mb-4">
-                    <span class="badge badge-soft-light float-right">Daily</span>
-                    <h5 class="card-title mb-0 text-white">Cost per Unit</h5>
+                    <span class="badge badge-soft-light float-right">Tum Zamanlar</span>
+                    <h5 class="card-title mb-0 text-white">Toplam Arac Sayisi</h5>
                 </div>
                 <div class="row d-flex align-items-center mb-4">
                     <div class="col-8">
                         <h2 class="d-flex align-items-center mb-0 text-white">
-                            $17.21
+                            @ViewBag.v1
                         </h2>
                     </div>
-                    <div class="col-4 text-right">
-                        <span class="text-white-50">12.5%
-                            <i class="mdi mdi-arrow-up"></i>
-                        </span>
+                </div>
+                
+            </div>
+        </div>
+    </div> <!-- end col-->
+
+    <div class="col-md-6 col-xl-3">
+        <div class="card bg-success border-success">
+            <div class="card-body">
+                <div class="mb-4">
+                    <span class="badge badge-soft-light float-right">Tum Zamanlar</span>
+                    <h5 class="card-title mb-0 text-white">Lokasyon Sayisi</h5>
+                </div>
+                <div class="row d-flex align-items-center mb-4">
+                    <div class="col-8">
+                        <h2 class="d-flex align-items-center text-white mb-0">
+                            @ViewBag.v2
+                        </h2>
                     </div>
                 </div>
-                <div class="progress badge-soft-light shadow-sm" style="height: 5px;">
-                    <div class="progress-bar bg-light" role="progressbar" style="width: 38%;"></div>
+            </div>
+        </div>
+    </div> <!-- end col-->
+
+    <div class="col-md-6 col-xl-3">
+        <div class="card bg-warning border-warning">
+            <div class="card-body">
+                <div class="mb-4">
+                    <span class="badge badge-soft-light float-right">Tum Zamanlar</span>
+                    <h5 class="card-title mb-0 text-white">Toplam Yazar Sayisi</h5>
+                </div>
+                <div class="row d-flex align-items-center mb-4">
+                    <div class="col-8">
+                        <h2 class="d-flex align-items-center text-white mb-0">
+                            @ViewBag.v3
+                        </h2>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div> <!-- end col-->
+
+    <div class="col-md-6 col-xl-3">
+        <div class="card bg-info border-info">
+            <div class="card-body">
+                <div class="mb-4">
+                    <span class="badge badge-soft-light float-right">Tum Zamanlar</span>
+                    <h5 class="card-title mb-0 text-white">Toplam Blog Sayisi</h5>
+                </div>
+                <div class="row d-flex align-items-center mb-4">
+                    <div class="col-8">
+                        <h2 class="d-flex align-items-center text-white mb-0">
+                           @ViewBag.v4
+                        </h2>
+                    </div>
                 </div>
             </div>
         </div>
     </div> <!-- end col-->
 </div>
+
 <div class="row">
     <div class="col-md-6 col-xl-3">
         <div class="card bg-primary border-primary">
             <div class="card-body">
                 <div class="mb-4">
-                    <span class="badge badge-soft-light float-right">Daily</span>
-                    <h5 class="card-title mb-0 text-white">Cost per Unit</h5>
+                    <span class="badge badge-soft-light float-right">Tum Zamanlar</span>
+                    <h5 class="card-title mb-0 text-white">Toplam Marka Sayisi</h5>
                 </div>
                 <div class="row d-flex align-items-center mb-4">
                     <div class="col-8">
                         <h2 class="d-flex align-items-center mb-0 text-white">
-                            $17.21
+                            @ViewBag.v5
                         </h2>
                     </div>
-                    <div class="col-4 text-right">
-                        <span class="text-white-50">12.5%
-                            <i class="mdi mdi-arrow-up"></i>
-                        </span>
-                    </div>
+   
                 </div>
-                <div class="progress badge-soft-light shadow-sm" style="height: 5px;">
-                    <div class="progress-bar bg-light" role="progressbar" style="width: 38%;"></div>
-                </div>
+                
             </div>
         </div>
     </div> <!-- end col-->
-</div>
-<div class="row">
+
     <div class="col-md-6 col-xl-3">
-        <div class="card bg-primary border-primary">
+        <div class="card bg-success border-success">
             <div class="card-body">
                 <div class="mb-4">
-                    <span class="badge badge-soft-light float-right">Daily</span>
-                    <h5 class="card-title mb-0 text-white">Cost per Unit</h5>
+                    <h5 class="card-title mb-0 text-white">Ortalama Gunluk Arac Fiyati</h5>
                 </div>
                 <div class="row d-flex align-items-center mb-4">
                     <div class="col-8">
-                        <h2 class="d-flex align-items-center mb-0 text-white">
-                            $17.21
+                        <h2 class="d-flex align-items-center text-white mb-0">
+                            @ViewBag.v6 TL
                         </h2>
                     </div>
-                    <div class="col-4 text-right">
-                        <span class="text-white-50">12.5%
-                            <i class="mdi mdi-arrow-up"></i>
-                        </span>
-                    </div>
                 </div>
-                <div class="progress badge-soft-light shadow-sm" style="height: 5px;">
-                    <div class="progress-bar bg-light" role="progressbar" style="width: 38%;"></div>
-                </div>
+
             </div>
         </div>
     </div> <!-- end col-->
-</div>
-<div class="row">
+
     <div class="col-md-6 col-xl-3">
-        <div class="card bg-primary border-primary">
+        <div class="card bg-warning border-warning">
             <div class="card-body">
                 <div class="mb-4">
-                    <span class="badge badge-soft-light float-right">Daily</span>
-                    <h5 class="card-title mb-0 text-white">Cost per Unit</h5>
+                    <h5 class="card-title mb-0 text-white">Ortalama Gunluk Haftalik Fiyati</h5>
                 </div>
                 <div class="row d-flex align-items-center mb-4">
                     <div class="col-8">
-                        <h2 class="d-flex align-items-center mb-0 text-white">
-                            $17.21
+                        <h2 class="d-flex align-items-center text-white mb-0">
+                            @ViewBag.v7 TL
                         </h2>
                     </div>
-                    <div class="col-4 text-right">
-                        <span class="text-white-50">12.5%
-                            <i class="mdi mdi-arrow-up"></i>
-                        </span>
-                    </div>
-                </div>
-                <div class="progress badge-soft-light shadow-sm" style="height: 5px;">
-                    <div class="progress-bar bg-light" role="progressbar" style="width: 38%;"></div>
                 </div>
             </div>
         </div>
     </div> <!-- end col-->
-</div>
-<div class="row">
+
     <div class="col-md-6 col-xl-3">
-        <div class="card bg-primary border-primary">
+        <div class="card bg-info border-info">
             <div class="card-body">
                 <div class="mb-4">
-                    <span class="badge badge-soft-light float-right">Daily</span>
-                    <h5 class="card-title mb-0 text-white">Cost per Unit</h5>
+                    <h5 class="card-title mb-0 text-white">Ortalama Aylik Haftalik Fiyati</h5>
                 </div>
                 <div class="row d-flex align-items-center mb-4">
                     <div class="col-8">
-                        <h2 class="d-flex align-items-center mb-0 text-white">
-                            $17.21
+                        <h2 class="d-flex align-items-center text-white mb-0">
+                            @ViewBag.v8 TL
                         </h2>
                     </div>
-                    <div class="col-4 text-right">
-                        <span class="text-white-50">12.5%
-                            <i class="mdi mdi-arrow-up"></i>
-                        </span>
-                    </div>
-                </div>
-                <div class="progress badge-soft-light shadow-sm" style="height: 5px;">
-                    <div class="progress-bar bg-light" role="progressbar" style="width: 38%;"></div>
                 </div>
             </div>
         </div>
     </div> <!-- end col-->
 </div>
+
+                    <div class="row">
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card bg-primary border-primary">
+                                <div class="card-body">
+                                    <div class="mb-4">
+                                        <h5 class="card-title mb-0 text-white">Elektrikli Arac Sayisi</h5>
+                                    </div>
+                                    <div class="row d-flex align-items-center mb-4">
+                                        <div class="col-8">
+                                            <h2 class="d-flex align-items-center mb-0 text-white">
+                                                @ViewBag.v9
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end col-->
+
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card bg-success border-success">
+                                <div class="card-body">
+                                    <div class="mb-4">
+                                        <h5 class="card-title mb-0 text-white">Otomatik Arac Sayisi</h5>
+                                    </div>
+                                    <div class="row d-flex align-items-center mb-4">
+                                        <div class="col-8">
+                                            <h2 class="d-flex align-items-center text-white mb-0">
+                                                @ViewBag.v10
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end col-->
+
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card bg-warning border-warning">
+                                <div class="card-body">
+                                    <div class="mb-4">
+                                        <h5 class="card-title mb-0 text-white">1000 Km Alti Araclar</h5>
+                                    </div>
+                                    <div class="row d-flex align-items-center mb-4">
+                                        <div class="col-8">
+                                            <h2 class="d-flex align-items-center text-white mb-0">
+                                               @ViewBag.v11
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end col--><!-- end col-->
+                    </div>

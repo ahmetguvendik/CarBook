@@ -18,7 +18,7 @@ public class GetCountByTranmissionIsAutoQueryHandler : IRequestHandler<GetCountB
        var value = _statisticsRepository.GetCountByTranmissionIsAuto();
        return new GetCountByTranmissionIsAutoQueryResult()
        {
-           Count = value
+           AutoCarCount = value
        };
     }
 }

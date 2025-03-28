@@ -18,7 +18,7 @@ public class GetCarCountByKmSmallerThan1000QueryHandler : IRequestHandler<GetCar
        var value = _statisticsRepository.GetCarCountByKmSmallerThan1000();
        return new GetCarCountByKmSmallerThan1000QueryResult()
        {
-           Count = value
+           CountKmSmallerThan1000 = value
        };
     }
 }
