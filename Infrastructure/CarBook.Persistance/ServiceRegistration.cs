@@ -3,6 +3,7 @@ using CarBook.Application.Repositories.BlogRepository;
 using CarBook.Application.Repositories.CarPricingReposiyories;
 using CarBook.Application.Repositories.CarRepositories;
 using CarBook.Application.Repositories.GenericRepository;
+using Carbook.Application.Repositories.RentACarRepositories;
 using Carbook.Application.Repositories.StatisticsRepositories;
 using CarBook.Persistance.Context;
 using Carbook.Persistance.Repositories;
@@ -10,6 +11,7 @@ using CarBook.Persistance.Repositories.BlogRepository;
 using CarBook.Persistance.Repositories.CarPricingRepositories;
 using CarBook.Persistance.Repositories.CarRepositories;
 using CarBook.Persistance.Repositories.CommentRepository;
+using Carbook.Persistance.Repositories.RentACarRepository;
 using Carbook.Persistance.Repositories.StatisticsRepository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -30,6 +32,6 @@ public static class ServiceRegistration
         collection.AddScoped(typeof(ICarPricingRepository), typeof(CarPricingRepository));
         collection.AddScoped(typeof(ICommentRepository), typeof(CommentRepository));
         collection.AddScoped(typeof(IStatisticsRepository), typeof(StatisticsRepository));
-        
+        collection.AddScoped(typeof(IRentACarRepository), typeof(RentACarRepostory));
     }
 }

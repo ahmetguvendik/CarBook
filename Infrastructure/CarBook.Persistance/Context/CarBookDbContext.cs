@@ -27,6 +27,7 @@ namespace CarBook.Persistance.Context
         public DbSet<Author> Authors { get; set; }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Comment> Comments { get; set; }
+        public DbSet<RentACar> RentACars { get; set; }  
 
     }
 }
