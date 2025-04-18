@@ -16,13 +16,15 @@ public class RentACarController : ControllerBase
         _mediator = mediator;
     }
 
-    [HttpPost]
-    public async Task<IActionResult> Get(GetRentACarQuery query)
+    [HttpGet]
+    public async Task<IActionResult> Get(string LocationID, bool Avaible)
     {
-        var value = await _mediator.Send(query);
+        GetRentACarQuery rentACarQuery = new GetRentACarQuery()
+        {
+             LocationID = LocationID,
+             Avaible = Avaible
+        };
+        var value = await _mediator.Send(rentACarQuery);
         return Ok(value);
     }
-
-
-   
 } 
