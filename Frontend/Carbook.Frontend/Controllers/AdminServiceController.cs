@@ -21,7 +21,7 @@ public class AdminServiceController : Controller
         {
             var jsonData = await response.Content.ReadAsStringAsync();
             var values = JsonConvert.DeserializeObject<List<ResultServiceDto>>(jsonData);
-            return View();
+            return View(values);
         }
         return View();
     }

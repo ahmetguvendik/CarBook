@@ -1,4 +1,5 @@
 ﻿using System;
+using Carbook.Application.Features.CQRS.Commands.CarPricingCommands;
 using CarBook.Application.Features.Mediator.Queries.AuthorQueries;
 using CarBook.Application.Features.Mediator.Queries.CarPricingQueries;
 using MediatR;
@@ -23,6 +24,13 @@ namespace CarBook.Presentation.Controllers
             return Ok(value);
         }
 
+        // POST api/values
+        [HttpPost]
+        public async Task<IActionResult> Post(CreateCarPricingCommad command)
+        {
+            await _mediator.Send(command);
+            return Ok("EKlendi");
+        }
     }
 
 }

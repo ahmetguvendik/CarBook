@@ -84,6 +84,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5DYXIvVXBkYXRlQ2FyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/AdminCarPricing/CreateCarPricing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5DYXJQcmljaW5nL0NyZWF0ZUNhclByaWNpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/AdminCarPricing/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5DYXJQcmljaW5nL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/AdminCategory/CreateCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW5DYXRlZ29yeS9DcmVhdGVDYXRlZ29yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

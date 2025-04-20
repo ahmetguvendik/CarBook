@@ -20,7 +20,9 @@ public class GetRentACarQueryHandler : IRequestHandler<GetRentACarQuery, List<Ge
         return values.Select(x => new GetRentACarQueryResult
         {
             CarId = x.CarId,
-             
+            BrandName = x.Car.Brand.Name,
+            CoverImageUrl = x.Car.CoverImageUrl,
+            ModelName = x.Car.Model,
         }).ToList();
     }
 } 

@@ -1,0 +1,38 @@
+@model CarBook.Dto.CarPricingDTOs.CreateCarPricingDto
+
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Yeni Araca Fiyat Ekleme Sayfasi</h4>
+        <p class="card-subtitle mb-4">Sisteme Eklemek Istediginiz Yeni Arabanin Fiyatini Seciniz </p>
+
+        <form asp-action="CreateCarPricing"  asp-controller="AdminCarPricing" method="post">
+            <div class="form-group">
+                <label for="simpleinput">Marka</label>
+                @Html.DropDownListFor(x => x.CarId, (List<SelectListItem>) ViewBag.Cars, new {@class="form=control"})
+            </div>
+            
+            <div class="form-group">
+                <label for="simpleinput">Marka</label>
+                @Html.DropDownListFor(x => x.pricingId, (List<SelectListItem>) ViewBag.Pricing, new {@class="form=control"})
+            </div>
+
+            <div class="form-group">
+                <label>Model</label>
+                <input type="number" asp-for="Price" placeholder="Model" class="form-control">
+            </div>
+
+           
+            
+            <button type="submit" class="btn btn-success">
+                Kaydet
+            </button>
+            
+
+        </form>
+    </div>
+    <!-- end card-body-->
+</div>
