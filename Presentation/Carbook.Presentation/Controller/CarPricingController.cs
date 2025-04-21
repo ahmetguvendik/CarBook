@@ -24,6 +24,12 @@ namespace CarBook.Presentation.Controllers
             return Ok(value);
         }
 
+        [HttpGet("GetAll")]
+        public async Task<IActionResult> GetAll()
+        {
+            var value = await _mediator.Send(new GetAllCarPricingQuery());
+            return Ok(value);
+        }
         // POST api/values
         [HttpPost]
         public async Task<IActionResult> Post(CreateCarPricingCommad command)

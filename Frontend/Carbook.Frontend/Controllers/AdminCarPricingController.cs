@@ -19,7 +19,7 @@ public class AdminCarPricingController : Controller
     public async Task<IActionResult> Index()
     {
         var client = _httpClientFactory.CreateClient();
-        var response = await client.GetAsync("http://localhost:5128/api/CarPricing");
+        var response = await client.GetAsync("http://localhost:5128/api/CarPricing/GetAll");
         if (response.IsSuccessStatusCode)
         {
             var jsonData = await response.Content.ReadAsStringAsync();

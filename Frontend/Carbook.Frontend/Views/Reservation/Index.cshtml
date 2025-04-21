@@ -1,0 +1,46 @@
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/UILayout/Index.cshtml";
+}
+
+<section class="ftco-section contact-section">
+    <div class="container">
+        <div class="row d-flex mb-5 contact-info">
+            <div class="col-md-8 block-9 mb-md-5">
+                <form asp-action="Index" asp-controller="Reservation" method="post">
+                    <div class="form-group">
+                        <input type="text" class="form-control" readonly placeholder="Almak Istediginiz Araba">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Adiniz ve Soyadiniz">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email Adresiniz">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Telefon Numaraniz">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Almak Istediginiz Lokasyon">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Teslim Etmek Istediginiz Lokasyon">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Yasiniz">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Ehliyet Aldiginiz Yiliniz">
+                    </div>
+                    <div class="form-group">
+                        <textarea cols="30" rows="7" class="form-control" placeholder="Mesajiniz" ></textarea>
+                    </div>
+                    <button>
+                        Rezervasyonu Tamamla
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>

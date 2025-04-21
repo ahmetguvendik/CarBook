@@ -27,7 +27,15 @@ namespace CarBook.Persistance.Context
         public DbSet<Author> Authors { get; set; }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Comment> Comments { get; set; }
-        public DbSet<RentACar> RentACars { get; set; }  
+        public DbSet<RentACar> RentACars { get; set; }
+        public DbSet<Reservation> Reservations { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Reservation>().HasOne(x=>x.PickUpLocation).WithMany(y=>y.PickUpReservation).HasForeignKey(x=>x.PickUpLocationId);
+            modelBuilder.Entity<Reservation>().HasOne(x=>x.DrofOffLocation).WithMany(y=>y.DropOffReservation).HasForeignKey(x=>x.DropOffLocationId);
+        }
     }
+    
+        
 }
