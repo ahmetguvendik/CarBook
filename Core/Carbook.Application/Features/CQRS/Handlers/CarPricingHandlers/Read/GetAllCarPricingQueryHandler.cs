@@ -20,6 +20,7 @@ public class GetAllCarPricingQueryHandler : IRequestHandler<GetAllCarPricingQuer
         return values.Select(x => new GetAllCarPricingQueryResult
         {
             Id = x.Id,
+            CarId = x.CarId,
             BrandName = x.Car.Brand.Name,
             CoverImageUrl = x.Car.CoverImageUrl,
             Model = x.Car.Model,

@@ -5,5 +5,5 @@ namespace Carbook.Application.Features.CQRS.Queries.ReservationQueries;
  
 public class GetReservationQuery : IRequest<List<GetReservationQueryResult>>
 {
-    
+
 }

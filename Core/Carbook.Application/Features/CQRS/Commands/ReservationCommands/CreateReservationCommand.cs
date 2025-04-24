@@ -13,4 +13,5 @@ public class CreateReservationCommand : IRequest
     public string CarId { get; set; }
     public string PickUpLocationId { get; set; }
     public string DropOffLocationId { get; set; }
+    public string Statues { get; set; } 
 }

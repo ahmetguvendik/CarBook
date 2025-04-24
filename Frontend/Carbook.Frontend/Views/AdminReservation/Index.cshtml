@@ -1,0 +1,68 @@
+@model List<Carbook.Dto.ReservartionDTOs.ResultReservationResult>
+
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Rezervasyonlar Sayfası</h4>
+                <p class="card-subtitle mb-4">Sistemdeki Rezervasyonlari Gorup Bu Sayfadan Islem Yapabilirsiniz.
+                </p>
+                <div class="table-responsive">
+
+                    <table class="table mb-12">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Isim Soyisim</th>
+                            <th>Email</th>
+                            <th>Telefon Numarasi</th>
+                            <th>Yas</th>
+                            <th>Surucu Belgesi Yasi</th>
+                            <th>Araba Modeli</th>
+                            <th>Araba Alinacak Lokasyon</th>
+                            <th>Araba Birakilacak Lokasyon</th>
+                            <th>Mesaj</th>
+                            <th>Durum</th>
+                            <th>Onayla</th>
+                            <th>Reddet</th>
+                        </tr>
+                        </thead>
+                        @foreach (var item in Model)
+                        {
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>@item.NameSurname</td>
+                                <td>@item.Email</td>
+                                <td>@item.PhoneNumber</td>
+                                <td>@item.Age</td>
+                                <td>@item.DriverLicanceYear</td>
+                                <td>@item.CarName</td>
+                                <td>@item.PickUpLocationName</td>
+                                <td>@item.DropOffLocationName</td>
+                                <td>@item.Message</td>
+                                <td>@item.Statues</td>
+                                <td><a href="/AdminReservation/AprovedReservation/@item.Id" class="btn btn-outline-success">Onayla</a></td>
+                                <td><a href="/AdminReservation/DenyedReservation/@item.Id" class="btn btn-outline-danger">Reddet</a></td>
+                            </tr>
+                            </tbody>
+                        }
+                    </table>
+                </div>
+
+            </div>
+            <!-- end card-body-->
+        </div>
+        <!-- end card -->
+
+    </div>
+    <!-- end col -->
+
+
+
+    <!-- end col -->
+</div>

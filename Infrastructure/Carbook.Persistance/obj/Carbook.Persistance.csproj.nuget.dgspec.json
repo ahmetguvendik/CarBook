@@ -1,0 +1,228 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Persistance/Carbook.Persistance.csproj": {}
+  },
+  "projects": {
+    "/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Application/Carbook.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Application/Carbook.Application.csproj",
+        "projectName": "Carbook.Application",
+        "projectPath": "/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Application/Carbook.Application.csproj",
+        "packagesPath": "/Users/ahmetguvendik/.nuget/packages/",
+        "outputPath": "/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ahmetguvendik/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Domain/Carbook.Domain.csproj": {
+                "projectPath": "/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Domain/Carbook.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Domain/Carbook.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Domain/Carbook.Domain.csproj",
+        "projectName": "Carbook.Domain",
+        "projectPath": "/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Domain/Carbook.Domain.csproj",
+        "packagesPath": "/Users/ahmetguvendik/.nuget/packages/",
+        "outputPath": "/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ahmetguvendik/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Persistance/Carbook.Persistance.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Persistance/Carbook.Persistance.csproj",
+        "projectName": "Carbook.Persistance",
+        "projectPath": "/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Persistance/Carbook.Persistance.csproj",
+        "packagesPath": "/Users/ahmetguvendik/.nuget/packages/",
+        "outputPath": "/Users/ahmetguvendik/Desktop/Project/Carbook/Infrastructure/Carbook.Persistance/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ahmetguvendik/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Application/Carbook.Application.csproj": {
+                "projectPath": "/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Application/Carbook.Application.csproj"
+              },
+              "/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Domain/Carbook.Domain.csproj": {
+                "projectPath": "/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Domain/Carbook.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.11.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.11.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

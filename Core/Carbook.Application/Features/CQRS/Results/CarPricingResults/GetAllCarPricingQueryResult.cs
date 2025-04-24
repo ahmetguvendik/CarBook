@@ -3,6 +3,7 @@ namespace CarBook.Application.Features.Mediator.Results.CarPricingResults;
 public class GetAllCarPricingQueryResult
 {
     public string Id { get; set; }
+    public string CarId { get; set; }
     public string Model { get; set; }
     public string CoverImageUrl { get; set; }
     public string BrandName { get; set; }

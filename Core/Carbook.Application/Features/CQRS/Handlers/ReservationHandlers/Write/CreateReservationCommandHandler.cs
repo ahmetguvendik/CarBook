@@ -27,6 +27,7 @@ public class CreateReservationCommandHandler : IRequestHandler<CreateReservation
         reservation.Message = request.Message;
         reservation.DropOffLocationId  = request.DropOffLocationId;
         reservation.PickUpLocationId  = request.PickUpLocationId;
+        reservation.Statues = "Rezervasyon Alındı";
         await _reservationRepository.CreateAsync(reservation);
         await _reservationRepository.SaveChangesAsync();
 
