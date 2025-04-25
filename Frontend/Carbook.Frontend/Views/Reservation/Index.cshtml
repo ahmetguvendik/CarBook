@@ -4,6 +4,29 @@
     ViewData["Title"] = "Index";
     Layout = "~/Views/UILayout/Index.cshtml";
 }
+<!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#btn1').click(function (e) {
+            e.preventDefault();
+
+            Swal.fire({
+                title: 'Rezervasyon alındı!',
+                text: 'Teşekkür ederiz, en kısa sürede sizinle iletişime geçeceğiz.',
+                icon: 'success',
+                confirmButtonText: 'Tamam'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $(this).closest('form').submit();
+                }
+            });
+        });
+    });
+</script>
 
 <section class="ftco-section contact-section">
     <div class="container">
@@ -11,7 +34,7 @@
             <div class="col-md-8 block-9 mb-md-5">
                 <form asp-action="Index" asp-controller="Reservation" method="post">
                     <div class="form-group">
-                        <input type="hidden" class="form-control" asp-for="CarId"  value="@ViewBag.v3" placeholder="Almak Istediginiz Araba">
+                        <input type="hidden" class="form-control" asp-for="CarId" value="@ViewBag.v3" placeholder="Almak Istediginiz Araba">
                     </div>
                     <div class="form-group">
                         <input type="text" class="form-control" asp-for="NameSurname" placeholder="Adiniz ve Soyadiniz">
@@ -35,9 +58,9 @@
                         <input type="text" class="form-control" asp-for="DriverLicanceYear" placeholder="Ehliyet Aldiginiz Yiliniz">
                     </div>
                     <div class="form-group">
-                        <textarea cols="30" rows="7" class="form-control" asp-for="Message" placeholder="Mesajiniz" ></textarea>
+                        <textarea cols="30" rows="7" class="form-control" asp-for="Message" placeholder="Mesajiniz"></textarea>
                     </div>
-                    <button>
+                    <button id="btn1" type="button" class="btn btn-primary">
                         Rezervasyonu Tamamla
                     </button>
                 </form>

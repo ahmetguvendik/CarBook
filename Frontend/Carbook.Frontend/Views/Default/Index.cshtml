@@ -92,16 +92,8 @@
         </div>
     </section>
 
-    @if (TempData["SuccessMessage"] != null)
-    {
-        <script>
-        window.onload = function() {
-            alert('@TempData["SuccessMessage"]');
-        };
-    </script>
-    }
+
     
- 
 
     @await Component.InvokeAsync("_Get5CarsWithBrandsComponentPartial")
 
