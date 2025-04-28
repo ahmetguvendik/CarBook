@@ -34,6 +34,11 @@ namespace CarBook.Persistance.Context
         {
             modelBuilder.Entity<Reservation>().HasOne(x=>x.PickUpLocation).WithMany(y=>y.PickUpReservation).HasForeignKey(x=>x.PickUpLocationId);
             modelBuilder.Entity<Reservation>().HasOne(x=>x.DrofOffLocation).WithMany(y=>y.DropOffReservation).HasForeignKey(x=>x.DropOffLocationId);
+            
+            // Add unique constraint to prevent duplicate car-feature combinations
+            modelBuilder.Entity<CarFeatures>()
+                .HasIndex(cf => new { cf.CarId, cf.FeaturesId })
+                .IsUnique();
         }
     }
     

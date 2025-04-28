@@ -226,9 +226,10 @@ namespace Carbook.Persistance.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CarId");
-
                     b.HasIndex("FeaturesId");
+
+                    b.HasIndex("CarId", "FeaturesId")
+                        .IsUnique();
 
                     b.ToTable("CarFeatures");
                 });

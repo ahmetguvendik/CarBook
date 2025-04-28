@@ -1,0 +1,112 @@
+@model Carbook.Dto.CarFeaturesDTOs.CreateCarFeaturesDto
+
+@{
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Yeni Özellik Ekleme Sayfasi</h4>
+        <p class="card-subtitle mb-4">Araç İçin Özellik Ekleyiniz </p>
+
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger">
+                @TempData["ErrorMessage"]
+            </div>
+        }
+
+        <form id="featureForm">
+            <div class="form-group">
+                <label>Araç Seçiniz</label>
+                @Html.DropDownListFor(x => x.CarId, (List<SelectListItem>) ViewBag.Cars, new {@class="form-control", id = "carDropdown"})
+            </div>
+            
+            <div class="form-group">
+                <label>Özellik Seçiniz</label>
+                @Html.DropDownListFor(x => x.FeaturesId, (List<SelectListItem>) ViewBag.Features, new {@class="form-control", id = "featureDropdown"})
+            </div>
+
+            <div class="form-group">
+                <label>Mevcut mu?</label>
+                @Html.DropDownListFor(x => x.IsAvaible, new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Evet", Value = "true" },
+                    new SelectListItem { Text = "Hayır", Value = "false" }
+                }, new { @class = "form-control" })
+            </div>
+
+            <button type="submit" class="btn btn-success">
+                Ekle
+            </button>
+        </form>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    $(document).ready(function() {
+        $('#carDropdown').change(function() {
+            var carId = $(this).val();
+            if (carId) {
+                $.ajax({
+                    url: '@Url.Action("GetAvailableFeatures", "AdminCarDetail")',
+                    type: 'POST',
+                    data: { carId: carId },
+                    success: function(data) {
+                        $('#featureDropdown').empty();
+                        $.each(data, function(index, item) {
+                            $('#featureDropdown').append($('<option></option>').val(item.value).text(item.text));
+                        });
+                    }
+                });
+            }
+        });
+
+        $('#featureForm').submit(function(e) {
+            e.preventDefault();
+            
+            var formData = {
+                CarId: $('#carDropdown').val(),
+                FeaturesId: $('#featureDropdown').val(),
+                IsAvaible: $('#IsAvaible').val()
+            };
+
+            $.ajax({
+                url: '@Url.Action("CreateFeatures", "AdminCarDetail")',
+                type: 'POST',
+                data: formData,
+                success: function(response) {
+                    if (response.success) {
+                        Swal.fire({
+                            title: 'Başarılı!',
+                            text: response.message,
+                            icon: 'success',
+                            confirmButtonText: 'Tamam'
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                window.location.href = '@Url.Action("Index", "AdminCar")';
+                            }
+                        });
+                    } else {
+                        Swal.fire({
+                            title: 'Hata!',
+                            text: response.message,
+                            icon: 'error',
+                            confirmButtonText: 'Tamam'
+                        });
+                    }
+                },
+                error: function() {
+                    Swal.fire({
+                        title: 'Hata!',
+                        text: 'Bir hata oluştu!',
+                        icon: 'error',
+                        confirmButtonText: 'Tamam'
+                    });
+                }
+            });
+        });
+    });
+</script>
