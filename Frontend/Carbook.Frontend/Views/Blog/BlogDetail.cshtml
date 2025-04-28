@@ -14,8 +14,8 @@
                 @await Component.InvokeAsync("_BlogDetailAuthorDetailComponentPartial", new { id = ViewBag.blogId })
 
                 @await Component.InvokeAsync("_BlogDetailGetCommentComponentPartial", new { id = ViewBag.blogId })
+                @await Html.PartialAsync("~/Views/Blog/CreateComment.cshtml", new CarBook.Dto.CommentDTOs.CreateCommentDto { BlogId = ViewBag.blogId })
                 
-
             </div> <!-- .col-md-8 -->
             <div class="col-md-4 sidebar ftco-animate">
                 @await Component.InvokeAsync("_BlogDetailSideBarSearchComponentPartial")
@@ -23,6 +23,9 @@
                 @await Component.InvokeAsync("_BlogDetailCategoryComponentPartial")
 
                 @await Component.InvokeAsync("_BlogDetailRecentBlogComponentPartial")
+                
+               
+                
 
             </div>
 

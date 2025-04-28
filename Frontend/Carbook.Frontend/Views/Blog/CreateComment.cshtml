@@ -3,6 +3,7 @@
 <div class="comment-form-wrap pt-5">
     <h3 class="mb-5">Bir Yorum Birakin</h3>
     <form asp-action="CreateComment" asp-controller="Blog" method="post">
+        <input type="hidden" asp-for="BlogId" value="@ViewBag.blogId" />
         <div class="form-group">
             <input type="text" class="form-control" placeholder="Adiniz ve Soyadiniz" asp-for="@Model.Name">
         </div>

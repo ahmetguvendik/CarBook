@@ -1,0 +1,9 @@
+namespace Carbook.Dto.CarFeaturesDTOs;
+
+public class ResultCarFeaturesDto
+{
+    public string Id { get; set; }
+    public string CarId { get; set; }
+    public string FeaturesName { get; set; }  
+    public bool IsAvaible { get; set; }	
+}

@@ -50,17 +50,15 @@ public class BlogController : Controller
         public async Task<IActionResult> CreateComment(CreateCommentDto createCommentDto)
         {
             createCommentDto.CreatedTime = DateTime.UtcNow;
-            createCommentDto.BlogId = ViewBag.blogId;
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(createCommentDto);
             StringContent stringContent = new StringContent(jsonData, encoding: Encoding.UTF8, "application/json");
             var response = await client.PostAsync("http://localhost:5128/api/Comment", stringContent);
             if (response.IsSuccessStatusCode)
             {
-                return RedirectToAction("Index", "Default");
+                return RedirectToAction("Index", "Blog");
             }
 
             return View();
-
         }
     }

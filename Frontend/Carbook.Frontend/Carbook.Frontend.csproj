@@ -20,4 +20,8 @@
       <Folder Include="Views\About\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Shared\Components\_CreateCommentComponentPartial\Default.cshtml" />
+    </ItemGroup>
+
 </Project>
