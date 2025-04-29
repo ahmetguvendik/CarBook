@@ -1,7 +1,11 @@
 using System.Reflection;
+using System.Text;
 using Carbook.Application;
+using Carbook.Application.Tools;
 using Carbook.Persistance;
 using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +14,20 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers().AddFluentValidation(x =>
 {
     x.RegisterValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+});
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+{
+    options.RequireHttpsMetadata = false;
+    options.TokenValidationParameters = new TokenValidationParameters()
+    {
+        ValidAudience = JwtTokenDefault.ValidAudience,
+        ValidIssuer = JwtTokenDefault.ValidIssuer,
+        ClockSkew = TimeSpan.Zero,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(JwtTokenDefault.Key)),
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true
+    };
 });
 
 builder.Services.AddEndpointsApiExplorer();
@@ -26,6 +44,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllers();
 app.UseHttpsRedirection();

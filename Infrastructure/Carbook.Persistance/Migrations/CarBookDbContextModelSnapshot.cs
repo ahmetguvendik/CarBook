@@ -44,6 +44,44 @@ namespace Carbook.Persistance.Migrations
                     b.ToTable("Abouts");
                 });
 
+            modelBuilder.Entity("CarBook.Domain.Entities.AppRole", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
+
+                    b.Property<string>("AppRoleName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("AppRoles");
+                });
+
+            modelBuilder.Entity("CarBook.Domain.Entities.AppUser", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("text");
+
+                    b.Property<string>("AppRoleId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AppRoleId");
+
+                    b.ToTable("AppUsers");
+                });
+
             modelBuilder.Entity("CarBook.Domain.Entities.Author", b =>
                 {
                     b.Property<string>("Id")
@@ -608,6 +646,17 @@ namespace Carbook.Persistance.Migrations
                     b.ToTable("Testimonials");
                 });
 
+            modelBuilder.Entity("CarBook.Domain.Entities.AppUser", b =>
+                {
+                    b.HasOne("CarBook.Domain.Entities.AppRole", "AppRole")
+                        .WithMany("AppUsersType")
+                        .HasForeignKey("AppRoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AppRole");
+                });
+
             modelBuilder.Entity("CarBook.Domain.Entities.Blog", b =>
                 {
                     b.HasOne("CarBook.Domain.Entities.Author", "Author")
@@ -761,6 +810,11 @@ namespace Carbook.Persistance.Migrations
                     b.Navigation("DrofOffLocation");
 
                     b.Navigation("PickUpLocation");
+                });
+
+            modelBuilder.Entity("CarBook.Domain.Entities.AppRole", b =>
+                {
+                    b.Navigation("AppUsersType");
                 });
 
             modelBuilder.Entity("CarBook.Domain.Entities.Author", b =>

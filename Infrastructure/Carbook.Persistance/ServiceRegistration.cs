@@ -1,4 +1,6 @@
 using Carbook.Application.Repositories;
+using Carbook.Application.Repositories.AppRoleRepositories;
+using Carbook.Application.Repositories.AppUserRepositories;
 using CarBook.Application.Repositories.BlogRepository;
 using Carbook.Application.Repositories.CarFeauresRepository;
 using CarBook.Application.Repositories.CarPricingReposiyories;
@@ -10,6 +12,8 @@ using Carbook.Application.Repositories.StatisticsRepositories;
 using Carbook.Application.Services;
 using CarBook.Persistance.Context;
 using Carbook.Persistance.Repositories;
+using Carbook.Persistance.Repositories.AppRoleRepositories;
+using Carbook.Persistance.Repositories.AppUserRepositories;
 using CarBook.Persistance.Repositories.BlogRepository;
 using Carbook.Persistance.Repositories.CarFeaturesRepository;
 using CarBook.Persistance.Repositories.CarPricingRepositories;
@@ -42,5 +46,8 @@ public static class ServiceRegistration
         collection.AddScoped(typeof(IReservationRepository), typeof(ReservationRepository));
         collection.AddScoped(typeof(IEmailService), typeof(EmailService));
         collection.AddScoped(typeof(ICarFeaturesRepositrory), typeof(CarFeaturesRepository));   
+        collection.AddScoped(typeof(IAppUserRepository), typeof(AppUserRepository)); 
+        collection.AddScoped(typeof(IAppRoleRepository), typeof(AppRoleRepository)); 
+
     }
 }

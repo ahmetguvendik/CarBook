@@ -149,3 +149,11 @@
 /Users/ahmetguvendik/Desktop/Project/Carbook/Presentation/Carbook.Presentation/bin/Debug/net9.0/FluentValidation.dll
 /Users/ahmetguvendik/Desktop/Project/Carbook/Presentation/Carbook.Presentation/bin/Debug/net9.0/FluentValidation.AspNetCore.dll
 /Users/ahmetguvendik/Desktop/Project/Carbook/Presentation/Carbook.Presentation/bin/Debug/net9.0/FluentValidation.DependencyInjectionExtensions.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Presentation/Carbook.Presentation/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Presentation/Carbook.Presentation/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Presentation/Carbook.Presentation/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Presentation/Carbook.Presentation/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Presentation/Carbook.Presentation/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Presentation/Carbook.Presentation/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Presentation/Carbook.Presentation/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Presentation/Carbook.Presentation/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
