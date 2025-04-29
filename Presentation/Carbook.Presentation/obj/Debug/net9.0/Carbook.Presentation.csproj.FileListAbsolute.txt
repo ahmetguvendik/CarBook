@@ -146,3 +146,6 @@
 /Users/ahmetguvendik/Desktop/Project/Carbook/Presentation/Carbook.Presentation/bin/Debug/net9.0/BouncyCastle.Cryptography.dll
 /Users/ahmetguvendik/Desktop/Project/Carbook/Presentation/Carbook.Presentation/bin/Debug/net9.0/MailKit.dll
 /Users/ahmetguvendik/Desktop/Project/Carbook/Presentation/Carbook.Presentation/bin/Debug/net9.0/MimeKit.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Presentation/Carbook.Presentation/bin/Debug/net9.0/FluentValidation.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Presentation/Carbook.Presentation/bin/Debug/net9.0/FluentValidation.AspNetCore.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Presentation/Carbook.Presentation/bin/Debug/net9.0/FluentValidation.DependencyInjectionExtensions.dll

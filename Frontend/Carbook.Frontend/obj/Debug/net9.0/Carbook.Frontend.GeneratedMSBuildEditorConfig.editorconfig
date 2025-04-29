@@ -200,6 +200,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmxvZy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/Car/CarDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FyL0NhckRldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/Car/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FyL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -286,6 +290,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/Shared/Components/_BlogDetailSideBarSearchComponentPartial/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0Jsb2dEZXRhaWxTaWRlQmFyU2VhcmNoQ29tcG9uZW50UGFydGlhbC9EZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/Shared/Components/_CarDetailCarFeaturesComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0NhckRldGFpbENhckZlYXR1cmVzQ29tcG9uZW50UGFydGlhbC9EZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/Shared/Components/_CarDetailCarTitleAndPropComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvX0NhckRldGFpbENhclRpdGxlQW5kUHJvcENvbXBvbmVudFBhcnRpYWwvRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/Views/Shared/Components/_ContactComponentPartial/Default.cshtml]

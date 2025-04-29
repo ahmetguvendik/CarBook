@@ -8,7 +8,7 @@ namespace CarBook.Application.Repositories.CarRepositories
         Task<List<Car>> GetCarWithBrands();
         Task<List<Car>> Get5CarWithBrands();
         int CarCount();
-        Task<List<Car>> GetCarWithPrice();
+        Task<Car> GetCarWithBrandsById(string id);
 	}
 }
 

@@ -1,10 +1,17 @@
+using System.Reflection;
 using Carbook.Application;
 using Carbook.Persistance;
+using FluentValidation.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 // Add services to the container.
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddFluentValidation(x =>
+{
+    x.RegisterValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+});
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddPersistanceService();

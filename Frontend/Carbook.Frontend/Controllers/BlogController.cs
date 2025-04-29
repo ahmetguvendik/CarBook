@@ -58,6 +58,10 @@ public class BlogController : Controller
             {
                 return RedirectToAction("Index", "Blog");
             }
+            else
+            {
+                return Json("Error");
+            }
 
             return View();
         }

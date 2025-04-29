@@ -27,4 +27,12 @@ public class CarController : Controller
         }
         return View();
     }
+
+    public IActionResult CarDetail(string id)
+    {
+        ViewBag.v1 = "Araba Detay";
+        ViewBag.v2 = "Secitiginiz Arabanin Detaylari";
+        ViewBag.v3 = id;
+        return View();
+    }
 }

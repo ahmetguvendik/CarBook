@@ -47,6 +47,14 @@ namespace CarBook.Presentation.Controllers
             var value = await _mediator.Send(new GetCarByIdQuery(id));
             return Ok(value);
         }
+        
+        [HttpGet("[action]")]
+        public async Task<IActionResult> GetCarWithBrandsById(string id)
+        {
+            var value = await _mediator.Send(new GetCarWithBrandsByIdQuery(id));
+            return Ok(value);
+        }
+
 
         // POST api/values
         [HttpPost]

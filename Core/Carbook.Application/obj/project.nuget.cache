@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "5vquq8ZotHc=",
+  "dgSpecHash": "vK6/mQuvBHk=",
   "success": true,
   "projectFilePath": "/Users/ahmetguvendik/Desktop/Project/Carbook/Core/Carbook.Application/Carbook.Application.csproj",
   "expectedPackageFiles": [
+    "/Users/ahmetguvendik/.nuget/packages/fluentvalidation/12.0.0-preview1/fluentvalidation.12.0.0-preview1.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "/Users/ahmetguvendik/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.1/fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/mediatr/12.4.1/mediatr.12.4.1.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/Users/ahmetguvendik/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.1.0/mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",

@@ -26,6 +26,12 @@ namespace CarBook.Persistance.Repositories.CarRepositories
             return count;
         }
 
+        public async Task<Car> GetCarWithBrandsById(string id)
+        {
+           var value = _carBookDbContext.Cars.Include(x => x.Brand).Where(x => x.Id == id).FirstOrDefault();
+           return value;
+        }
+
         public async Task<List<Car>> GetCarWithPrice()
         {
             var cars = _carBookDbContext.Cars.Include(x => x.Brand).Include(y=>y.CarPricings).ThenInclude(z=>z.Pricing).ToList();

@@ -1,5 +1,6 @@
 ﻿using CarBook.Application.Features.Mediator.Commands.CommetCommands;
 using CarBook.Application.Features.Mediator.Queries.CommentQueries;
+using Carbook.Application.Validations.Comments;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -47,10 +48,15 @@ namespace CarBook.Presentation.Controllers
         }
 
 
-        // POST api/values
         [HttpPost]
         public async Task<IActionResult> Post(CreateCommentCommand command)
         {
+            CreateCommentValidation commandValidation = new CreateCommentValidation();
+            var validationResult = await commandValidation.ValidateAsync(command);
+            if (!validationResult.IsValid)
+            {
+                return BadRequest(error:validationResult.Errors);
+            }
             await _mediator.Send(command);
             return Ok("EKlendi");
         }
