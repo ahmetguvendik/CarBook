@@ -21,7 +21,7 @@ public class LoginController : ControllerBase
         var value = await _mediator.Send(query);
         if (value.IsExist)
         {
-            return Created("", JwtTokenGenerator.GenerateJwtTokenDefault(value));
+            return Ok(JwtTokenGenerator.GenerateJwtTokenDefault(value));
         }
         return BadRequest("Email or password is incorrect");
     }

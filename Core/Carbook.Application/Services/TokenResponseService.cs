@@ -2,6 +2,10 @@ namespace Carbook.Application.Services;
 
 public class TokenResponseService
 {
+    public TokenResponseService()
+    {
+    }
+
     public TokenResponseService(string token, DateTime expireDate)
     {
         Token = token;

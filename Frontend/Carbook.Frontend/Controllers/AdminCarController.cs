@@ -1,13 +1,16 @@
+using System.Net.Http.Headers;
 using System.Text;
 using CarBook.Dto.AboutDTOs;
 using CarBook.Dto.AdminDTOs;
 using CarBook.Dto.CarDTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
 using ResultBrandDto = CarBook.Dto.BrandDTOs.ResultBrandDto;
 
 namespace Carbook.Frontend.Controllers;
+
 
 public class AdminCarController : Controller
 {
@@ -19,14 +22,20 @@ public class AdminCarController : Controller
     }
     public async Task<IActionResult> Index()
     {
-        var client = _httpClientFactory.CreateClient();
-        var response = await client.GetAsync("http://localhost:5128/api/Car/GetCarWithBrands");
-        if (response.IsSuccessStatusCode)
+        var token = User.Claims.FirstOrDefault(x=>x.Type=="accesstoken").Value;
+        if (token != null)
         {
-            var jsonData = await response.Content.ReadAsStringAsync();
-            var values = JsonConvert.DeserializeObject<List<ResultCarWithBrandsDto>>(jsonData);
-            return View(values);
+            var client = _httpClientFactory.CreateClient();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            var response = await client.GetAsync("http://localhost:5128/api/Car/GetCarWithBrands");
+            if (response.IsSuccessStatusCode)
+            {
+                var jsonData = await response.Content.ReadAsStringAsync();
+                var values = JsonConvert.DeserializeObject<List<ResultCarWithBrandsDto>>(jsonData);
+                return View(values);
+            }
         }
+     
         return View();
     }
     

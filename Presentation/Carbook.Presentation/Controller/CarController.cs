@@ -3,6 +3,7 @@ using CarBook.Application.Features.Mediator.Commands.FeatureCommands;
 using CarBook.Application.Features.Mediator.Queries.CarQueries;
 using CarBook.Application.Features.Mediator.Queries.FeatureQueries;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -56,7 +57,6 @@ namespace CarBook.Presentation.Controllers
         }
 
 
-        // POST api/values
         [HttpPost]
         public async Task<IActionResult> Post(CreateCarCommand command)
         {

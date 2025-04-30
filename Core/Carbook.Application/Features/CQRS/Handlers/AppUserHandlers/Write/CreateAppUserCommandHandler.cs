@@ -21,6 +21,9 @@ public class CreateAppUserCommandHandler : IRequestHandler<CreateAppUserCommand>
             Id = Guid.NewGuid().ToString(),
             Username = request.Username,
             Password = request.Password,
+            Email = request.Email,
+            Name = request.Name,
+            Surname = request.Surname,
             AppRoleId = "2",
         });
         await _repository.SaveChangesAsync();

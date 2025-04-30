@@ -1,5 +1,7 @@
+using System.Net.Http.Headers;
 using System.Text;
 using Carbook.Dto.LocationDTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -23,6 +25,7 @@ public class AdminLocationController : Controller
             var values = JsonConvert.DeserializeObject<List<ResultLocationDto>>(jsonData);
             return View(values);
         }
+        
         return View();
     }
     
@@ -35,15 +38,19 @@ public class AdminLocationController : Controller
     [HttpPost]
     public async Task<IActionResult> CreateLocation(CreateLocationDto createLocationDto)
     {
+        var token = User.Claims.FirstOrDefault(x=>x.Type=="accesstoken").Value; 
+        if (token != null)
+        {
         var client = _httpClientFactory.CreateClient();
+        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
         var jsonData = JsonConvert.SerializeObject(createLocationDto);
         StringContent stringContent = new StringContent(jsonData, encoding: Encoding.UTF8, "application/json");
         var response = await client.PostAsync("http://localhost:5128/api/Location", stringContent);
         if (response.IsSuccessStatusCode)
         {
             return RedirectToAction("Index", "AdminLocation");
+        } 
         }
-
         return View();
            
     }

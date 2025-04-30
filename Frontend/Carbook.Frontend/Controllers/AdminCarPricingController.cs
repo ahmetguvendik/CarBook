@@ -2,11 +2,13 @@ using System.Text;
 using CarBook.Dto.AdminDTOs;
 using CarBook.Dto.CarPricingDTOs;
 using CarBook.Dto.PricingDTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Newtonsoft.Json;
 
 namespace Carbook.Frontend.Controllers;
+
 
 public class AdminCarPricingController : Controller
 {

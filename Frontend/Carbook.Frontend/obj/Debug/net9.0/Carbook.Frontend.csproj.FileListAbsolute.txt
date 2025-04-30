@@ -447,3 +447,6 @@
 /Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
 /Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
 /Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll
+/Users/ahmetguvendik/Desktop/Project/Carbook/Frontend/Carbook.Frontend/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

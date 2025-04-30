@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace Carbook.Frontend.Controllers;
 
-public class AdminStatisticsController : Controller
+public class    AdminStatisticsController : Controller
 {
     private readonly IHttpClientFactory _httpClientFactory;
 

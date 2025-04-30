@@ -1,5 +1,5 @@
-
 using Carbook.Persistance;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +8,20 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient();
 builder.Services.AddPersistanceService();
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddCookie(JwtBearerDefaults.AuthenticationScheme,opt =>
+{
+    opt.LoginPath = "/Login/Index";
+    opt.AccessDeniedPath = "/Login/AccessDenied";
+    opt.Cookie.SameSite = SameSiteMode.Strict;
+    opt.Cookie.HttpOnly = true;
+    opt.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
+    opt.Cookie.Name = "CarbookJwt";
+    
+});
+
+
+
 
 var app = builder.Build();
 
@@ -22,6 +36,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseRouting();
 
+app.UseAuthentication();    
 app.UseAuthorization();
 
 app.MapStaticAssets();
@@ -33,3 +48,4 @@ app.MapControllerRoute(
 
 
 app.Run();
+

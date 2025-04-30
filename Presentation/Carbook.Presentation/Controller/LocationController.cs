@@ -2,11 +2,13 @@ using Carbook.Application.Features.CQRS.Commands.LocationCommands;
 using Carbook.Application.Features.CQRS.Queries.LocationQueries;
 using CarBook.Application.Features.Mediator.Commands.FeatureCommands;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CarBook.Presentation.Controllers
 
 {
+   
     [Route("api/[controller]")]
     [ApiController]
     public class LocationController : Controller
@@ -33,6 +35,7 @@ namespace CarBook.Presentation.Controllers
         }
 
         // POST api/values
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<IActionResult> Post(CreateLocationCommand command)
         {
